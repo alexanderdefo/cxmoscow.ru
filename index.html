@@ -5,115 +5,33 @@
 <title>Схватка — Архив сценариев cxmoscow.ru</title>
 <link href="game.css" type="text/css" rel="stylesheet">
 <style>
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    user-select: none;
-}
-h2:hover {
-    background-color: #4a5595;
-}
-h2 .arrow {
-    display: inline-block;
-    width: 20px;
-    text-align: center;
-    transition: transform 0.2s;
-}
-h2.collapsed-header .arrow {
-    transform: rotate(-90deg);
-}
-.year-count {
-    font-size: 0.7em;
-    color: #CCC;
-    font-weight: normal;
-    margin-left: 5px;
-}
-.year-content {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-.year-content.collapsed {
-    max-height: 0 !important;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 5px 0 15px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 5px 10px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-td {
-    background-color: #3a4585;
-}
-tr:nth-child(even) td {
-    background-color: #344b8a;
-}
-tr:hover td {
-    background-color: #4a5595;
-}
-a {
-    color: #87CEEB;
-}
-a:hover {
-    color: #FFFF00;
-}
-.tag {
-    display: inline-block;
-    padding: 1px 6px;
-    border-radius: 3px;
-    font-size: 0.8em;
-    margin-right: 3px;
-    white-space: nowrap;
-}
+body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 960px; margin-left: auto; margin-right: auto; }
+h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
+h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 20px; user-select: none; }
+h2:hover { background-color: #4a5595; }
+h2 .arrow { display: inline-block; width: 20px; text-align: center; transition: transform 0.2s; }
+h2.collapsed-header .arrow { transform: rotate(-90deg); }
+.year-count { font-size: 0.7em; color: #CCC; font-weight: normal; margin-left: 5px; }
+.year-content { overflow: hidden; transition: max-height 0.3s ease; }
+.year-content.collapsed { max-height: 0 !important; }
+table { border-collapse: collapse; width: 100%; margin: 5px 0 15px 0; }
+td, th { border: 1px solid #666; padding: 5px 10px; }
+th { background-color: #3a4585; color: #FFFF00; }
+td { background-color: #3a4585; }
+tr:nth-child(even) td { background-color: #344b8a; }
+tr:hover td { background-color: #4a5595; }
+a { color: #87CEEB; }
+a:hover { color: #FFFF00; }
+.tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.8em; margin-right: 3px; white-space: nowrap; }
 .tag-city { background: #2e7d32; }
 .tag-open { background: #e65100; }
 .tag-closed { background: #c62828; }
 .tag-mini { background: #6a1b9a; }
 .tag-unknown { background: #546e7a; }
 .tag-alex { background: #8e44ad; }
-.stats-bar {
-    text-align: center;
-    color: #CCC;
-    font-size: 0.9em;
-    margin: 5px 0 10px 0;
-    padding: 8px;
-    background-color: #3a4585;
-    border-radius: 6px;
-}
-.stats-bar a {
-    color: #FFFF00;
-    cursor: pointer;
-    margin: 0 8px;
-    text-decoration: underline;
-}
-.stats-bar a:hover {
-    color: #87CEEB;
-}
+.stats-bar { text-align: center; color: #CCC; font-size: 0.9em; margin: 5px 0 10px 0; padding: 8px; background-color: #3a4585; border-radius: 6px; }
+.stats-bar a { color: #FFFF00; cursor: pointer; margin: 0 8px; text-decoration: underline; }
+.stats-bar a:hover { color: #87CEEB; }
 </style>
 </head>
 <body>
@@ -121,27 +39,30 @@ a:hover {
 <h1>Схватка — Архив сценариев cxmoscow.ru</h1>
 
 <div class="stats-bar">
-Всего 58 игр |
+Всего 61 игр |
 <a onclick="expandAll()">Развернуть все</a>
 <a onclick="collapseAll()">Свернуть все</a>
 </div>
 
 <div class="year-section" id="year-2005">
-<h2 onclick="toggleYear(2005)"><span class="arrow">&#9660;</span> 2005 <span class="year-count">(11 игр: 5 открытых, 6 закрытых)</span></h2>
+<h2 onclick="toggleYear(2005)"><span class="arrow">&#9660;</span> 2005 <span class="year-count">(14 игр: 5 открытых, 9 закрытых)</span></h2>
 <div class="year-content" id="yc-2005">
 <table>
 <tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th></tr>
-<tr><td>1</td><td>13-08-2005</td><td><a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario.html">Он от дедушки ушел, он от бабушки ушел</a> <a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>2</td><td>27-08-2005</td><td><a href="gid2_Game 2/scenario.html">В первый раз...</a> <a href="gid2_Game 2/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>3</td><td>31-08-2005</td><td><a href="gid3_Game 3/scenario.html">Москва, Москва!</a> <a href="gid3_Game 3/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>4</td><td>17-09-2005</td><td><a href="gid4_Game 4/scenario.html">Учиться, учиться и еще раз учиться</a> <a href="gid4_Game 4/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>5</td><td>01-10-2005</td><td><a href="gid5_Game 5/scenario.html">Бриллиантовая Рука</a> <a href="gid5_Game 5/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>6</td><td>15-10-2005</td><td><a href="gid6_Game 6/scenario.html">Саша и Маша</a> <a href="gid6_Game 6/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>7</td><td>22-10-2005</td><td><a href="gid7_Game 7/scenario.html">Виртуальные радости</a> <a href="gid7_Game 7/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>8</td><td>29-10-2005</td><td><a href="gid8_Game 8/scenario.html">Сорви Голова (г. Александров)</a> <a href="gid8_Game 8/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-alex">Александров</span></td></tr>
-<tr><td>9</td><td>29-10-2005</td><td><a href="gid9_Game 9/scenario.html">Вини Пух и все все все...</a> <a href="gid9_Game 9/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>10</td><td>05-11-2005</td><td><a href="gid10_Ах/scenario.html">Ах, какие женщины!</a> <a href="gid10_Ах/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
-<tr><td>11</td><td>12-11-2005</td><td><a href="gid11_ВОР/scenario.html">ВОР</a> <a href="gid11_ВОР/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>1</td><td>13-08-2005</td><td><a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario.html">Он от дедушки ушел, он от бабушки ушел</a><a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>2</td><td>27-08-2005</td><td><a href="gid2_Game 2/scenario.html">В первый раз...</a><a href="gid2_Game 2/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>3</td><td>31-08-2005</td><td><a href="gid3_Game 3/scenario.html">Москва, Москва!</a><a href="gid3_Game 3/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>4</td><td>17-09-2005</td><td><a href="gid4_Game 4/scenario.html">Учиться, учиться и еще раз учиться</a><a href="gid4_Game 4/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>5</td><td>01-10-2005</td><td><a href="gid5_Game 5/scenario.html">Бриллиантовая Рука</a><a href="gid5_Game 5/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>6</td><td>15-10-2005</td><td><a href="gid6_Game 6/scenario.html">Саша и Маша</a><a href="gid6_Game 6/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>7</td><td>22-10-2005</td><td><a href="gid7_Game 7/scenario.html">Виртуальные радости</a><a href="gid7_Game 7/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>8</td><td>29-10-2005</td><td><a href="gid8_Game 8/scenario.html">Сорви Голова (г. Александров)</a><a href="gid8_Game 8/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-alex">Александров</span></td></tr>
+<tr><td>9</td><td>29-10-2005</td><td><a href="gid9_Game 9/scenario.html">Вини Пух и все все все...</a><a href="gid9_Game 9/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>10</td><td>05-11-2005</td><td><a href="gid10_Ах/scenario.html">Ах, какие женщины!</a><a href="gid10_Ах/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-open">Открытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>11</td><td>12-11-2005</td><td><a href="gid11_ВОР/scenario.html">ВОР</a><a href="gid11_ВОР/scenario_stats.html">[статистика]</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>12</td><td>26-11-2005</td><td><a href="gid12_Международный день студентов/scenario.html">Международный день студентов</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>14</td><td>10-12-2005</td><td><a href="gid14_Города России/scenario.html">Города России</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
+<tr><td>16</td><td>24-12-2005</td><td><a href="gid16_Джингл Белз/scenario.html">Джингл Белз</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td></tr>
 </table>
 </div>
 </div>
@@ -155,18 +76,18 @@ a:hover {
 <tr><td>19</td><td>11-02-2006</td><td><a href="gid19_День Святого Валентина/scenario.html">День Святого Валентина</a></td><td><a href="gid19_День Святого Валентина/scenario_stats.html">стат.</a></td></tr>
 <tr><td>21</td><td>24-02-2006</td><td><a href="gid21_День Защитника Отечества/scenario.html">День Защитника Отечества</a></td><td><a href="gid21_День Защитника Отечества/scenario_stats.html">стат.</a></td></tr>
 <tr><td>23</td><td>11-03-2006</td><td><a href="gid23_Международный Женский День/scenario.html">Международный Женский День</a></td><td><a href="gid23_Международный Женский День/scenario_stats.html">стат.</a></td></tr>
-<tr><td>25</td><td>25-03-2006</td><td><a href="gid25_Настоящий первый день весны/scenario.html">Настоящий первый день весны</a></td><td></td></tr>
-<tr><td>26</td><td>08-04-2006</td><td><a href="gid26_ДДД/scenario.html">ДДД</a></td><td></td></tr>
+<tr><td>25</td><td>25-03-2006</td><td><a href="gid25_Настоящий первый день весны/scenario.html">Настоящий первый день весны</a></td><td><a href="gid25_Настоящий первый день весны/scenario_stats.html">стат.</a></td></tr>
+<tr><td>26</td><td>08-04-2006</td><td><a href="gid26_ДДД/scenario.html">ДДД</a></td><td><a href="gid26_ДДД/scenario_stats.html">стат.</a></td></tr>
 <tr><td>27</td><td>22-04-2006</td><td><a href="gid27_ВДТ - Восток дело тонкое/scenario.html">ВДТ — Восток дело тонкое</a></td><td></td></tr>
 <tr><td>29</td><td>06-05-2006</td><td><a href="gid29_Проверка на профпригодность/scenario.html">Проверка на профпригодность</a></td><td><a href="gid29_Проверка на профпригодность/scenario_stats.html">стат.</a></td></tr>
-<tr><td>31</td><td>20-05-2006</td><td><a href="gid31_Проводы весны/scenario.html">Проводы весны</a></td><td></td></tr>
-<tr><td>34</td><td>03-06-2006</td><td><a href="gid34_Дети шпионов/scenario.html">Дети шпионов</a></td><td></td></tr>
-<tr><td>35</td><td>17-06-2006</td><td><a href="gid35_Охотники за приведениями/scenario.html">Охотники за приведениями</a></td><td></td></tr>
+<tr><td>31</td><td>20-05-2006</td><td><a href="gid31_Проводы весны/scenario.html">Проводы весны</a></td><td><a href="gid31_Проводы весны/scenario_stats.html">стат.</a></td></tr>
+<tr><td>34</td><td>03-06-2006</td><td><a href="gid34_Дети шпионов/scenario.html">Дети шпионов</a></td><td><a href="gid34_Дети шпионов/scenario_stats.html">стат.</a></td></tr>
+<tr><td>35</td><td>17-06-2006</td><td><a href="gid35_Охотники за приведениями/scenario.html">Охотники за приведениями</a></td><td><a href="gid35_Охотники за приведениями/scenario_stats.html">стат.</a></td></tr>
 <tr><td>36</td><td>23-06-2006</td><td><a href="gid36_City Car Game/scenario.html">City Car Game</a></td><td></td></tr>
-<tr><td>37</td><td>01-07-2006</td><td><a href="gid37_Вперед в прошлое/scenario.html">Вперед в прошлое</a></td><td></td></tr>
-<tr><td>38</td><td>15-07-2006</td><td><a href="gid38_Трасса 60/scenario.html">Трасса 60</a></td><td></td></tr>
+<tr><td>37</td><td>01-07-2006</td><td><a href="gid37_Вперед в прошлое/scenario.html">Вперед в прошлое</a></td><td><a href="gid37_Вперед в прошлое/scenario_stats.html">стат.</a></td></tr>
+<tr><td>38</td><td>15-07-2006</td><td><a href="gid38_Трасса 60/scenario.html">Трасса 60</a></td><td><a href="gid38_Трасса 60/scenario_stats.html">стат.</a></td></tr>
 <tr><td>41</td><td>12-08-2006</td><td><a href="gid41_На Конец-То/scenario.html">На Конец-То</a></td><td></td></tr>
-<tr><td>43</td><td>26-08-2006</td><td><a href="gid43_Алиса Льюиса Кэрролла/scenario.html">Алиса Льюиса Кэрролла</a></td><td></td></tr>
+<tr><td>43</td><td>26-08-2006</td><td><a href="gid43_Алиса Льюиса Кэрролла/scenario.html">Алиса Льюиса Кэрролла</a></td><td><a href="gid43_Алиса Льюиса Кэрролла/scenario_stats.html">стат.</a></td></tr>
 <tr><td>45</td><td>09-09-2006</td><td><a href="gid45_Очень страшная игра 1/scenario.html">Очень страшная игра 1</a></td><td></td></tr>
 <tr><td>54</td><td>21-10-2006</td><td><a href="gid54_10 антиподвигов Геракла/scenario.html">10 антиподвигов Геракла</a></td><td></td></tr>
 <tr><td>58</td><td>18-11-2006</td><td><a href="gid58_Назад в СССР/scenario.html">Назад в СССР</a></td><td></td></tr>
@@ -180,25 +101,25 @@ a:hover {
 <table>
 <tr><th>gid</th><th>Дата</th><th>Название</th><th>Статистика</th></tr>
 <tr><td>69</td><td>20-01-2007</td><td><a href="gid69_Грибы да шишки/scenario.html">Грибы да шишки</a></td><td></td></tr>
-<tr><td>70</td><td>27-01-2007</td><td><a href="gid70_Шерлок Холмс и доктор Ватсон. Приключения в Москве/scenario.html">Шерлок Холмс и доктор Ватсон. Приключения в Москве</a></td><td></td></tr>
-<tr><td>75</td><td>10-02-2007</td><td><a href="gid75_Винки/scenario.html">Винки</a></td><td></td></tr>
-<tr><td>77</td><td>24-02-2007</td><td><a href="gid77_Красная армия всех сильней/scenario.html">Красная армия всех сильней</a></td><td></td></tr>
+<tr><td>70</td><td>27-01-2007</td><td><a href="gid70_Шерлок Холмс и доктор Ватсон. Приключения в Москве/scenario.html">Шерлок Холмс и доктор Ватсон. Приключения в Москве.</a></td><td></td></tr>
+<tr><td>75</td><td>10-02-2007</td><td><a href="gid75_Винки/scenario.html">Винки</a></td><td><a href="gid75_Винки/scenario_stats.html">стат.</a></td></tr>
+<tr><td>77</td><td>24-02-2007</td><td><a href="gid77_Красная армия всех сильней/scenario.html">Красная армия всех сильней</a></td><td><a href="gid77_Красная армия всех сильней/scenario_stats.html">стат.</a></td></tr>
 <tr><td>79</td><td>10-03-2007</td><td><a href="gid79_За дам!/scenario.html">За дам!</a></td><td></td></tr>
-<tr><td>82</td><td>24-03-2007</td><td><a href="gid82_Московские каникулы Черепашек Ниндзя/scenario.html">Московские каникулы Черепашек Ниндзя</a></td><td></td></tr>
-<tr><td>85</td><td>07-04-2007</td><td><a href="gid85_Руслан и Людмила/scenario.html">Руслан и Людмила</a></td><td></td></tr>
-<tr><td>87</td><td>21-04-2007</td><td><a href="gid87_Игра II или как Ник стал G.O.P.-Ником/scenario.html">Игра II или как Ник стал G.O.P.-Ником</a></td><td></td></tr>
-<tr><td>89</td><td>05-05-2007</td><td><a href="gid89_Resident Evil/scenario.html">Resident Evil</a></td><td></td></tr>
-<tr><td>91</td><td>19-05-2007</td><td><a href="gid91_Старик Хоттабыч/scenario.html">Старик Хоттабыч</a></td><td></td></tr>
-<tr><td>93</td><td>02-06-2007</td><td><a href="gid93_Школьные годы чудесные/scenario.html">Школьные годы чудесные</a></td><td></td></tr>
-<tr><td>95</td><td>16-06-2007</td><td><a href="gid95_Великий Комбинатор. Новые приключения в Москве/scenario.html">Великий Комбинатор</a></td><td></td></tr>
-<tr><td>97</td><td>30-06-2007</td><td><a href="gid97_Новости/scenario.html">Новости</a></td><td></td></tr>
-<tr><td>99</td><td>14-07-2007</td><td><a href="gid99_По следам Ивана Купала/scenario.html">По следам Ивана Купала</a></td><td></td></tr>
-<tr><td>100</td><td>28-07-2007</td><td><a href="gid100_Я знаю это потому что это знает Тайлер/scenario.html">Я знаю это потому что это знает Тайлер</a></td><td></td></tr>
-<tr><td>101</td><td>11-08-2007</td><td><a href="gid101_Onboard/scenario.html">Onboard</a></td><td></td></tr>
-<tr><td>102</td><td>25-08-2007</td><td><a href="gid102_Место преступления/scenario.html">Место преступления</a></td><td></td></tr>
-<tr><td>105</td><td>08-09-2007</td><td><a href="gid105_Краденое солнце и другая шизофрения/scenario.html">Краденое солнце и другая шизофрения</a></td><td></td></tr>
-<tr><td>111</td><td>22-09-2007</td><td><a href="gid111_Я знаю что вы сделали прошлым летом/scenario.html">Я знаю что вы сделали прошлым летом</a></td><td></td></tr>
-<tr><td>114</td><td>13-10-2007</td><td><a href="gid114_Куба в лицах и фактах/scenario.html">Куба в лицах и фактах</a></td><td></td></tr>
+<tr><td>82</td><td>24-03-2007</td><td><a href="gid82_Московские каникулы Черепашек Ниндзя/scenario.html">Московские каникулы Черепашек Ниндзя</a></td><td><a href="gid82_Московские каникулы Черепашек Ниндзя/scenario_stats.html">стат.</a></td></tr>
+<tr><td>85</td><td>07-04-2007</td><td><a href="gid85_Руслан и Людмила/scenario.html">Руслан и Людмила</a></td><td><a href="gid85_Руслан и Людмила/scenario_stats.html">стат.</a></td></tr>
+<tr><td>87</td><td>21-04-2007</td><td><a href="gid87_Игра II или как Ник стал G.O.P.-Ником/scenario.html">Игра II или как Ник стал G.O.P.-Ником</a></td><td><a href="gid87_Игра II или как Ник стал G.O.P.-Ником/scenario_stats.html">стат.</a></td></tr>
+<tr><td>89</td><td>05-05-2007</td><td><a href="gid89_Resident Evil/scenario.html">Resident Evil</a></td><td><a href="gid89_Resident Evil/scenario_stats.html">стат.</a></td></tr>
+<tr><td>91</td><td>19-05-2007</td><td><a href="gid91_Старик Хоттабыч/scenario.html">Старик Хоттабыч</a></td><td><a href="gid91_Старик Хоттабыч/scenario_stats.html">стат.</a></td></tr>
+<tr><td>93</td><td>02-06-2007</td><td><a href="gid93_Школьные годы чудесные/scenario.html">Школьные годы чудесные</a></td><td><a href="gid93_Школьные годы чудесные/scenario_stats.html">стат.</a></td></tr>
+<tr><td>95</td><td>16-06-2007</td><td><a href="gid95_Великий Комбинатор. Новые приключения в Москве/scenario.html">Великий Комбинатор. Новые приключения в Москве.</a></td><td><a href="gid95_Великий Комбинатор. Новые приключения в Москве/scenario_stats.html">стат.</a></td></tr>
+<tr><td>97</td><td>30-06-2007</td><td><a href="gid97_Новости/scenario.html">Новости</a></td><td><a href="gid97_Новости/scenario_stats.html">стат.</a></td></tr>
+<tr><td>99</td><td>14-07-2007</td><td><a href="gid99_По следам Ивана Купала/scenario.html">По следам Ивана Купала</a></td><td><a href="gid99_По следам Ивана Купала/scenario_stats.html">стат.</a></td></tr>
+<tr><td>100</td><td>28-07-2007</td><td><a href="gid100_Я знаю это потому что это знает Тайлер/scenario.html">Я знаю это потому что это знает Тайлер</a></td><td><a href="gid100_Я знаю это потому что это знает Тайлер/scenario_stats.html">стат.</a></td></tr>
+<tr><td>101</td><td>11-08-2007</td><td><a href="gid101_Onboard/scenario.html">Onboard</a></td><td><a href="gid101_Onboard/scenario_stats.html">стат.</a></td></tr>
+<tr><td>102</td><td>25-08-2007</td><td><a href="gid102_Место преступления/scenario.html">Место преступления</a></td><td><a href="gid102_Место преступления/scenario_stats.html">стат.</a></td></tr>
+<tr><td>105</td><td>08-09-2007</td><td><a href="gid105_Краденое солнце и другая шизофрения/scenario.html">Краденое солнце и другая шизофрения</a></td><td><a href="gid105_Краденое солнце и другая шизофрения/scenario_stats.html">стат.</a></td></tr>
+<tr><td>111</td><td>22-09-2007</td><td><a href="gid111_Я знаю что вы сделали прошлым летом/scenario.html">Я знаю что вы сделали прошлым летом</a></td><td><a href="gid111_Я знаю что вы сделали прошлым летом/scenario_stats.html">стат.</a></td></tr>
+<tr><td>114</td><td>13-10-2007</td><td><a href="gid114_Куба в лицах и фактах/scenario.html">Куба в лицах и фактах</a></td><td><a href="gid114_Куба в лицах и фактах/scenario_stats.html">стат.</a></td></tr>
 </table>
 </div>
 </div>
@@ -221,7 +142,7 @@ a:hover {
 <tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Статистика</th></tr>
 <tr><td>238</td><td>28-03-2009</td><td><a href="gid238_МиниСХ Новые приключения колобка/scenario.html">МиниСХ Новые приключения колобка</a></td><td><span class="tag tag-closed">Закрытая</span> <span class="tag tag-mini">миниСХ</span></td><td><span class="tag tag-city">Москва</span></td><td><a href="gid238_МиниСХ Новые приключения колобка/scenario_stats.html">стат.</a></td></tr>
 <tr><td>239</td><td>28-03-2009</td><td><a href="gid239_Я знаю это место/scenario.html">Я знаю это место</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-city">Москва</span></td><td><a href="gid239_Я знаю это место/scenario_stats.html">стат.</a></td></tr>
-<tr><td>245</td><td>10-04-2009</td><td><a href="gid245_Кин-дза-дза/scenario.html">Кин-дза-дза</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-unknown">Неизвестно</span></td><td><a href="gid245_Кин-дза-дза/scenario_stats.html">стат.</a></td></tr>
+<tr><td>245</td><td>18-04-2009</td><td><a href="gid245_Кин-дза-дза/scenario.html">Кин-дза-дза</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-unknown">Неизвестно</span></td><td><a href="gid245_Кин-дза-дза/scenario_stats.html">стат.</a></td></tr>
 <tr><td>266</td><td>20-06-2009</td><td><a href="gid266_Game 266/scenario.html">Game 266</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-unknown">Неизвестно</span></td><td><a href="gid266_Game 266/scenario_stats.html">стат.</a></td></tr>
 <tr><td>271</td><td>04-07-2009</td><td><a href="gid271_Game 271/scenario.html">Game 271</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-unknown">Неизвестно</span></td><td><a href="gid271_Game 271/scenario_stats.html">стат.</a></td></tr>
 <tr><td>272</td><td>10-07-2009</td><td><a href="gid272_Game 272/scenario.html">Game 272</a></td><td><span class="tag tag-closed">Закрытая</span></td><td><span class="tag tag-unknown">Неизвестно</span></td><td><a href="gid272_Game 272/scenario_stats.html">стат.</a></td></tr>
@@ -233,10 +154,7 @@ a:hover {
 function toggleYear(year) {
     var el = document.getElementById('yc-' + year);
     var h2 = el.previousElementSibling;
-    if (el) {
-        el.classList.toggle('collapsed');
-        if (h2) h2.classList.toggle('collapsed-header');
-    }
+    if (el) { el.classList.toggle('collapsed'); if (h2) h2.classList.toggle('collapsed-header'); }
 }
 function expandAll() {
     document.querySelectorAll('.year-content').forEach(function(el) {
