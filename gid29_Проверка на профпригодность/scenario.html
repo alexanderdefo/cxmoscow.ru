@@ -1,0 +1,450 @@
+<html>
+<head>
+
+	<title>Игровой портал</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
+<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<link href="http://cxmoscow.ru/games/game.css" type="text/css" rel="stylesheet">
+<script src="http://cxmoscow.ru/cx.js"></script> 
+<style><!-- custom_cxmoscow_style -->
+body {
+    background-color: #4f5ba9 !important;
+    color: #FFFFFF !important;
+}
+.level_name h2, .gnum {
+    color: #FFFF00 !important;
+}
+#hint {
+    background-color: #FFFACD !important;
+    color: #000080 !important;
+    border: 1px solid #DAA520 !important;
+    padding: 4px 8px !important;
+    margin: 4px 0 !important;
+}
+img.image-not-available {
+    border: 2px dashed #DAA520 !important;
+    padding: 5px !important;
+    opacity: 0.8 !important;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+</head>
+<body bgcolor="black">
+ 
+<div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
+&nbsp;&nbsp;<a href="http://cxmoscow.ru/index.php"><font color="#FFFFFF">&laquo; на главную</font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF">&laquo;список игр</font></a>
+<div align="center"><h1>Игра №29</h1></div>
+<div id="scen">
+Начало: 06-05-2006&nbsp;в&nbsp;22:00:00<br>
+Тип игры: Закрытая<br>
+Описание: <br>
+Принадлежности: 1<br>
+<br><br>
+
+<br><br>
+<div id="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Настоящий схватчик должен уметь делать почти все. Нам бы очень хотелось проверить ваши вокальные данные. Поэтому, направляйтесь к ТК "Охотный Ряд" и спойте агенту любую песню о Москве. Если ему понравится ваше пение, то в обмен на карточку команды он даст вам код.<br><br><br><br>
+<b>По вопросам игры ICQ 285487</b><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Агент находится недалеко от часов.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Агентом является человек, к которому вы бы никогда не стали бы подходить. Он в зеленой куртке.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схсап59фир</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Да, но чтобы хорошо играть, схватчику необходимо быстро мыслить и "не щелкать клювом" на улице, получившей свое название по фамилии дьяка, владевшего в прежние века селом Останкино. Там вы найдете серебристую машину на аварийке и выполнив указания агента сможете найти код.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Первая подсказка находится в тексте задания.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Щелкановская улица, код на трубе у пруда</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх1лакмус7</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Чтобы не только быстро мыслить, но еще и быстро перемещаться, вам нужна машина. Подтверждением наличия у вас средства передвижения станет фотография человека из команды рядом с автомобилем марки Москвич. Модель 412 (или старше). Фотографию Вам необходимо привезти по адресу ул. Новослободская, д.3 (при подъезде к адресу, позвоните по номеру 8-926-357-07-76). Фотографию печатать не надо. Достаточно предъявить ее на фотоаппарате. Карточка команды должна быть при Вас.
+<br> На этом уровне будет только вторая подсказка<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне будет только вторая подсказка</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Если вы до сих пор озабочены поиском "Москвича" то можете съездить по адресу ул. Исаковского 28-1. там недалеко от арки вы найдте искомое.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схла3тунь</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>У "Москвича-412", который сейчас ищет Ваша команда в поле, наверняка изношены и требуют замены шаровые опоры... Сообщите нам их каталожный номер по состоянию на 4 квартал 1983 года.
+<br><br> Формат ответа: сх+номер<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;сх412-2904058-01
+сх412290405801</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Поем хорошо, бегаем быстро, машина есть. Во время игры всякое бывает - и организаторы могут вас отправить куда угодно. Вот и сейчас - отправляйтесь на остров, что в Куличках и поищите там код, дающий право перехода на следующий уровень. <br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Найдя по карте все Московские церкви "в Кулишках" вы сможете понять район поисков.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Б.Трехсвятительский пер., "Остров Формоза", код на козырьке над витринами.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схтитрнхл</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Схватчик должен быть готов к любым неприятностям – если сломается машина - вы должны быстро и легко ориентироваться не только в городе, но и в метро, и в близлежащих окрестностях. Эта станция метро была открыта в 1988 году. Её название поможет найти вам институт, расположенный неподалеку. Найдите рядом с входом в институт памятную табличку. 
+<br>3 строка снизу - код.<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Станция названа по фамилии человека, который зафиксировал процентное соотношение С2Н5ОН и Н2О в составе водки. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Табличка слева от центрального входа в РХТУ им. Д.И. Менделеева. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схпрофессор</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Этот человек был физиком и физиологом. Однако благодаря слабым знаниям в химии этого профессора, его фамилию знает каждый студент-химик. <br><br> Формат ответа: сх + фамилия + имя<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Электрохимический метод нанесения металлических и химических покрытий на электропроводящий и неэлектропроводящий материал для придания ему определенных свойств.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;схгальванилуиджи</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Говорят, что по ночам в Москве творится чертовщина. Схватчик бесстрашен, не так ли? Однажды два гражданина, весной, в часы заката, пришли на эти пруды. Первую часть ключа вы обнаружите на лавочке, возможно на которой один из этих литераторов произнес крылатую фразу про доказательства Канта и Соловки. Вторую часть - в подъезде, где жил другой, трагически погибший в этот же вечер.<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;"... И уселись на скамейку лицом к пруду, спиной к Бронной" <br><br> "в доме номер 302 бис"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Код на скамейке напротив указателя «Малая Бронная, д. 34» <br><br> Садовая
+д.10, код на торце первой ступеньки в подъезде. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схмоль8схром5</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Есть достоверно известный факт, что один турист посетив Венецию и не найдя там кладбища, пришел к выводу, что умерших хоронят под водой. О чем и поинтересовался у экскурсовода, Что ответил экскурсовод? <br><br>Формат ответа: сх + ответ экскурсовода без знаков препинания<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Забавные вопросы об Италии</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;http://travel.solpar.ru/italia/index/ask.php</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схдаскамнемнашее</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Схватчик должен быть всесторонне образован. Булгакова вспомнили? Хорошо. Теперь придется еще немного подумать. В советское время было много алогичностей - был под запретом не только Булгаков и его романы, но и некоторые названия переулков. Вот например: переулок в советское время был переименован. И его новое название противоставлялось прежнему, и, по мнению тогдашних правителей носило, антирелигиозный характер. Сейчас ему возвращено старое название. На доме, в котором жил поэт и исполнитель песен будет код.<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;"...я выселен с Арбата, Арбатский эмигрант..."</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Протопоповский пер., д.16</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схсоль68ват</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>В одной из песен у В.Высоцкого, есть железный аргумент, который выдвигают его друзья, почему ему не стоит встречаться с девушкой, - любовница Нина отличалась, мягко говоря, не самым пуританским нравом. Точнее - имела некие отношения со всеми жителями мужского пола на этой улице. Назовите улицу.
+<br><br> Формат ответа: сх+название улицы<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Песня написана в 1963 году.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;"Наводчица"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схордынка</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вы знаете... Ну только не ругайтесь... Нам очень сильно понравились ваши вокальные данные и мы подумали о том, что, наверное, вы, как настоящий схватчик, который все может, неплохо играете на музыкальных инструментах и тут же возник вопрос: "А вы ноктюрн сыграть могли бы на флейте водосточных труб?". Попытавшись это сделать, вы найдете код.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;автор Маяковский</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;водосточная труба, Лубянский проезд, д.3</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схсам23хам</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>О-па... Вы уже здесь. Что же, сомнений в том, что вы настоящий схватчик - не осталось. И нам кажется, что вы достойны памятника. Настоящему схватчику. Но когда жил этот скульптор, к сожалению, нас еще не было. А жаль, ведь слепив "женщину, призывающую к борьбе", он фактически предсказал появление "схватки". Итак, предпоследний код находится на искусственных насаждениях.<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Скульптура "Родина-мать"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Тимирязевская ул., д.33, код на «лесах»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схффтал16</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Проезд назван в честь завода, основанного в 19 веке. Расположен между "тропинкой пессимистов" и "проломом" в камер-коллежском валу. <br><br> Формат ответа: сх+полное название проезда по карте<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Шоссе энтузиастов и Проломная Застава</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Название одной из команд почти полностью совпадает с названием проезда</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схзаводасерпимолот</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Как ни крути, схватчики время от времени нарушают общественный порядок и учиняют хулиганские выходки. Расплата за это рано или поздно наступит: либо на страшном, либо на народном суде. И Суд, и церковь (названная в честь "мирной" великомученицы) расположены, кстати, на одной улице, носившей в свое время имя все той же великомученицы. Код Вы найдете в месте, объединяющем эти два здания. Во избежание проблем с правоохранительными органами, НЕ ИЩИТЕ код на территории храма и за забором суда.<br><br><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Великомученица Ирина, Измайловский суд, у трансформаторной будки</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;У трансформаторной будки - забор, рядом - дерево. За деревом на заборе - код =)</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схфос38фор</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Вспомните номер статьи Уголовного Кодекса РСФСР под которую попадали бы действия схватчиков. "Умышленные действия, грубо нарушающие общественный порядок...", далее думаем, прочтете самостоятельно. Кодом станет дата утверждения этого кодекса (в формате ДДММГГГГ).<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;ст. 206</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;сх27101960</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;</div></div><br clear="all"/>
+</div>
+<br><br>
+

@@ -1,0 +1,570 @@
+<html>
+<head>
+
+	<title>Игровой портал</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
+<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<link href="http://www.cxmoscow.ru/games/game.css" type="text/css" rel="stylesheet">
+<script src="http://www.cxmoscow.ru/cx.js"></script> 
+<style><!-- custom_cxmoscow_style -->
+body {
+    background-color: #4f5ba9 !important;
+    color: #FFFFFF !important;
+}
+.level_name h2, .gnum {
+    color: #FFFF00 !important;
+}
+#hint {
+    background-color: #FFFACD !important;
+    color: #000080 !important;
+    border: 1px solid #DAA520 !important;
+    padding: 4px 8px !important;
+    margin: 4px 0 !important;
+}
+img.image-not-available {
+    border: 2px dashed #DAA520 !important;
+    padding: 5px !important;
+    opacity: 0.8 !important;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+</head>
+<body bgcolor="black">
+ 
+<div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
+&nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF">&laquo; на главную</font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF">&laquo;список игр</font></a>
+<div align="center"><h1>Игра №54</h1></div>
+<div id="scen">
+Начало: 21-10-2006&nbsp;в&nbsp;20:00:00<br>
+Тип игры: Закрытая<br>
+Описание: 1<br>
+Принадлежности: 1<br>
+<br><br>
+
+<br><br>
+<div class="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>На найденное небольшое количество денег он купил что-то странное под названием Dirol (Stimorol, Orbit). Он долго не мог понять, что с этим делать. Распотрошив упаковки, в каждой он обнаружил ровно 10 зубов. «Каково в этом мире?», подумал Геркулес, в мое время за каждый зуб необходимо было совершит подвиг, или, как минимум, кому-нибудь их выбить. Он хотел есть, и эти зубы ему были точно ни к чему… Недолго думая, он нанизал их на нить и решил, что без труда их поменяет на еду в заведении «общепита» еще не виданной до сих пор нации. Переходя тропу кишащую железными тварями с яркими глазами и громким противным воем, он заметил «Титана» с бакенбардами.<br>
+<br>
+У Геракла на ожерелье должно быть ровно 30 «зубов».( Dirol, Stimorol или Orbit). Вы получите ключ, когда агент предложит поменять один ваш «зуб» на гамбургер.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Макдоналдс на Пушкинской.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Агент в коричневой толстовке и голубых джинсах</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схна251на</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>«Мне рассказывали, что в детстве я голыми руками давил змей… Но как задушить такую… В брюхе, где оказался и я, было много людей. Все выглядели удрученными, что не удивительно, змея неслась по своим подземным норам, кушая все больше и больше жертв. Руками не получится, попробуем ногами». Геракл обхватил ногами один из «позвонков» и повис на нем «вниз головой».<br>
+<br>
+Необходимо прислать на doom@cxmoscow.ru, 2-ух висящих вверх ногами Гераклов (на одном фото) на горизонтальном поручне под потолком у «змеи».<br>
+<br>
+На этом уровне подсказок не будет.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схежим4т</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Наш герой был очень голоден и зол. Он так и не понял, как в этом мире можно заработать деньги. По пути ему попался плохо пахнущий человек в лохмотьях, у которого он и отобрал большую кучу денег. Он точно не знал, что на них можно купить, но выбора у него не было.<br>
+<br>
+Вам необходимо привезти 1 рубль по 1 копейке.<br>
+Агентов вы найдете в спорт-баре Bleachers. Адрес: Волгоградский пр-т, 1. Когда будете на месте, позвоните: 89261251792. Агент ждет только по одному представителю от команды.<br>
+<br>
+На этом уровне подсказок не будет.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схвывод77</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Вспомните станцию с упавшей колонной. ответ: сх + название + ГГГГ (год открытия)<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Римская</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;схримская1995</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Гераклу очень хотелось в туалет. После того, как он попытался сделать это в последний раз, странные, грубые, одинаково одетые люди посадили его в темницу и не отпускали сутки, требуя какой-то паспорт… Проходя мимо одной арки, он заметил молодых людей, которые справили нужду и спокойно пошли дальше. Геракл рассвирепел от несправедливости и погнался за ними, но потерял их след в какой-то арке на каком-то перекрестке.<br>
+<br>
+Перекресток Малого и Малой вам подскажет автор этих строк:<br>
+&quot;В грязи мы скулить и тонуть начинаем,<br>
+Забыв о прозрачности дивной росы,<br>
+Но вот уж росою мы грязь называем,<br>
+О, как мы ужасны в такие часы.&quot;<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Ул. малая Андроньевкая. Заброшенное здание.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Ключ не во дворе, а именно в арке.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схнебось</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Геракл наткнулся на уже известных ему людей в форме. Он быстро спрятался в одном из 2-ух странных сооружений, похожих на чье-то логово. Он забежал внутрь и затаился. Ему было страшно.<br>
+<br>
+«Эти товарищи были очень серьезными и никогда не ходили по клубам. Один -  замнаркома финансов СССР, другой - член реввоенсовета в на восточном фронте во время гражданской войны. В обычной жизни они не пересекались, но волею судеб, улицы, которым позже дали их имена - пересекаются, а по старому названию ассоциировались бы у нас с увеселительными заведениями.»<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Пересечение ул. Рогова и ул. Максимова.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Ключ внизу, на стене, напротив железной двери.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх10крт</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Разгадайте кроссворд. Код сх+буквы под числами в желтых клетках. <br>
+(все слова на русскими буквами)<br>
+<img src="image_not_available.png"><br>
+по вертикали:<br>
+1. мифический  народ,  живший,  по  мнению  греков,  во<br>
+Фракии.<br>
+2. Область на северо-западе Пелопоннеса.<br>
+3. основатель Акрополя, -- получеловек-полузмея.<br>
+4. чудовище с телом змеи и девятью головами дракона.<br>
+5. По чьему распоряжению были совершены подвиги Геракла.<br>
+6. Потомки Геракла.<br>
+7. Чем убил Геракл Авгия.<br>
+<br>
+По горизонтали:<br>
+8. Отец Геракла.<br>
+9. Какое животное победил в первом подвиге Геракл.<br>
+10. Животное, жившее на горе Эриманфе.<br>
+11. Второе имя Геракла.<br>
+12. Один  из  Кикладских  островов  в  Эгейском  море,  славившийся  в<br>
+древности своим мрамором.<br>
+13. Город в Арголиде, на северо-востоке Пелопоннеса.<br>
+14. Город на берегу Арголидского залива в Арголиде.<br>
+15. Страна  на  западном  берегу  Малой  Азии   с   главным   городом<br>
+Пергамом. <br>
+16. Мифическая река.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;13. Нимей.<br>
+14. Лерна.<br>
+15. Мизиа.<br>
+16. Эредан.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;1. Бистоны.<br>
+2. Элида<br>
+3. КЕКРОП<br>
+4. Гидра<br>
+5. Эврисфей.<br>
+6. Гераклиды<br>
+7. Стрела<br>
+8. Зевс<br>
+9. Лев<br>
+10. Кабан<br>
+11. Геркулес<br>
+12. Парос<br>
+13. Нимей<br>
+14. Лерна<br>
+15. Мизиа.<br>
+16. Эредан.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схввнрурдремддзтд</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><b> Уровень снят, ключ : схгкжув </b><br>
+&quot;Ого, даже в таком городе есть лес! Здесь я сам себе хозяин! Здесь я все могу!&quot; Он оступился и скатился в большой овраг, где нашел много землянок. Если здесь кто-то и обитал, то придется им срочно искать новое жилье, если унесут ноги…<br>
+<br>
+Лес имени автора космогонической гипотезы о том, что планеты Солнечной системы образовались при объединении холодных твёрдых тел, вращавшихся вокруг Солнца.<br>
+<br>
+Ключ написан на металлической поверхности. Опасно, смотрите под ноги, во многих землянках можно провалиться.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Усадьба Братцево. В парке, напротив дома по адресу: ул. Окружная, 10</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Ключ на трубе.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схгкжув</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Геракл решил подарить букет цветов своей возлюбленной. Букет он собирал по всему миру. Нарвал 21 разный цветок. Вам необходимо из букв составить названия цветов.<br>
+Пароль сх+из каждого названия взять первую букву. (сх+Первая буква первого цветка + первая буква второго и т.д.)<br>
+1. ДОКАВИЗГ<br>
+2. НЕГРИГО<br>
+3. УДЕЛКАНАЛ<br>
+4. ВОЙЛЕК<br>
+5. РЕЗНЯИТОГ<br>
+6. АНФАРШ<br>
+7. ПАНТЮЛЬ<br>
+8. НАЦИЯТРУС<br>
+9. ЛУПАМИР<br>
+10. АМОКШАР<br>
+11. ОБОДВОРС<br>
+12. ЧУДАКВОИН<br>
+13. ЦУНАМИДЕ<br>
+14. АЗБУКАДЕН<br>
+15. КУРСОК<br>
+16. РАНАМАТ<br>
+17. СЛУГАИДОЛ<br>
+18. ГИТАРАМРАК<br>
+19. ЮТЛИК<br>
+20. ТЕНХАРИЗМА<br>
+21. КАТРАНПЕСНЯ<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;4. Левкой<br>
+9. Примула<br>
+11. Водосбор<br>
+16. Амарант<br>
+21. Наперстянка</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;1. Гвоздика<br>
+2. Георгин<br>
+3. Календула<br>
+4. Левкой<br>
+5. Гортензия<br>
+6. Шафран<br>
+7. Тюльпан<br>
+8. Настурция<br>
+9. Примула<br>
+10. Ромашка<br>
+11. Водосбор<br>
+12. Одуванчик<br>
+13. Медуница<br>
+14. Незабудка<br>
+15. Крокус<br>
+16. Амарант<br>
+17. Гладиолус<br>
+18. Маргaаритка<br>
+19. Лютик<br>
+20. Хризантема<br>
+21. Наперстянка</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схггклгштнпрвомнкагмлхн</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Он шел по улице, которая будто шептала ему как живая:<br>
+<br>
+<img src="image_not_available.png"><br>
+<br>
+Как только он с неё свернул, он увидел, как его именем наживаются люди… Он сел на скамейку и задумался что ему с этим делать и как их наказать…<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Ул. Кунцевская</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;На лавочке, напротив магазина «Страна Геркулесия».</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сххотфгс</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>У Геракла чесались руки кого-нибудь покалечить. Он направился на улицу, где это точно должно быть в почете. Когда он добрался, то удивился. Вместо инвалидов он «обнаружил» большое строение с большим количеством железных летающих монстров…<br>
+Облокотившись на трубу, он размышлял, хватит ли ему сил, победить этих огромных чудищ.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;ул. 1-ая Аэропотовская. Ключ на вентиляционных отводах.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;возле дома №5</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схэф2904</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>В поисках чудовищ, которых обязательно надо победить, что бы завоевать уважение и вес в новом, неизвестном для Геракла мире, проходя мимо www.zzzp.ru/51/ostan.jpg, он забрел в зеленую зону, но нашел там только крыс и зловонье…<br>
+<br>
+<b> УРОВЕНЬ СНИМАЕТСЯ </b> ключ : сххцап<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;м. Краснопресненская.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Зелная зона сразу за Сим-симом. Ключ на табличке.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сххцап</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Геркулес блуждал в отчаянье по городу, он не знал чем занять себя и свою силищу. Решил разрушить всю эту великую «страну», которая еще недавно получала приз «Quality Summit Award». Опять не задача: какой-то «герой» до него уже побывали камня на камне не оставил. Геракл уныло побрел вокруг «развалин», по загадочным надстройкам для людей, построенных, видимо для того, что бы оберегать их от железных, снующих везде чудовищ или от гигантов, разрушивших здание.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Китайгородский переулок. Ищите внутри железного навеса для пешеходов.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Ключ на свае.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схгъпжм</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><img src="image_not_available.png"><br>
+Красная клеточка - начало пути этого животного.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;схлошадьюходи</div></div><br clear="all"/>
+</div>
+<br><br>
+</body>
+</html>

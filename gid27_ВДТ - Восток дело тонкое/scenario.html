@@ -1,0 +1,537 @@
+<html>
+<head>
+
+	<title>Игровой портал</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
+<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<link href="http://www.cxmoscow.ru/games/game.css" type="text/css" rel="stylesheet">
+<script src="http://www.cxmoscow.ru/cx.js"></script> 
+<style><!-- custom_cxmoscow_style -->
+body {
+    background-color: #4f5ba9 !important;
+    color: #FFFFFF !important;
+}
+.level_name h2, .gnum {
+    color: #FFFF00 !important;
+}
+#hint {
+    background-color: #FFFACD !important;
+    color: #000080 !important;
+    border: 1px solid #DAA520 !important;
+    padding: 4px 8px !important;
+    margin: 4px 0 !important;
+}
+img.image-not-available {
+    border: 2px dashed #DAA520 !important;
+    padding: 5px !important;
+    opacity: 0.8 !important;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+</head>
+<body bgcolor="black">
+ 
+<div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
+&nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF">&laquo; на главную</font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF">&laquo;список игр</font></a>
+<div align="center"><h1>Игра №27</h1></div>
+<div id="scen">
+Начало: 22-04-2006&nbsp;в&nbsp;20:00:00<br>
+Тип игры: Закрытая<br>
+Описание: Авторы: Организаторы<br>
+Принадлежности: 2 автомобиля.<br>
+Фонарик.<br>
+Сотовый телефон.<br>
+Доступ в Интернет.<br>
+Цифровой фотоапарат.<br>
+3 круглых картошки среднего размера.<br>
+20-ок куринных яиц.<br>
+<br><br>
+
+<br><br>
+<div class="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вам необходимо провести опрос среди населения. Вы даете попробовать новое восточное средство для снятия стресса. Агент скажет вам ключ, если вы подойдете к нему со словами «Вы хотите совершенно бесплатно попробовать новый способ из восточной медицины по снятию стресса?».
+Ищите в районе чистых прудов (сквер + вокруг пруда).
+<br>
+Вы предлагаете попробовать прокрутить 2 яйца в ладони (как китайские шарики, шарики для снятия стресса) и после того, как потенциальный агент это делает, вы спрашиваете «Что вы чувствуете?».
+<br>
+При выполнении всего вышеперечисленного, агент скажет вам код.
+
+<br>
+<br>
+<b>Агенты - не "Рокеры" и т.п. Не трогайте их во избежание проблем :-)</b><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Агенты - 2 парня. "Светленький" и "темненький".</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схватка857</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><img src="map324.JPG"><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Если до сих пор не нашли агента - звоните 544 7772</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Если до сих пор не нашли агента - звоните 544 7772</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх843асх</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Вам необходимо сделать следующие вычисления, но без учета приоритета действий (т.е. по очереди, «умножить» и «поделить» не имеет приоритета перед «сложить» и «вычесть»). <br>
+К полученному приставить 8905 и позвонить по этому номеру для получения ключа.<br><br>
+
+204400683 + 9583724 * 200 / 34 + 9658 /234 + 3459
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;8-905-538-2696</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;схабонентнеотвечаетиливременнонедоступенпопробуйтепозвонитьпозднее</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Агент – 2 девушки. Одна одета в красное платье, у другой красно-белая юбка. Их можно найти на тверской. Необходимо подойти к ним и спросить с восточным акцентом «дэвушка, а сколко врэмени?». Она не отреагирует. Далее «дэвушка, а можно с вами познакомитца». Опять ноль реакции. После этого вы можете определить ключ по надписи на стекле, в сторону которого посмотрит кто-то их них.
+<br><br>
+Формат ответа: сх + первое из 3-ех слов. (на английском)<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Ищите на Тверской, между Охотным рядом и Камергерским переулком.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Магазин ZARA</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схspring
+cxspring</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><br>
+<img src="image_not_available.png">
+<br>
+<img src="image_not_available.png">
+<br>
+<img src="image_not_available.png"><br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Включите "3-ий глаз". Это "стерео изображение"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;сх57те1Oв5хс</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх57те1Oв5хс</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Ключ расположен на одной из остановок на этой «Драгоценной жемчужине востока», на мусорке (внутрь лезть не надо).<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Самарканд</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Остановка «Рязанский проспект», смотреть снизу мусорки.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схво95ток</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><img src="image_not_available.png"><br>
+Формат ответа : Формат ответа: сх + название прачечной + надпись неизвестного умельца ниже вывески.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Авиамоторная...</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;ул. Пруд Ключики, д5</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схфапралох</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Ключ: схепм8л
+<br>
+Это задание снимается. 
+<br><br>
+Именно так бы назвали любого султана с его гаремом большинство русских бабушек, окажись он здесь со своими привычками по отношению к дамам.<br>
+В месте, где такой вот «5-ый» (как бы его назвали бабушки) упирается в шоссе имени станка, ищите ручей, а там ищите ключ.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;5-ая КабЕльная ул. На металлической поверхности.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Внизу около мостика, со стороны, дальней, от шоссе Фрезер.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схепм8л</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Расшифровать <a href="image_not_available.png">это</a> поможет знание об одной из особенностей арабского языка.<br><br>
+Формат ответа: сх + фамилия + номер телефона.
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Обратите звук.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Тверская-Ямская, д. 2/3, рядом стройка.<br>
+Обратите звук с помощью стандартной программы "звукозапись". Эффекты-&gt;Обратить.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схиванов2503878</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Первых три буквы из названия улицы, можно вычислить из обидного прозвища для лиц, употребляющих много и/или часто алкоголь. Следующие 4 буквы – это первые 4 буквы одного из слов в названии темы игры.<br>
+Первый ключ находится на бортике хоккейной площадки, второй – фраза на разбитой табличке.(вам необходимо восстановить фразу)<br><br>
+
+Формат ответа: 1 ключ + 2-ой ключ
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;1-ая улица бухвостова.
+2-ой ключ напротив фитнес-центра</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;1-ый ключ на внутренней стороне площадке, дальней от 1-ой бухвостовой.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх57ура9берегисьавтомобиля</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Блины «Морозко» с творогом + Моя Семья, Апельсиновый, нектар с витамином С 2л + Lipton 1.25л Ice Tea Green + Lays Золотистые натуральные 25 гр. + Red Bull c Таурином 250мл + Coca cola 0.5 л + Рондо Лимон  Мята + Dirol Арбузная свежесть 12 драже + Nestle classic for men (молочный с арахисом и изюмом) 100гр <br>
+Последних 8 цифр штрих-кода.
+
+<br><br>
+Формат ответа: сх + полученное число.<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;сх640153691</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вам нужно приехать на пересечение Большой Бронной и Сытинского переулка.
+<br>
+Цифры указанные ниже помогут вам найти ключ.
+<br><br>
+3.27
+<br>
+1.23
+<br>
+1.16; 3.24
+<br>
+5.19.2
+<br>
+6.4
+<br>
+5.7.1; 2.4
+<br>
+5.5
+<br>
+1.20.2; 1.24; 3.24
+<br>
+5.19.2
+<br>
+3.27
+<br>
+4.2.2; 1.24; 2.5; 3.24
+<br>
+5.19.2
+<br>
+5.6
+<br>
+5.7.2; 2.4
+<br>
+5.19.2
+<br>
+5.7.2
+<br>
+3.29
+<br>
+1.21
+<br>
+2.4; 5.6; 6.16
+<br>
+3.29
+<br>
+3.28
+<br>
+3.27
+<br><br>
+Формат ответа: сх+ООО заведения+телефон заведения<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Смотрите Правила дорожного движения</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Цифры - номера знаков дорожного движения</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;схкамин2999980</div></div><br clear="all"/><strong>Ответ:</strong><br>схкамин2999980<br><br><br>
+</div>
+<br><br>
+</body>
+</html>

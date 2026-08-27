@@ -1,0 +1,468 @@
+<html>
+<head>
+
+	<title>Игровой портал</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
+<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<link href="http://www.cxmoscow.ru/games/game.css" type="text/css" rel="stylesheet">
+<script src="http://www.cxmoscow.ru/cx.js"></script> 
+<style><!-- custom_cxmoscow_style -->
+body {
+    background-color: #4f5ba9 !important;
+    color: #FFFFFF !important;
+}
+.level_name h2, .gnum {
+    color: #FFFF00 !important;
+}
+#hint {
+    background-color: #FFFACD !important;
+    color: #000080 !important;
+    border: 1px solid #DAA520 !important;
+    padding: 4px 8px !important;
+    margin: 4px 0 !important;
+}
+img.image-not-available {
+    border: 2px dashed #DAA520 !important;
+    padding: 5px !important;
+    opacity: 0.8 !important;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+<style>
+/* Стилизация схватка.cx */
+body {
+    background-color: #4f5ba9;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #FFFF00;
+    text-align: center;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #FFFF00;
+    background-color: #3a4585;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.gnum {
+    color: #FFFF00;
+    font-size: 1.2em;
+}
+#scen, .scen {
+    background-color: #3a4585;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+#hint, .hint-box {
+    background-color: #FFFACD;
+    color: #000080;
+    border: 1px solid #DAA520;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+#ltxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+strong {
+    color: #FFD700;
+}
+a {
+    color: #87CEEB;
+}
+img[src="hint.gif"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+img[src="image_not_available.png"] {
+    border: 2px dashed #DAA520;
+    padding: 5px;
+    background-color: #4f5ba9;
+    max-width: 300px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #3a4585;
+    color: #FFFF00;
+}
+</style>
+</head>
+<body bgcolor="black">
+ 
+<div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
+&nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF">&laquo; на главную</font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF">&laquo;список игр</font></a>
+<div align="center"><h1>Игра №36</h1></div>
+<div id="scen">
+Начало: 23-06-2006&nbsp;в&nbsp;19:00:00<br>
+Тип игры: Закрытая<br>
+Описание: г. Челябинск<br>
+Принадлежности: <br>
+<br><br>
+
+<br><br>
+<div class="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>На нашем материке их две…Одну из них охраняет человек, который нуждается в твоей помощи. <br>
+У него есть весы с двумя чашами и шесть бильярдных шаров. Все шары на вид одинаковые, но по весу один из них тяжелее остальных. Проделав всего два взвешивания, он должен указать на тяжелый шар. Расскажи ему как это сделать. В ответ на правильное решение, он назовет тебе пароль.<br>
+Для того, чтобы он узнал тебя начни свой разговор словами «Нужно сделать так…» Торопись. Удачи !<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Один начальник дивизии - любитель васильков</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Весы не ищите, задачка для умных и разговорчивых</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;андреевна</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>«Восток – дело тонкое…». И именно на Востоке, там где железные кони ходят по земле и по небу, есть информация, которая откроет тебе путь дальше. <br>
+От младшего коня иди к  старшему коню. Увидишь  расписной дом. Подойди к дому.<br>
+Там есть то, что тебе нужно.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;«Аппаратная, Шарташ,….»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;«Какая организованность! Кони ходят строго по расписанию»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;команда</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Их мир колдунами на тысячу лет <br>
+Укрыт от всех нас и от света,<br>
+И думаем мы, что чудеснее нет,<br>
+Чем пара влюбленная эта…<br>
+Им не видеть, увы, рассвет поутру,<br>
+Им не чувствовать запах сирени,<br>
+Но они Вам подскажут путь<br>
+Для дальнейших побед и свершений…<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Охраняет их сын Посейдона и Геи</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Рядом с Шотландией дом без номера</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;три</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Степан Георгиевич очень любил фрукты-ягоды. И потому, открыл на своей любимой улице целый магазин…<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Даже будучи суховатым старичком 92-х лет, он не изменял своим пристрастиям.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;А больше всего он любил виноград… </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;изюм</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>У входа в «Сити-центр» человек может раскрыть пароль всего за три фотографии с другими «Сити…» (нужно предъявить агенту три фотоизображения названий организаций, предприятий и пр., в которых присутствует слово «Сити…»)<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Ищите среди банков, отелей и прочих.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Ищите читателя «Делового квартала»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;город</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Когда они были маленькими, то носили «звездочки». А когда стали постарше,-построили Данилу Егоровичу дом, посадили парк. Но, к сожалению Данил Егорович многого не знал. Зато помог найти человека, который в этом доме, среди всего беспорядка, выбирает сладости. Человек узнал их по громкому пению….<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;…он говорил, что молл…</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Тел. Агента__8-904-987-23-61</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;удача</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>…- так начинается много сказок, а напротив есть место, где начинаются и где  заканчиваются дороги, по которым отправил царь своих сыновей за молодильными яблоками. И зря он указал им дальние пути,- яблоня оказалась совсем рядом.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Перекресток улиц красного командира и праздника, предложенного Кларой Цеткин.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Сорт яблок</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;ранет</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Пароль знает человек на Reception<br>
+<br>
+<img src="image_not_available.png"> <br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;Ну что ж, тогда поехали…Мы знаем дорогу…<br>
+<br>
+<img src="image_not_available.png"> </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;победа</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Они очень любили этот бодрящий напиток. Однажды  мартовским  воскресным  вечером все друзья встретились здесь. И хотя  их сбережений хватило лишь на одну чашечку кофе,  вся компания с легкостью разделила её. Бармен был так удивлён...<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;В адресе присутствуют цифры 8 и 7</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Вы когда- нибудь  играли в «жадину»? Бармена можно удивить именно этим. Он единственный человек, который знает пароль.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;капитан</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Они часто размышляли о времени. И мечтали купить какие-нибудь особенные часы. Они видели много разных часов: с боем, с кукушкой, песочные…Но  эти особенно запали в душу и, всякий раз когда они вспоминали о времени, им хотелось вернуться именно к этим часам… Да и выпить пора….<br><br><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">1.&nbsp;&nbsp;«…а ведь действительно, здесь мы уже были…»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">2.&nbsp;&nbsp;Снова пришло время пить кофе.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"></div><div id="hint">3.&nbsp;&nbsp;мартини</div></div><br clear="all"/>
+</div>
+<br><br>
+</body>
+</html>
