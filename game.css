@@ -1,0 +1,26 @@
+#main {overflow:auto;align:center;width:100%;border:1 solid #FFCB15;background-color:#4F5BA9;border-width:1;border-style:solid;border-color:#FFCB15;color:white;}
+.gnum {color:#FFCB15;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 20;}
+.timeout {color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 20;}
+.timeouttxt {color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 16;}
+#header {width:100%;height:30;background-image:url(img/b1.gif);}
+#level {padding:3;float:right;height:30;}
+#lnum {position:relative;top:3;color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 16;}
+#ltxt {float:left;}
+#txt {padding:0 0 10 20;width:80%;float:left;font-family: Arial, Helvetica; font-size: 14;}
+#time {background-image:url(img/time.gif);height:191;width:140;float:right;}
+#timer {position:relative;top:40;color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 24;}
+#timelevel {position:relative;top:40;color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 24;}
+#timepromt {position:relative;top:40;color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 24;}
+#bonus {position:relative;top:40;color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 14;}
+#hint {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: relative; TOP: 37px;
+	padding-bottom:37;
+}
+#passfield {border:1 solid #FFCB15;border-width:1;border-style:solid;border-color:#FFCB15;background-color:#6777DD;color:white;}
+#go {float:right;padding:0 50 0 0;]
+.level_name{margin:30px 0px}
+div.level_name H2{background:#FFCB15;width:100%;color:#000000}
+#scen {margin-left:10;margin-right:10;width:90%}
+#scen a {color:yellow;}
+#scen a:hover {color:black;}
+#boltalka {height:100;width:100%;float:left;}
