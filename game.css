@@ -1,4 +1,4 @@
-#main {overflow:auto;width:90%;margin:0 auto;background-color:#3a4585;color:white;}
+#main {overflow:auto;width:100%;margin:0 auto;background-color:#3a4585;color:white;}
 .gnum {color:#FFCB15;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 20;}
 .timeout {color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 20;}
 .timeouttxt {color:white;font-weight:bold;font-family: Arial, Helvetica, sans-serif; font-size: 16;}
@@ -20,7 +20,7 @@
 #go {float:right;padding:0 50 0 0;]
 .level_name{margin:30px 0px}
 div.level_name H2{background:#FFCB15;width:100%;color:#000000}
-#scen {width:90%;margin:10px auto;}
+#scen {width:100%;margin:10px auto;}
 #scen a {color:yellow;}
 #scen a:hover {color:black;}
 #boltalka {height:100;width:100%;float:left;}

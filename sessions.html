@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Схватка — Сезоны московских закрытых игр</title>
+<link href="game.css" type="text/css" rel="stylesheet">
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { max-width: 95%; margin: 0 auto; }
+.site-logo-header { text-align: center; margin: 0 auto 12px auto; }
+.site-logo-header img { display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 4px; border: none; }
+h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 20px; user-select: none; }
+h2:hover { background-color: #4a5595; }
+h2 .arrow { display: inline-block; width: 20px; text-align: center; transition: transform 0.2s; }
+h2.collapsed-header .arrow { transform: rotate(-90deg); }
+.year-count { font-size: 0.7em; color: #CCC; font-weight: normal; margin-left: 5px; }
+.year-content { overflow: hidden; transition: max-height 0.3s ease; }
+.year-content.collapsed { max-height: 0 !important; }
+table { border-collapse: collapse; width: 100%; margin: 5px 0 15px 0; }
+col.col-gid { width: 4%; }
+col.col-date { width: 10%; }
+col.col-name { width: 44%; }
+col.col-type { width: 14%; }
+col.col-city { width: 14%; }
+col.col-stat { width: 8%; }
+td, th { border: 1px solid #666; padding: 5px 8px; }
+th { background-color: #4f5ba9; color: #FFFF00; text-align: left; }
+td { background-color: #4f5ba9; }
+tr:nth-child(even) td { background-color: #344b8a; }
+tr:hover td { background-color: #4a5595; }
+a { color: #87CEEB; }
+a:hover { color: #FFFF00; }
+.tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.8em; margin-right: 3px; white-space: nowrap; }
+.tag-city { background: #2e7d32; }
+.tag-open { background: #e65100; }
+.tag-closed { background: #c62828; }
+.tag-mini { background: #6a1b9a; }
+.tag-unknown { background: #546e7a; }
+.tag-alex { background: #8e44ad; }
+.tag-samara { background: #e67e22; }
+.tag-chelya { background: #c0392b; }
+.tag-kirov { background: #16a085; }
+.tag-missing { background: #555; color: #AAA; }
+.stats-bar { text-align: center; color: #CCC; font-size: 0.9em; margin: 5px 0 10px 0; padding: 8px; background-color: #4f5ba9; border-radius: 6px; }
+.stats-bar a, .stats-bar .filter-link { color: #FFFF00; cursor: pointer; margin: 0 6px; text-decoration: underline; }
+.stats-bar a:hover, .stats-bar .filter-link:hover { color: #87CEEB; }
+.subtitle { text-align: center; color: #AAA; font-size: 0.75em; margin: -8px 0 12px 0; }
+.filter-bar { text-align: center; margin: 8px 0; padding: 8px; background-color: #4f5ba9; border-radius: 6px; }
+.filter-bar label { color: #CCC; margin: 0 8px; font-size: 0.85em; }
+.filter-bar select { background-color: #3a4585; color: #FFF; border: 1px solid #666; padding: 3px 8px; border-radius: 3px; font-size: 0.85em; }
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
+.nav-links { text-align: center; margin: 10px 0; }
+.nav-links a { color: #FFFF00; margin: 0 10px; text-decoration: underline; }
+.nav-links a:hover { color: #87CEEB; }
+</style>
+</head>
+<body>
+<div class="main-wrap">
+
+<div class="site-logo-header"><a href="index.html"><img src="logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+
+<h1>Сезоны московских закрытых игр</h1>
+<p class="subtitle">рейтинги команд по сезонам cxmoscow.ru (2006—2010)</p>
+
+<div class="nav-links"><a href="index.html">Все сценарии</a></div>
+
+<div class="stats-bar">
+8 сезонов |
+<a onclick="expandAll()">Развернуть все</a>
+<a onclick="collapseAll()">Свернуть все</a>
+</div>
+
+<div class="filter-bar">
+<label>Тип:</label>
+<select id="filter-type" onchange="filterTable()">
+<option value="">— все —</option>
+<option value="Закрытая">Закрытая</option>
+<option value="Открытая">Открытая</option>
+</select>
+<label>Город:</label>
+<select id="filter-city" onchange="filterTable()">
+<option value="">— все —</option>
+<option value="Москва">Москва</option>
+<option value="Челябинск">Челябинск</option>
+<option value="Александров">Александров</option>
+<option value="Неизвестно">Неизвестно</option>
+</select>
+<a class="filter-link" onclick="clearFilters()">Сброс</a>
+</div>
+
+<div class="year-section" id="year-s1">
+<h2 onclick="toggleYear('s1')"><span class="arrow">&#9660;</span> Первый сезон (11.03.2006 — 15.07.2006) <span class="year-count">(в архиве 10 из 10)</span></h2>
+<div class="year-content" id="yc-s1">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>23</td><td>11-03-2006</td><td><a href="gid23_Международный Женский День/scenario.html">Международный Женский День</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid23_Международный Женский День/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>25</td><td>25-03-2006</td><td><a href="gid25_Настоящий первый день весны/scenario.html">Настоящий первый день весны</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid25_Настоящий первый день весны/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>26</td><td>08-04-2006</td><td><a href="gid26_ДДД/scenario.html">ДДД</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid26_ДДД/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>27</td><td>22-04-2006</td><td><a href="gid27_ВДТ - Восток дело тонкое/scenario.html">ВДТ — Восток дело тонкое</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>29</td><td>06-05-2006</td><td><a href="gid29_Проверка на профпригодность/scenario.html">Проверка на профпригодность</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>31</td><td>20-05-2006</td><td><a href="gid31_Проводы весны/scenario.html">Проводы весны</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid31_Проводы весны/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>34</td><td>03-06-2006</td><td><a href="gid34_Дети шпионов/scenario.html">Дети шпионов</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid34_Дети шпионов/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>35</td><td>17-06-2006</td><td><a href="gid35_Охотники за приведениями/scenario.html">Охотники за приведениями</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid35_Охотники за приведениями/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>37</td><td>01-07-2006</td><td><a href="gid37_Вперед в прошлое/scenario.html">Вперед в прошлое</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid37_Вперед в прошлое/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>38</td><td>15-07-2006</td><td><a href="gid38_Трасса 60/scenario.html">Трасса 60</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid38_Трасса 60/scenario_stats.html">стат.</a></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s2">
+<h2 onclick="toggleYear('s2')"><span class="arrow">&#9660;</span> Второй сезон (11.08.2006 — 01.07.2007) <span class="year-count">(в архиве 5 из 10, 5 нет)</span></h2>
+<div class="year-content" id="yc-s2">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>41</td><td>12-08-2006</td><td><a href="gid41_На Конец-То/scenario.html">На Конец-То</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>43</td><td>26-08-2006</td><td><a href="gid43_Алиса Льюиса Кэрролла/scenario.html">Алиса Льюиса Кэрролла</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid43_Алиса Льюиса Кэрролла/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>45</td><td>09-09-2006</td><td><a href="gid45_Очень страшная игра 1/scenario.html">Очень страшная игра 1</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>49</td><td>?</td><td><span class="tag-missing">Игра команды ? (gid49)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>50</td><td>?</td><td><span class="tag-missing">Игра команды ? (gid50)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>56</td><td>?</td><td><span class="tag-missing">Игра команды ? (gid56)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>60</td><td>?</td><td><span class="tag-missing">Игра команды ? (gid60)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>63</td><td>?</td><td><span class="tag-missing">Игра команды ? (gid63)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>70</td><td>27-01-2007</td><td><a href="gid70_Шерлок Холмс и доктор Ватсон. Приключения в Москве/scenario.html">Шерлок Холмс и доктор Ватсон. Приключения в Москве.</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>75</td><td>10-02-2007</td><td><a href="gid75_Винки/scenario.html">Винки</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid75_Винки/scenario_stats.html">стат.</a></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s3">
+<h2 onclick="toggleYear('s3')"><span class="arrow">&#9660;</span> Третий сезон (2007) <span class="year-count">(в архиве 10 из 10)</span></h2>
+<div class="year-content" id="yc-s3">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>79</td><td>10-03-2007</td><td><a href="gid79_За дам!/scenario.html">За дам!</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>82</td><td>24-03-2007</td><td><a href="gid82_Московские каникулы Черепашек Ниндзя/scenario.html">Московские каникулы Черепашек Ниндзя</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid82_Московские каникулы Черепашек Ниндзя/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>87</td><td>21-04-2007</td><td><a href="gid87_Игра II или как Ник стал G.O.P.-Ником/scenario.html">Игра II или как Ник стал G.O.P.-Ником</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid87_Игра II или как Ник стал G.O.P.-Ником/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>89</td><td>05-05-2007</td><td><a href="gid89_Resident Evil/scenario.html">Resident Evil</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid89_Resident Evil/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>91</td><td>19-05-2007</td><td><a href="gid91_Старик Хоттабыч/scenario.html">Старик Хоттабыч</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid91_Старик Хоттабыч/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>93</td><td>02-06-2007</td><td><a href="gid93_Школьные годы чудесные/scenario.html">Школьные годы чудесные</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid93_Школьные годы чудесные/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>95</td><td>16-06-2007</td><td><a href="gid95_Великий Комбинатор. Новые приключения в Москве/scenario.html">Великий Комбинатор. Новые приключения в Москве.</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid95_Великий Комбинатор. Новые приключения в Москве/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>99</td><td>14-07-2007</td><td><a href="gid99_По следам Ивана Купала/scenario.html">По следам Ивана Купала</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid99_По следам Ивана Купала/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>100</td><td>28-07-2007</td><td><a href="gid100_Я знаю это потому что это знает Тайлер/scenario.html">Я знаю это потому что это знает Тайлер</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid100_Я знаю это потому что это знает Тайлер/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>101</td><td>11-08-2007</td><td><a href="gid101_Onboard/scenario.html">Onboard</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid101_Onboard/scenario_stats.html">стат.</a></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s4">
+<h2 onclick="toggleYear('s4')"><span class="arrow">&#9660;</span> Четвертый сезон (2007—2008) <span class="year-count">(в архиве 2 из 10, 8 нет)</span></h2>
+<div class="year-content" id="yc-s4">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>105</td><td>08-09-2007</td><td><a href="gid105_Краденое солнце и другая шизофрения/scenario.html">Краденое солнце и другая шизофрения</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid105_Краденое солнце и другая шизофрения/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>114</td><td>13-10-2007</td><td><a href="gid114_Куба в лицах и фактах/scenario.html">Куба в лицах и фактах</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid114_Куба в лицах и фактах/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>121</td><td>?</td><td><span class="tag-missing">?</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>125</td><td>?</td><td><span class="tag-missing">?</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>130</td><td>?</td><td><span class="tag-missing">?</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>143</td><td>02-02-2008</td><td><span class="tag-missing">Побег из тюрьмы</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>146</td><td>16-02-2008</td><td><span class="tag-missing">Мы тупеем от TV</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>148</td><td>01-03-2008</td><td><span class="tag-missing">Зона Отчуждения</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>151</td><td>15-03-2008</td><td><span class="tag-missing">Понедельник начинается в субботу, в 20:00</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>159</td><td>12-04-2008</td><td><span class="tag-missing">Страх и ненависть</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s5">
+<h2 onclick="toggleYear('s5')"><span class="arrow">&#9660;</span> Пятый сезон (2008) <span class="year-count">(в архиве 1 из 10, 9 нет)</span></h2>
+<div class="year-content" id="yc-s5">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>168</td><td>?</td><td><span class="tag-missing">Я все еще знаю, что вы сделали прошлым летом, и не только.</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>175</td><td>21-06-2008</td><td><span class="tag-missing">Невероятные приключение итальянцев в Москве</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>180</td><td>19-07-2008</td><td><span class="tag-missing">Сто лет туда-сюда.</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>184</td><td>02-08-2008</td><td><span class="tag-missing">Перфонтана</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>189</td><td>30-08-2008</td><td><span class="tag-missing">Сокровище нации</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>191</td><td>13-09-2008</td><td><span class="tag-missing">Кот Да Винчи</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>197</td><td>25-10-2008</td><td><span class="tag-missing">Три мушкетера</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>200</td><td>11-10-2008</td><td><span class="tag-missing">Я всегда буду знать, что вы делали прошлым летом</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>206</td><td>08-11-2008</td><td><span class="tag-missing">Тайны старого города</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>210</td><td>06-12-2008</td><td><a href="gid210_Сибирь/scenario.html">Сибирь</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s6">
+<h2 onclick="toggleYear('s6')"><span class="arrow">&#9660;</span> Шестой сезон (2009) <span class="year-count">(в архиве 0 из 10, 10 нет)</span></h2>
+<div class="year-content" id="yc-s6">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>221</td><td>24-01-2009</td><td><span class="tag-missing">Пила: схватка на выживание</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>223</td><td>07-02-2009</td><td><span class="tag-missing">Через тернии к звездам</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>226</td><td>21-02-2009</td><td><span class="tag-missing">Джентльмены удачи</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>231</td><td>07-03-2009</td><td><span class="tag-missing">Собачье сердце</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>233</td><td>21-03-2009</td><td><span class="tag-missing">Матрица</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>241</td><td>04-04-2009</td><td><span class="tag-missing">Sliders</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>246</td><td>18-04-2009</td><td><span class="tag-missing">Кин-дза-дза</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>255</td><td>23-05-2009</td><td><span class="tag-missing">Форест Гамп</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>258</td><td>30-05-2009</td><td><span class="tag-missing">Амели из Бирюлева</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>262</td><td>13-06-2009</td><td><span class="tag-missing">P.S. I love you</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s7">
+<h2 onclick="toggleYear('s7')"><span class="arrow">&#9660;</span> Седьмой сезон (2009—2010) <span class="year-count">(в архиве 0 из 10, 10 нет)</span></h2>
+<div class="year-content" id="yc-s7">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>276</td><td>18-07-2009</td><td><span class="tag-missing">День сурка</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>280</td><td>01-08-2009</td><td><span class="tag-missing">Gone In CX Seconds</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>287</td><td>29-08-2009</td><td><span class="tag-missing">Мастер и Маргарита</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>296</td><td>12-09-2009</td><td><span class="tag-missing">CX I'm loving it</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>302</td><td>26-09-2009</td><td><span class="tag-missing">Рататуй</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>323</td><td>31-10-2009</td><td><span class="tag-missing">Страшилки Советского Детства</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>331</td><td>14-11-2009</td><td><span class="tag-missing">Адреналин</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>337</td><td>28-11-2009</td><td><span class="tag-missing">Правила правильной свадьбы</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>351</td><td>12-12-2009</td><td><span class="tag-missing">Идентификация Борна</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>372</td><td>16-01-2010</td><td><span class="tag-missing">Bond, James Bond! Off, fuck off</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+</table>
+</div>
+</div><div class="year-section" id="year-s8">
+<h2 onclick="toggleYear('s8')"><span class="arrow">&#9660;</span> Восьмой сезон (2010) <span class="year-count">(в архиве 0 из 10, 10 нет)</span></h2>
+<div class="year-content" id="yc-s8">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>398</td><td>27-02-2010</td><td><span class="tag-missing">Простоквашино</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>412</td><td>27-03-2010</td><td><span class="tag-missing">Буратени (игра команды TENI)</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>422</td><td>10-04-2010</td><td><span class="tag-missing">Вокруг света за 80 дней</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>433</td><td>24-04-2010</td><td><span class="tag-missing">Южный парк</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>450</td><td>22-05-2010</td><td><span class="tag-missing">СТИЛЯГИ. ГЛАМУРНЫЙ СССР</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>471</td><td>19-06-2010</td><td><span class="tag-missing">?</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>478</td><td>03-07-2010</td><td><span class="tag-missing">НАША РАША, или Яйца Q-бы</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>486</td><td>17-07-2010</td><td><span class="tag-missing">Скала</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>502</td><td>11-09-2010</td><td><span class="tag-missing">Дорога ВЖК</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>510</td><td>25-09-2010</td><td><span class="tag-missing">Кабинет</span></td><td>Закрытая</td><td>Москва</td><td><span style="color:#777;">—</span></td></tr>
+</table>
+</div>
+</div>
+
+<div class="year-section" id="year-extra">
+<h2 onclick="toggleYear('extra')"><span class="arrow">&#9660;</span> Вне сезонов <span class="year-count">(53 игр вне сезонов)</span></h2>
+<div class="year-content" id="yc-extra">
+<table class="game-table">
+<colgroup><col class="col-gid"><col class="col-date"><col class="col-name"><col class="col-type"><col class="col-city"><col class="col-stat"></colgroup>
+<tr><th>gid</th><th>Дата</th><th>Название</th><th>Тип</th><th>Город</th><th>Стат.</th></tr>
+<tr data-type="Открытая" data-city="Москва"><td>1</td><td>13-08-2005</td><td><a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario.html">Он от дедушки ушел, он от бабушки ушел</a></td><td>Открытая</td><td>Москва</td><td><a href="gid1_Он от дедушки ушел, он от бабушки ушел/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Открытая" data-city="Москва"><td>2</td><td>27-08-2005</td><td><a href="gid2_Game 2/scenario.html">В первый раз...</a></td><td>Открытая</td><td>Москва</td><td><a href="gid2_Game 2/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Открытая" data-city="Москва"><td>3</td><td>31-08-2005</td><td><a href="gid3_Game 3/scenario.html">Москва, Москва!</a></td><td>Открытая</td><td>Москва</td><td><a href="gid3_Game 3/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>4</td><td>17-09-2005</td><td><a href="gid4_Game 4/scenario.html">Учиться, учиться и еще раз учиться</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid4_Game 4/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>5</td><td>01-10-2005</td><td><a href="gid5_Game 5/scenario.html">Бриллиантовая Рука</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid5_Game 5/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>6</td><td>15-10-2005</td><td><a href="gid6_Game 6/scenario.html">Саша и Маша</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid6_Game 6/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Открытая" data-city="Москва"><td>7</td><td>22-10-2005</td><td><a href="gid7_Game 7/scenario.html">Виртуальные радости</a></td><td>Открытая</td><td>Москва</td><td><a href="gid7_Game 7/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Александров"><td>8</td><td>29-10-2005</td><td><a href="gid8_Game 8/scenario.html">Сорви Голова (г. Александров)</a></td><td>Закрытая</td><td>Александров</td><td><a href="gid8_Game 8/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>9</td><td>29-10-2005</td><td><a href="gid9_Game 9/scenario.html">Вини Пух и все все все...</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid9_Game 9/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Открытая" data-city="Москва"><td>10</td><td>05-11-2005</td><td><a href="gid10_Ах/scenario.html">Ах, какие женщины!</a></td><td>Открытая</td><td>Москва</td><td><a href="gid10_Ах/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>11</td><td>12-11-2005</td><td><a href="gid11_ВОР/scenario.html">ВОР</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid11_ВОР/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>12</td><td>26-11-2005</td><td><a href="gid12_Международный день студентов/scenario.html">Международный день студентов</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Александров"><td>13</td><td>03-12-2005</td><td><a href="gid13_Агент (г. Александров)/scenario.html">Агент (г. Александров)</a></td><td>Закрытая</td><td>Александров</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>14</td><td>10-12-2005</td><td><a href="gid14_Города России/scenario.html">Города России</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Самара"><td>15</td><td>24-12-2005</td><td><a href="gid15_Мастер и Маргарита (Самара)/scenario.html">Мастер и Маргарита (Самара)</a></td><td>Закрытая</td><td>Самара</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>16</td><td>24-12-2005</td><td><a href="gid16_Джингл Белз/scenario.html">Джингл Белз</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>17</td><td>28-01-2006</td><td><a href="gid17_Ирония судьбы (Челябинск)/scenario.html">Ирония судьбы (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>18</td><td>28-01-2006</td><td><a href="gid18_Крепкий Орешек/scenario.html">Крепкий Орешек</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>19</td><td>11-02-2006</td><td><a href="gid19_День Святого Валентина/scenario.html">День Святого Валентина</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid19_День Святого Валентина/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>20</td><td>18-02-2006</td><td><a href="gid20_Мемуары Казановы (Челябинск)/scenario.html">Мемуары Казановы (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>21</td><td>24-02-2006</td><td><a href="gid21_День Защитника Отечества/scenario.html">День Защитника Отечества</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid21_День Защитника Отечества/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>22</td><td>04-03-2006</td><td><a href="gid22_Резервus Олипиадus (Челябинск)/scenario.html">Резервus Олипиадus (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>24</td><td>18-03-2006</td><td><a href="gid24_Сумасшедшие лягушки (Челябинск)/scenario.html">Сумасшедшие лягушки (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>28</td><td>22-04-2006</td><td><a href="gid28_Радуга (Челябинск)/scenario.html">Радуга (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>30</td><td>13-05-2006</td><td><a href="gid30_Схватка в Метробоксе (Челябинск)/scenario.html">Схватка в Метробоксе (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>32</td><td>26-05-2006</td><td><a href="gid32_Экскурсии по городу (Челябинск)/scenario.html">Экскурсии по городу (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>33</td><td>01-04-2006</td><td><a href="gid33_Похождения Ивана-дурака (Челябинск)/scenario.html">Похождения Ивана-дурака (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>36</td><td>23-06-2006</td><td><a href="gid36_City Car Game/scenario.html">City Car Game</a></td><td>Закрытая</td><td>Челябинск</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Челябинск"><td>40</td><td>04-08-2006</td><td><a href="gid40_По мотивам несостоявшихся игр (Челябинск)/scenario.html">По мотивам несостоявшихся игр (Челябинск)</a></td><td>Закрытая</td><td>Челябинск</td><td><a href="gid40_По мотивам несостоявшихся игр (Челябинск)/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Кировоград"><td>51</td><td>07-10-2006</td><td><a href="gid51_Первая Кировоградская сХватка/scenario.html">Первая Кировоградская сХватка</a></td><td>Закрытая</td><td>Кировоград</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>54</td><td>21-10-2006</td><td><a href="gid54_10 антиподвигов Геракла/scenario.html">10 антиподвигов Геракла</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>58</td><td>18-11-2006</td><td><a href="gid58_Назад в СССР/scenario.html">Назад в СССР</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>69</td><td>20-01-2007</td><td><a href="gid69_Грибы да шишки/scenario.html">Грибы да шишки</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>77</td><td>24-02-2007</td><td><a href="gid77_Красная армия всех сильней/scenario.html">Красная армия всех сильней</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid77_Красная армия всех сильней/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>85</td><td>07-04-2007</td><td><a href="gid85_Руслан и Людмила/scenario.html">Руслан и Людмила</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid85_Руслан и Людмила/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>97</td><td>30-06-2007</td><td><a href="gid97_Новости/scenario.html">Новости</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid97_Новости/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>102</td><td>25-08-2007</td><td><a href="gid102_Место преступления/scenario.html">Место преступления</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid102_Место преступления/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>111</td><td>22-09-2007</td><td><a href="gid111_Я знаю что вы сделали прошлым летом/scenario.html">Я знаю что вы сделали прошлым летом</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid111_Я знаю что вы сделали прошлым летом/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>211</td><td>29-11-2008</td><td><a href="gid211_Game 211/scenario.html">Game 211</a></td><td>Закрытая</td><td>Москва</td><td></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>238</td><td>28-03-2009</td><td><a href="gid238_МиниСХ Новые приключения колобка/scenario.html">МиниСХ Новые приключения колобка</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid238_МиниСХ Новые приключения колобка/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>239</td><td>28-03-2009</td><td><a href="gid239_Я знаю это место/scenario.html">Я знаю это место</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid239_Я знаю это место/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>245</td><td>18-04-2009</td><td><a href="gid245_Кин-дза-дза/scenario.html">Кин-дза-дза</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid245_Кин-дза-дза/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>248</td><td>18-04-2009</td><td><a href="gid248_Game 248/scenario.html">Game 248</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid248_Game 248/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>253</td><td>08-05-2009</td><td><a href="gid253_Game 253/scenario.html">Game 253 (Младшая Лига)</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid253_Game 253/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>266</td><td>20-06-2009</td><td><a href="gid266_Game 266/scenario.html">Game 266</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid266_Game 266/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>268</td><td>26-06-2009</td><td><a href="gid268_Game 268/scenario.html">Game 268</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid268_Game 268/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>271</td><td>04-07-2009</td><td><a href="gid271_Game 271/scenario.html">Game 271</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid271_Game 271/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Неизвестно"><td>272</td><td>10-07-2009</td><td><a href="gid272_Game 272/scenario.html">Game 272</a></td><td>Закрытая</td><td>Неизвестно</td><td><a href="gid272_Game 272/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>571</td><td>19-03-2011</td><td><a href="gid571_Автостопом по галактике/scenario.html">Автостопом по галактике</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid571_Автостопом по галактике/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>601</td><td>28-05-2011</td><td><a href="gid601_Сверхъестественное Подмосковье/scenario.html">Сверхъестественное Подмосковье</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid601_Сверхъестественное Подмосковье/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>660</td><td>29-10-2011</td><td><a href="gid660_Сегодня/scenario.html">Сегодня</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid660_Сегодня/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>746</td><td>06-04-2013</td><td><a href="gid746_МарьИванна против рома/scenario.html">МарьИванна против рома</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid746_МарьИванна против рома/scenario_stats.html">стат.</a></td></tr>
+<tr data-type="Закрытая" data-city="Москва"><td>772</td><td>29-06-2013</td><td><a href="gid772_Атлас/scenario.html">Атлас</a></td><td>Закрытая</td><td>Москва</td><td><a href="gid772_Атлас/scenario_stats.html">стат.</a></td></tr>
+</table>
+</div>
+</div>
+
+<script>
+function toggleYear(id) {
+    var el = document.getElementById('yc-' + id);
+    var h2 = el.previousElementSibling;
+    if (el) { el.classList.toggle('collapsed'); if (h2) h2.classList.toggle('collapsed-header'); }
+}
+function expandAll() {
+    document.querySelectorAll('.year-content').forEach(function(el) {
+        el.classList.remove('collapsed');
+        el.previousElementSibling.classList.remove('collapsed-header');
+    });
+}
+function collapseAll() {
+    document.querySelectorAll('.year-content').forEach(function(el) {
+        el.classList.add('collapsed');
+        el.previousElementSibling.classList.add('collapsed-header');
+    });
+}
+
+function filterTable(sel) {
+    var typeVal = document.getElementById('filter-type').value;
+    var cityVal = document.getElementById('filter-city').value;
+    document.querySelectorAll('table.game-table tr[data-type]').forEach(function(tr) {
+        var show = true;
+        if (typeVal && tr.getAttribute('data-type') !== typeVal) show = false;
+        if (cityVal && tr.getAttribute('data-city') !== cityVal) show = false;
+        tr.style.display = show ? '' : 'none';
+    });
+}
+function clearFilters() {
+    document.getElementById('filter-type').value = '';
+    document.getElementById('filter-city').value = '';
+    filterTable();
+}
+
+</script>
+
+<footer>Спасибо за Игру!</footer>
+
+</div>
+</body>
+</html>

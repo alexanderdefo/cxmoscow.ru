@@ -2,6 +2,8 @@
   "game_number": 31,
   "start": "20-05-2006",
   "game_type": "Закрытая",
+  "description": "1",
+  "supplies": "1",
   "levels": [
     {
       "number": 1,

@@ -2,6 +2,8 @@
   "game_number": 79,
   "start": "10-03-2007",
   "game_type": "Закрытая",
+  "description": "За дам!",
+  "supplies": "За дам!",
   "levels": [
     {
       "number": 1,
@@ -57,7 +59,9 @@
           "3. схандреа"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "http://en.wikipedia.org/wiki/2007_Atlantic_hurricane_season"
+      ],
       "images": []
     },
     {
@@ -88,7 +92,9 @@
           "3. cxlongbeach"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "http://en.wikipedia.org/wiki/RMS_Queen_Mary\nhttp://en.wikipedia.org/wiki/RMS_Queen_Mary_2"
+      ],
       "images": [
         "http://www.cxmoscow.ru/games/get_file.php?file="
       ]
@@ -284,7 +290,9 @@
           "3. схалександрпушкин"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "Комментарий:\nАвторы литературных произведений «Дама Червей», «Гамбит Бубновой Дамы», «Пиковая Дама», «Роковая Дама Пик»."
+      ],
       "images": []
     },
     {

@@ -2,6 +2,7 @@
   "game_number": 5,
   "start": "01-10-2005",
   "game_type": "Закрытая",
+  "supplies": "Фонарик",
   "levels": [
     {
       "number": 1,

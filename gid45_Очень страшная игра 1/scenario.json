@@ -2,6 +2,8 @@
   "game_number": 45,
   "start": "09-09-2006",
   "game_type": "Закрытая",
+  "description": "Позже...",
+  "supplies": "Позже...",
   "levels": [
     {
       "number": 1,

@@ -2,6 +2,8 @@
   "game_number": 41,
   "start": "12-08-2006",
   "game_type": "Закрытая",
+  "description": "Первая игра нового сезона",
+  "supplies": "1. 2 автомобиля",
   "levels": [
     {
       "number": 1,

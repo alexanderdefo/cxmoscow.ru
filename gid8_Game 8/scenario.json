@@ -2,6 +2,7 @@
   "game_number": 8,
   "start": "29-10-2005",
   "game_type": "Закрытая",
+  "description": "Схватка Александров",
   "levels": [
     {
       "number": 1,
@@ -18,7 +19,9 @@
           "3. Ключ: shelement19"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shelement19"
+      ],
       "images": []
     },
     {
@@ -36,7 +39,9 @@
           "3. Ключ: shземля9га"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shземля9га"
+      ],
       "images": [
         "phototmobile2.png",
         "zemliaritual2.png"
@@ -57,7 +62,9 @@
           "3. Ключ: shwater7mkr"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shwater7mkr"
+      ],
       "images": [
         "phototmobile3.png",
         "vodavodopad3.png",
@@ -79,7 +86,9 @@
           "3. Ключ: shogonpojar4"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shogonpojar4"
+      ],
       "images": [
         "phototmobile4.png",
         "ogonpojar4.png"
@@ -95,7 +104,9 @@
           "3. Ключ: shinomontaжvozduh5"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shinomontaжvozduh5"
+      ],
       "images": [
         "phototmobiel5.png",
         "vozduh5pod2.png"
@@ -116,7 +127,9 @@
           "3. Ключ: shkubikfinish2"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "shkubikfinish2\n\nСпасибо за Игру!"
+      ],
       "images": []
     }
   ]

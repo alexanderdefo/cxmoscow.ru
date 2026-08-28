@@ -2,6 +2,8 @@
   "game_number": 11,
   "start": "12-11-2005",
   "game_type": "Закрытая",
+  "description": "ВОР",
+  "supplies": "ВОР",
   "levels": [
     {
       "number": 1,

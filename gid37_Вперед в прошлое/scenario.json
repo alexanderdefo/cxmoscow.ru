@@ -2,6 +2,8 @@
   "game_number": 37,
   "start": "01-07-2006",
   "game_type": "Закрытая",
+  "description": "Авторы игры команда Йокодзуны",
+  "supplies": "1. 2 автомобиля",
   "levels": [
     {
       "number": 1,
@@ -18,7 +20,9 @@
           "3. схпоехали1"
         ]
       ],
-      "answers": [],
+      "answers": [
+        "1"
+      ],
       "images": []
     },
     {

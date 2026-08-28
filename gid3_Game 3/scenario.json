@@ -2,6 +2,7 @@
   "game_number": 3,
   "start": "31-08-2005",
   "game_type": "Открытая",
+  "supplies": "Доступ в интернет.",
   "levels": [
     {
       "number": 1,

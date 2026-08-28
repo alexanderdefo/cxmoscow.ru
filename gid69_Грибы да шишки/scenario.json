@@ -2,6 +2,8 @@
   "game_number": 69,
   "start": "20-01-2007",
   "game_type": "Закрытая",
+  "description": "Грибы да шишки",
+  "supplies": "Грибы да шишки",
   "levels": [
     {
       "number": 1,
