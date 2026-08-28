@@ -2,7 +2,6 @@
   "game_number": 93,
   "start": "02-06-2007",
   "game_type": "Закрытая",
-  "supplies": "1. 2 автомобиля.",
   "levels": [
     {
       "number": 1,
@@ -92,9 +91,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/rozha.GIF"
-      ]
+      "images": []
     },
     {
       "number": 4,
@@ -124,9 +121,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/geo1654.gif"
-      ]
+      "images": []
     },
     {
       "number": 5,
@@ -186,9 +181,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/sl333.JPG"
-      ]
+      "images": []
     },
     {
       "number": 7,
@@ -248,10 +241,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/metr1.jpg",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/metr2.jpg"
-      ]
+      "images": []
     },
     {
       "number": 9,
@@ -297,11 +287,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/773.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/772.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/93/775.JPG"
-      ]
+      "images": []
     }
   ]
 }

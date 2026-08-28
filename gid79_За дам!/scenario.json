@@ -2,8 +2,6 @@
   "game_number": 79,
   "start": "10-03-2007",
   "game_type": "Закрытая",
-  "description": "За дам!",
-  "supplies": "За дам!",
   "levels": [
     {
       "number": 1,
@@ -59,9 +57,7 @@
           "3. схандреа"
         ]
       ],
-      "answers": [
-        "http://en.wikipedia.org/wiki/2007_Atlantic_hurricane_season"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -92,12 +88,8 @@
           "3. cxlongbeach"
         ]
       ],
-      "answers": [
-        "http://en.wikipedia.org/wiki/RMS_Queen_Mary\nhttp://en.wikipedia.org/wiki/RMS_Queen_Mary_2"
-      ],
+      "answers": [],
       "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/q1.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/q2.jpg",
         "http://www.cxmoscow.ru/games/get_file.php?file="
       ]
     },
@@ -130,9 +122,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/wife.jpg"
-      ]
+      "images": []
     },
     {
       "number": 5,
@@ -163,10 +153,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/tarlett.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/madonn.jpg"
-      ]
+      "images": []
     },
     {
       "number": 6,
@@ -197,10 +184,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/icq4.gif",
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/4hearts.jpg"
-      ]
+      "images": []
     },
     {
       "number": 7,
@@ -230,9 +214,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/nor.jpg"
-      ]
+      "images": []
     },
     {
       "number": 8,
@@ -272,12 +254,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/79/paroe.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/79/paroe1.JPG",
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/spicegirls.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/sss.jpg"
-      ]
+      "images": []
     },
     {
       "number": 9,
@@ -307,9 +284,7 @@
           "3. схалександрпушкин"
         ]
       ],
-      "answers": [
-        "Комментарий:\nАвторы литературных произведений «Дама Червей», «Гамбит Бубновой Дамы», «Пиковая Дама», «Роковая Дама Пик»."
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -341,9 +316,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/79/sir.jpg"
-      ]
+      "images": []
     }
   ]
 }

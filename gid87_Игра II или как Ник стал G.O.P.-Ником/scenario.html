@@ -1,216 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
-<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<title>Схватка — Сценарий игры №87</title>
 <link href="../game.css" type="text/css" rel="stylesheet">
- 
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
 h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
 .gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
 #hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
 #ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
 strong { color: #FFD700; }
 a { color: #87CEEB; }
 img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
 .stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
 </style>
 </head>
-<body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<body>
+<div class="main-wrap">
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -251,10 +68,10 @@ th { background-color: #3a4585; color: #FFFF00; }
 Опасность: Неопасно <br>
 <br>
 В этот день Ник сильно выпил. Только один «человек» составил ему компанию – маленький деревянный клоун. Это был день рождения Ника. Его худший день рождения. Еще бы: его банковский счет неожиданно оказался заблокирован, а стрелка на приборной панели показывала на полное отсутствие топлива в бензобаке. Нику жутко хотелось домой и он, оставив автомобиль на южной окраине города, решился на отважный шаг: как же страшно ему было спускаться в метро впервые за долгие годы… <br>
-Первое строение двенадцатого дома – вот куда шел Ник, выйдя из метро и размышляя о своей такой «благополучной» жизни. «Поганая жизнь» - думал Ник, устало топая по направлению к пруду в резиновых сапогах – остроумном подарке сослуживцев. «Поганый пруд» - думал Ник. И вдруг им овладела тревога. Он обернулся – и понял, что потерял единственного гостя на этом грустном празднике. Он потерял деревянного клоуна. И черт его знает: то ли дело было в панике от мысли, что ему придется отмечать день рождения в одиночестве, то ли дело было просто в опьянении, но Ник бросился за подмогой к прохожим. «Я – Ник, владелец заводов, газет, пароходов! Вы не подскажете, где мой маленький деревянный клоун с ключом во рту?» - дрожащим от слез голосом спрашивал он их. <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Чистые пруды, от памятника до дома 12 стр 1. Агенты - две женщины</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схигого57</div></div><br clear="all"/><strong>Ответ:</strong><br>Курсивом обозначались какие-то забавные моменты с прошлых игр-) Специально написали это примечание и даже выделили крупным - прежде всего для &quot;новичков&quot;, которые тогда не играли, - во избежание их запутывания
+Первое строение двенадцатого дома – вот куда шел Ник, выйдя из метро и размышляя о своей такой «благополучной» жизни. «Поганая жизнь» - думал Ник, устало топая по направлению к пруду в резиновых сапогах – остроумном подарке сослуживцев. «Поганый пруд» - думал Ник. И вдруг им овладела тревога. Он обернулся – и понял, что потерял единственного гостя на этом грустном празднике. Он потерял деревянного клоуна. И черт его знает: то ли дело было в панике от мысли, что ему придется отмечать день рождения в одиночестве, то ли дело было просто в опьянении, но Ник бросился за подмогой к прохожим. «Я – Ник, владелец заводов, газет, пароходов! Вы не подскажете, где мой маленький деревянный клоун с ключом во рту?» - дрожащим от слез голосом спрашивал он их. <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Чистые пруды, от памятника до дома 12 стр 1. Агенты - две женщины</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схигого57</div></div><br clear="all"/><strong>Ответ:</strong><br>Курсивом обозначались какие-то забавные моменты с прошлых игр-) Специально написали это примечание и даже выделили крупным - прежде всего для &quot;новичков&quot;, которые тогда не играли, - во избежание их запутывания
 &quot;Поганый пруд&quot; - историческое название Чистых прудов
 &quot;оставив автомобиль на южной окраине города&quot; - этой фразой мы хотели намекнуть на местоположение 2-го уровня, прежде всего из уважения к командам, играющим 2-3 экипажами. Мы не хотели, чтобы вы долго ехали на 2-й уровень или долго его разгадывали, там вся прелесть на месте была.
-<br><br><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Клоун был новеньким в этом городе. Он еще плохо знал названия улиц и проспектов. А его маленькие ножки не поспевали за поступью Ника. В какой-то момент клоун понял, что потерялся. Он огляделся. «фига себе, какой здоровый чугунный болван!», - мелькнуло в его крошечном деревянном мозгу. Клоун не знал, что когда-то этот «болван» дипломатично и чрезвычайно представлял Россию в стране кошек и ковров, но его это и не волновало. Важно было лишь то, что он нигде не мог найти Ника! Клоун вздохнул, и засеменил в сторону «круга». Он подходил к занятым своими делами прохожим и вежливо повторял: «Я маленький деревянный клоун. Вы не видели Ника, владельца заводов газет и пароходов?» Правда, говорить ему мешал ключ, который все это время торчал у него изо рта. <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Чистые пруды, от памятника до дома 12 стр 1. Агент - девушка-эмо</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схогого19</div></div><br clear="all"/><strong>Ответ:</strong><br>Чугунный болван - памятник
+<br><br><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Клоун был новеньким в этом городе. Он еще плохо знал названия улиц и проспектов. А его маленькие ножки не поспевали за поступью Ника. В какой-то момент клоун понял, что потерялся. Он огляделся. «фига себе, какой здоровый чугунный болван!», - мелькнуло в его крошечном деревянном мозгу. Клоун не знал, что когда-то этот «болван» дипломатично и чрезвычайно представлял Россию в стране кошек и ковров, но его это и не волновало. Важно было лишь то, что он нигде не мог найти Ника! Клоун вздохнул, и засеменил в сторону «круга». Он подходил к занятым своими делами прохожим и вежливо повторял: «Я маленький деревянный клоун. Вы не видели Ника, владельца заводов газет и пароходов?» Правда, говорить ему мешал ключ, который все это время торчал у него изо рта. <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Чистые пруды, от памятника до дома 12 стр 1. Агент - девушка-эмо</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схогого19</div></div><br clear="all"/><strong>Ответ:</strong><br>Чугунный болван - памятник
 Дипломатично и чрезвычайно представлял Россию в стране кошек и ковров - Грибоедов в свое время был послом Персии
 Таким образом, получилось 2 флэшмоба, проходящего в одном месте. Задумка: клоуны ходят мимо Ников и наоборот, и никак не могут друг друга найти. Прохожие радостно помогают - да вот же он, вот, ты что, не видешь?
 А еще если в минимуме заявлены резиновые сапоги, это не всегда значит, что они будут использоваться лишь в говнах-)<br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Раз мы решили из Ника сделать ГОП-Ника, прежде всего необходима теоретическая подготовка. <br>
@@ -265,7 +82,7 @@ th { background-color: #3a4585; color: #FFFF00; }
  <br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Незнание закона не освобождает от ответственности.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Уголовный кодекс Российской Федерации </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпонятие</div></div><br clear="all"/><strong>Ответ:</strong><br>надо было просто догадаться-)<br><br><br><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Найдя клоуна, Ник решил было отправиться домой, как его помощник позвонил ему. «Черт побери, почему именно в этот день мне приходится увольнять друга моего отца?!» - нервничал Ник. До офиса он решил идти пешком: ему всегда лучше думалось во время прогулок. И он отправился туда, где начинался его роман с бывшей будущей женой, теперь уже снова бывшей. Тепло от освещающего небо факела не достигало Ника, поэтому он все же поспешил согреться, благо офис находился в 5 кварталах. Табличка &quot;дом 20&quot; всколыхнула в нем переживания юности и он устремился в &quot;шалаш&quot; напротив. Многое изменилось с тех пор, но тот детский стих, который он тогда в шутку аккуратно вывел на стене, вызвал смутное чувство какой-то утраты. <br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Незнание закона не освобождает от ответственности.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Уголовный кодекс Российской Федерации </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпонятие</div></div><br clear="all"/><strong>Ответ:</strong><br>надо было просто догадаться-)<br><br><br><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Найдя клоуна, Ник решил было отправиться домой, как его помощник позвонил ему. «Черт побери, почему именно в этот день мне приходится увольнять друга моего отца?!» - нервничал Ник. До офиса он решил идти пешком: ему всегда лучше думалось во время прогулок. И он отправился туда, где начинался его роман с бывшей будущей женой, теперь уже снова бывшей. Тепло от освещающего небо факела не достигало Ника, поэтому он все же поспешил согреться, благо офис находился в 5 кварталах. Табличка &quot;дом 20&quot; всколыхнула в нем переживания юности и он устремился в &quot;шалаш&quot; напротив. Многое изменилось с тех пор, но тот детский стих, который он тогда в шутку аккуратно вывел на стене, вызвал смутное чувство какой-то утраты. <br>
 <br>
 Уронили мишку на пол, <br>
 Оторвали мишке лапу, <br>
@@ -276,36 +93,36 @@ th { background-color: #3a4585; color: #FFFF00; }
 <br>
 Найдите автомобиль Пежо 407, цвета бордо, номер х428хо90, предъявите карточку команды.  Агент вам даст то, что пригодится далее. <br>
 <br>
- <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Подсказка 1: Пятый квартал Капотни, д. 20. Между ним и МКАД ом &quot;шалаш&quot; <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Подсказка 2: Сравните стих в задании и стих на доме. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Подсказка 3: схгопники9супер1 </div></div><br clear="all"/><strong>Ответ:</strong><br>&quot;факел в небе&quot; - первое, что приходит в голову, разумеется, Капотня. 
+ <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Подсказка 1: Пятый квартал Капотни, д. 20. Между ним и МКАД ом &quot;шалаш&quot; <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Подсказка 2: Сравните стих в задании и стих на доме. <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Подсказка 3: схгопники9супер1 </div></div><br clear="all"/><strong>Ответ:</strong><br>&quot;факел в небе&quot; - первое, что приходит в голову, разумеется, Капотня. 
 &quot;Офис находился в 5 кварталах&quot; - 5ый квартал Капотни. Искомое строение находится напротив дома 20. 
 Из множества написанных в здании кодов вам нужны только содержащие слова стишка. Ответ складывается из последних, приписанных к словам букв. 
 
 &quot;автор Маяковский&quot; - стеб над подсказкой к 8 уровню игры №29: 
 http://www.cxmoscow.ru/games/listgames.php?gid=29&statistics;=yes 
 кто вспомнил - того, надеемся, повеселило. Кто придумал другую логику, то в минимуме было указано 2 машины.
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/21.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/22.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/23.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/24.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/25.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/26.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/27.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/28.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/29.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/210.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/211.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/212.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/213.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/214.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/215.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/216.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Его дочь зачали в год Московсих  Олимпийских  игр, но родилась она только в 1982. Работать начала уже в 1989, и с тех пор побывала более чем в 30 странах, даже в горячих точках. Она часто снималась в кино, хотя это и не основная ее работа. Она не должна была работать с людьми, но ей приходится делать и это. Ее называют легкой, но вряд ли бы Вы подумали об этом, увидев ее. <br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/21.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/22.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/23.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/24.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/25.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/26.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/27.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/28.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/29.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/210.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/211.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/212.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/213.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/214.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/215.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/216.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Его дочь зачали в год Московсих  Олимпийских  игр, но родилась она только в 1982. Работать начала уже в 1989, и с тех пор побывала более чем в 30 странах, даже в горячих точках. Она часто снималась в кино, хотя это и не основная ее работа. Она не должна была работать с людьми, но ей приходится делать и это. Ее называют легкой, но вряд ли бы Вы подумали об этом, увидев ее. <br>
 <br>
 Форма ответа: сх+фамилия ее отца (на языке оригинала)<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;У нее острое зрение, она увидит вас издалека. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Дочь зовут M82 Barrett Light Fifty</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схbarrett</div></div><br clear="all"/><strong>Ответ:</strong><br>Логика решения. 
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;У нее острое зрение, она увидит вас издалека. <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Дочь зовут M82 Barrett Light Fifty</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схbarrett</div></div><br clear="all"/><strong>Ответ:</strong><br>Логика решения. 
 Дано: 
 1. Женский род 
 2. Не человек (два года беременности, начала работать в 7 лет) - следовательно предмет. 
@@ -320,12 +137,12 @@ http://www.cxmoscow.ru/games/listgames.php?gid=29&statistics;=yes
 <br><br><br><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Ник мчался вдоль забора, который шел от большого синего здания, что находится в месте встречи молдавского господаря и гляциолога Владимира Михайловича. <br>
 На уровне 2 ключа. <br>
 <br>
-П.С. На трубы не лазить.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пересечение 1-ого Котляковского и Кантемировской улицы.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код в окне.<br>
-Код за наклоненной плитой.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдозор99схдапересчету42</div></div><br clear="all"/><strong>Ответ:</strong><br>Молдавский господарь - Кантемир (ya.ru)
+П.С. На трубы не лазить.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пересечение 1-ого Котляковского и Кантемировской улицы.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код в окне.<br>
+Код за наклоненной плитой.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдозор99схдапересчету42</div></div><br clear="all"/><strong>Ответ:</strong><br>Молдавский господарь - Кантемир (ya.ru)
 Гляциолог Владимир Михайлович - Котляков (ya.ru) 
 
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/31.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/32.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><i>Руслан в дороге от тоски<br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/31.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/32.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><i>Руслан в дороге от тоски<br>
 Пытается размять мозги:<br>
 <br></i><br>
 <br>
@@ -334,29 +151,29 @@ http://www.cxmoscow.ru/games/listgames.php?gid=29&statistics;=yes
 <br>
 <br>
 <br>
-   <img src="https://web.archive.orghttp://gopstyle.com/gallery/d/170-2/__________+copy.jpg"> <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;1 - <b>с</b>оловей, 2 - о<b>х</b>отский улит, 9 - альбатро<b>c</b></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;сходивлес</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Выбравшись из этого жуткого места, Ник чувствовал, что ему жизненно необходим психоаналитик. Он никак не мог самостоятельно найти объяснения происходящему. И вот, он уже почти у цели: больнице №21, как во всем здании резко отключают свет. Ник в смятении бежит в лифт. Там он видит надпись «процент альтзакрытьокно». Лифт резко останавливается между этажами. Ник лезет в люк - и видит «процент помощьминусодин». Ник напрягаясь изо всех сил ползет по балке – и снова надпись: «процент найтидалее» и «процент компанияиздательнидфоспид». Он выбирается на лестницу, где читает «процент параметрсветосилыпри50процентномпаденииосвещенностивобъективе». Он чувствует дыхние дикой собаки бинго в затылок, прыжок - Ник падает в мусорный бак. Там - «процент дваразапочетырнадцать, процент началосамогоизветногоходапешкой, процент сновастеппингядраConroe, процент двестиписятпять». <br>
+   <img src="gopstyle.com/gallery/d/170-2/__________+copy.jpg"> <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;1 - <b>с</b>оловей, 2 - о<b>х</b>отский улит, 9 - альбатро<b>c</b></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;сходивлес</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Выбравшись из этого жуткого места, Ник чувствовал, что ему жизненно необходим психоаналитик. Он никак не мог самостоятельно найти объяснения происходящему. И вот, он уже почти у цели: больнице №21, как во всем здании резко отключают свет. Ник в смятении бежит в лифт. Там он видит надпись «процент альтзакрытьокно». Лифт резко останавливается между этажами. Ник лезет в люк - и видит «процент помощьминусодин». Ник напрягаясь изо всех сил ползет по балке – и снова надпись: «процент найтидалее» и «процент компанияиздательнидфоспид». Он выбирается на лестницу, где читает «процент параметрсветосилыпри50процентномпаденииосвещенностивобъективе». Он чувствует дыхние дикой собаки бинго в затылок, прыжок - Ник падает в мусорный бак. Там - «процент дваразапочетырнадцать, процент началосамогоизветногоходапешкой, процент сновастеппингядраConroe, процент двестиписятпять». <br>
 Наверное, все это что-то значит, осенило Ника. <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ул. Фруктовая 21а</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код снаружи здания</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдети</div></div><br clear="all"/><strong>Ответ:</strong><br>Из загадок выходит: %F4%F0%F3%EA%F2%EE%E2%E0%FF
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ул. Фруктовая 21а</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код снаружи здания</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдети</div></div><br clear="all"/><strong>Ответ:</strong><br>Из загадок выходит: %F4%F0%F3%EA%F2%EE%E2%E0%FF
 Ищем что нить в яндексе, и в адресной строке добовляем искомую строчку. Имеем &quot;фруктовая&quot;.
 Внутри, на 2 этаже написана подсказка: код снаружи.
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/4_1.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><i>&quot;Сейчас бы черепахового супа&quot;</i> - еле одтышавшись, мечтал Ник, - «и помыться». Его лицо исказила дьявольская ухмылка. Он вышел на площадь трех слов. Три заглавные буквы вспыхнули в измученной памяти Ника... G.O.P.? – подумали вы? Или, может быть, х…? Но нет. ИБТ – вот что привиделось Нику. <br>
- <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp; Площадь Иосипа Броз Тито. Фонтан у института общественных наук РАН. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На металлической вертикально-стоящей трубе.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схфишка57</div></div><br clear="all"/><strong>Ответ:</strong><br><img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/4_2.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Кони на хвост носрал<br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/4_1.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><i>&quot;Сейчас бы черепахового супа&quot;</i> - еле одтышавшись, мечтал Ник, - «и помыться». Его лицо исказила дьявольская ухмылка. Он вышел на площадь трех слов. Три заглавные буквы вспыхнули в измученной памяти Ника... G.O.P.? – подумали вы? Или, может быть, х…? Но нет. ИБТ – вот что привиделось Нику. <br>
+ <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp; Площадь Иосипа Броз Тито. Фонтан у института общественных наук РАН. <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На металлической вертикально-стоящей трубе.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схфишка57</div></div><br clear="all"/><strong>Ответ:</strong><br><img src="www.ljplus.ru/img3/m/a/masha19cm/4_2.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Кони на хвост носрал<br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Это анаграмма, образующая стандартный код. Вот ему сегодня икается-))<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Имя и фамилия главного героя фильма «Игра»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схниколасванортон</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вдоволь наплескавшись в фонтане и купив себе пацанские треники, Ник решил, что не так уж плохо он и выглядит в этом странном наряде. «Все, с меня хватит всех этих неприятностей. Я знаю, кто сможет все мне объяснить», - подумал Ник и решительно поехал к адвокату,  <i>напевая по дороге <a href="https://web.archive.orghttp://cxmoscow.ru/game/87/haha.mp3">песню</a>. </i> Странные вещи уже перестали удивлять Ника. Не удивился он, и найдя доблестного юриста в лесу, гуляющего около моста. И ведь казалось бы, причем здесь первый вторник ноября 1967 года? <br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Это анаграмма, образующая стандартный код. Вот ему сегодня икается-))<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Имя и фамилия главного героя фильма «Игра»</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схниколасванортон</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вдоволь наплескавшись в фонтане и купив себе пацанские треники, Ник решил, что не так уж плохо он и выглядит в этом странном наряде. «Все, с меня хватит всех этих неприятностей. Я знаю, кто сможет все мне объяснить», - подумал Ник и решительно поехал к адвокату,  <i>напевая по дороге <a href="http://cxmoscow.ru/game/87/haha.mp3">песню</a>. </i> Странные вещи уже перестали удивлять Ника. Не удивился он, и найдя доблестного юриста в лесу, гуляющего около моста. И ведь казалось бы, причем здесь первый вторник ноября 1967 года? <br>
 Один экипаж, захватите карточку команды. При подъезде позвоните 8-926-223-0335<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Парк 50-летия октября. Подсказок больше не будет. Звонтите.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Подсказок больше не будет. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схавай</div></div><br clear="all"/><strong>Ответ:</strong><br>Первый вторник ноября 1967 г. - 7ое ноября - День 50-летия Великой Октябьской Социалистической Революции. Или коротко - &quot;50-летия октября&quot;. Такое название имеет улица в Солнцево (вне зоны игры) и искомый парк близ м. Проспект Вернадского. 
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Парк 50-летия октября. Подсказок больше не будет. Звонтите.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Подсказок больше не будет. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схавай</div></div><br clear="all"/><strong>Ответ:</strong><br>Первый вторник ноября 1967 г. - 7ое ноября - День 50-летия Великой Октябьской Социалистической Революции. Или коротко - &quot;50-летия октября&quot;. Такое название имеет улица в Солнцево (вне зоны игры) и искомый парк близ м. Проспект Вернадского. 
 Песня? Ну а песня это просто хит от Сталкеров (см. игру №50), которым мы до сих пор заслушиваемся )). <br><br><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Торопясь к своему адвокату, он вдруг вспомнил, как пару месяцев назад тот помог ему выпутаться из весьма щекотливой ситуации. Тогда Ник летел на крыльях любви к знакомой на своем Ford’e, но попал в жуткое дорожно-транспортное происшествие – сбил пешехода. Всю ночь он провел рядом с машиной, глядя в небо… Ему так жалко было свой Ford, за который он только что заплатил 33К, а теперь еще 2 ему придется заплатить за ремонт. <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Крылатские холмы 33 к2.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Смотрите вверх. Район 11 - 13 этажа.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схшерлок</div></div><br clear="all"/><strong>Ответ:</strong><br>Можно попробовать поискать происшествия 2-месячной давности, например так: 
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Крылатские холмы 33 к2.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Смотрите вверх. Район 11 - 13 этажа.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схшерлок</div></div><br clear="all"/><strong>Ответ:</strong><br>Можно попробовать поискать происшествия 2-месячной давности, например так: 
 http://www.yandex.ru/yandsearch?text=Ford+%F1%E1%E8%EB+%EF%E5%F8%E5%F5%EE%E4%E0 
 что выведет на улицу Крылатские холмы. Кроме того, &quot;крылья любви&quot; - намек на Крылатское. 
 цифры 33K и 2 -- намек на д. 33 к. 2. 
@@ -369,15 +186,15 @@ http://www.yandex.ru/yandsearch?text=Ford+%F1%E1%E8%EB+%EF%E5%F8%E5%F5%EE%E4%E0
 <br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;«москвичку» гораздо чаще именуют Ростовом.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;И Ленинград, и Ростов, и Сочи – это виды этой игры.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпреферанс</div></div><br clear="all"/><strong>Ответ:</strong><br>Виды преферанса. Ростов называют еще &quot;Московская пулька&quot;, правда гораздо реже. Но задание и так достаточно очевидно.<br><br><br><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Так и не получив от безумного адвоката ответа, Ник решил вернуться к своей машине. Вдруг он сам сможет понять, что присходит, вернувшись на начальную точку пути?! Но не тут то было: Ник не без ужаса обнаружил, что все колеса проколоты. <i> «Наверное, запер Юргена», - подумал он.</i> Ник уже и не помнил те времена, когда он в последний раз пользовался общественным транспортом. Тогда он еще во всю лузгал семечки и держался за бабулин подол. «Эх, была не была» - вздохнул Ник, и купил пакет семечек, чтобы за время пути как следует подумать о жизни. <br>
-<img src="https://web.archive.orghttp://cxmoscow.ru/game/87/azad_shifr.JPG"><br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;«москвичку» гораздо чаще именуют Ростовом.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;И Ленинград, и Ростов, и Сочи – это виды этой игры.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпреферанс</div></div><br clear="all"/><strong>Ответ:</strong><br>Виды преферанса. Ростов называют еще &quot;Московская пулька&quot;, правда гораздо реже. Но задание и так достаточно очевидно.<br><br><br><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Так и не получив от безумного адвоката ответа, Ник решил вернуться к своей машине. Вдруг он сам сможет понять, что присходит, вернувшись на начальную точку пути?! Но не тут то было: Ник не без ужаса обнаружил, что все колеса проколоты. <i> «Наверное, запер Юргена», - подумал он.</i> Ник уже и не помнил те времена, когда он в последний раз пользовался общественным транспортом. Тогда он еще во всю лузгал семечки и держался за бабулин подол. «Эх, была не была» - вздохнул Ник, и купил пакет семечек, чтобы за время пути как следует подумать о жизни. <br>
+<img src="cxmoscow.ru/game/87/azad_shifr.JPG"><br>
 <br>
 Чуть далее обозначенной остановки, Ник увидел прекрасный осенний пейзаж.<br>
 <br>
 <br>
 Код нестандартный. <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Трамвайная остановка «Западный мост». Радиус поиска 200 метров. Близ двух параллельных прямых.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Столб. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Ответ: схлистопад </div></div><br clear="all"/><strong>Ответ:</strong><br>начинаете разгадывать ребусы..самые простые 2, 4 и 5: 
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Трамвайная остановка «Западный мост». Радиус поиска 200 метров. Близ двух параллельных прямых.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Столб. <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Ответ: схлистопад </div></div><br clear="all"/><strong>Ответ:</strong><br>начинаете разгадывать ребусы..самые простые 2, 4 и 5: 
 
 2) фабрика без &quot;ка&quot;+цитрус без &quot;тр&quot;=фабрициус 
 4)new=новый 
@@ -395,37 +212,37 @@ http://www.yandex.ru/yandsearch?text=Ford+%F1%E1%E8%EB+%EF%E5%F8%E5%F5%EE%E4%E0
 
 ?-это остановка западный мост около которой вы и нашли код -)
 
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/6.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/6.jpg">
 <br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Николасу было не до книжек - в математике с музыкой он был не силен, да и холопы, будь они хоть трижды мастера, его не волновали. <br>
 ответ - сх+имя фамилия автора+имя фамилия главного героя (на русском языке) <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;игра - ремесло сложное, особенно, когда речь идет о столь миниатюрных предметах<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;«Игра в бисер»<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схгермангессеиозефкнехт</div></div><br clear="all"/><strong>Ответ:</strong><br>Собсна, тема &quot;игра&quot; дает общую канву заданию - Николасу было не до книжек - речь, судя по всему, идет о книжке, связанной с математикой и музыкой и, возможно, игрой. Интеллектуалы, знакомые с творчеством Гессе, допрут сразу. 
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;игра - ремесло сложное, особенно, когда речь идет о столь миниатюрных предметах<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;«Игра в бисер»<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схгермангессеиозефкнехт</div></div><br clear="all"/><strong>Ответ:</strong><br>Собсна, тема &quot;игра&quot; дает общую канву заданию - Николасу было не до книжек - речь, судя по всему, идет о книжке, связанной с математикой и музыкой и, возможно, игрой. Интеллектуалы, знакомые с творчеством Гессе, допрут сразу. 
 Те, кто с творчеством Гессе не знаком, имеют формулировку про холопа, который трижды мастер. Фамилия главного героя Кнехт переводится с немецкого как &quot;слуга, холоп&quot;, и он, собственно, мастер игры Иозеф третий. 
 Так что вбив в поисковик &quot;игра, математика, музыка, книга&quot; и покопавшись в ссылках, приходим к ответу 
 схгермангессеиозефкнехт<br><br><br><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br> <br>
 Он снова и снова пробегал глазами по картинкам, как вдруг его осенило. Он понесся к месту событий, а в голове его крутилась мысль, что все это происходит не случайно, не просто так. Ник даже не заметил, как оказался в воде  <i>тут вам бы и пригодился белый шкаф с веслами</i>. Еле выбравшись, Ник дополз до беседки. Вокруг было тихо – и на какую-то минуту Нику вдруг показалось, что все позади. И тут его взгляд упал на заброшенное здание неподалеку - ему в голову закрались дурные предчувствия. «Это Игра, это всего лишь Игра»,- простонал он. <br>
 <br>
 <br>
- <img src="https://web.archive.orghttp://img231.imageshack.us/img231/4671/flags2copytn2.jpg"><br>
+ <img src="img231.imageshack.us/img231/4671/flags2copytn2.jpg"><br>
 <br>
 На уровне два ключа. <br>
-Форма ответа: Ключ из беседки +ключ из дома<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Головинские пруды. Беседка и заброшенное здание недалеко от входа с улицы Михалковской.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В беседке – снаружи со стороны озера.<br>
+Форма ответа: Ключ из беседки +ключ из дома<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Головинские пруды. Беседка и заброшенное здание недалеко от входа с улицы Михалковской.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В беседке – снаружи со стороны озера.<br>
 В здании – справа от колонны с надписью «ГОП-кола» в окне, на металлической поверхности. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлом4схкот31</div></div><br clear="all"/><strong>Ответ:</strong><br>Страны, флаги которых изображены в задании, первыми буквами образуют еще одну несложную шифровку &quot;Пруд всему голова&quot; = головинские пруды
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлом4схкот31</div></div><br clear="all"/><strong>Ответ:</strong><br>Страны, флаги которых изображены в задании, первыми буквами образуют еще одну несложную шифровку &quot;Пруд всему голова&quot; = головинские пруды
 Белый шкаф с веслами - но комментс-))
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/71.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/71.jpg">
 
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/72.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Иногда судьбы сводят людей в совершенно непредсказуемых местах… <br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/72.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Иногда судьбы сводят людей в совершенно непредсказуемых местах… <br>
 <br>
 1. 955, 978, 1595, 1640, 1722, 1814, 1856, 1866, 1871 <br>
 <br>
 2. 1015, 1054, 1657, 1709, 1794, 1861, 1913, 1916, 1934 <br>
 <br>
- <img src="https://web.archive.orghttp://gopstyle.com/koord/lenuci1.jpg"><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Это годы жизни людей, изображенных на украинских гривнах. <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Символы – это знаки для слепых, которые присутствуют на банкнотах. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх52022005010100<br>
+ <img src="gopstyle.com/koord/lenuci1.jpg"><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Это годы жизни людей, изображенных на украинских гривнах. <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Символы – это знаки для слепых, которые присутствуют на банкнотах. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх52022005010100<br>
 </div></div><br clear="all"/><strong>Ответ:</strong><br>Задание по большей части на внимательность. 
 Вбиваем даты, которые приведены в задании - понимаем, что это годы рождения-смерти людей, изображенных на украинских гривнах. 
 Смотрим на сами гривны. Смотрим не просто так, а с пристрастием: тогда через некоторое время находим символы, присутствующие в задании - вертикальные и горизонтальные палочки, кружочки, треугольнички, квадратики - украина тоже заботится о свох слепых, но азбука Брайля не катит, они решили быть оригинальными - вот и идея для задания. 
@@ -435,18 +252,18 @@ http://www.yandex.ru/yandsearch?text=Ford+%F1%E1%E8%EB+%EF%E5%F8%E5%F5%EE%E4%E0
 Что-то ему подсказывало, что все закончится хорошо. Он даже подумал о том, что чувствовал бы себя королем, если бы снял пару телочек, и поехал в их сторону, но лампочка уровня бензина загорелась,<i> и машина проорала &quot;Во мне нет бензина!&quot;.</i> «Хорошо бы заправиться» - угрюмо подумал он. И поехал туда, гдЕ сто пятнадцать ХО. Он уже знал, что Игра не позвала бы его на обычную заправку.<br>
 <br>
 Два кода. На дорогу не выходить.<br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пересечение Ярославки и Мкад. Заброшенная «АЗС 95».</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на здании. Если стоять спиной то левый угол. Надо нануться<br>
-Код на жестяной поверхности у &quot;шланга&quot; с Е-95. Внизу.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх05сливсхгопкола40</div></div><br clear="all"/><strong>Ответ:</strong><br>Обращаем внимание на фразу &quot;гдЕ сто пятнадцать ХО&quot; видем заглавные буквы Е115ХО догадываемся, что надо на Е115 (Ярославка, для этого и вода про девочек и короля).ХО-пересечение с кольцом. Из задания следует что нам нужна заправка.
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пересечение Ярославки и Мкад. Заброшенная «АЗС 95».</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на здании. Если стоять спиной то левый угол. Надо нануться<br>
+Код на жестяной поверхности у &quot;шланга&quot; с Е-95. Внизу.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх05сливсхгопкола40</div></div><br clear="all"/><strong>Ответ:</strong><br>Обращаем внимание на фразу &quot;гдЕ сто пятнадцать ХО&quot; видем заглавные буквы Е115ХО догадываемся, что надо на Е115 (Ярославка, для этого и вода про девочек и короля).ХО-пересечение с кольцом. Из задания следует что нам нужна заправка.
 
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/81.jpg">
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/82.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Николас любил бабло и тачки, а циферки он не любил. Здорово было бы, если бы все расчеты были в таком виде:<br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/81.jpg">
+<img src="www.ljplus.ru/img3/m/a/masha19cm/82.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Николас любил бабло и тачки, а циферки он не любил. Здорово было бы, если бы все расчеты были в таком виде:<br>
 <br>
- <img src="https://web.archive.orghttp://gopstyle.com/gallery/d/174-2/arifmetika2.jpg"><br>
+ <img src="gopstyle.com/gallery/d/174-2/arifmetika2.jpg"><br>
 <br>
 Форма ответа: сх+число<br>
-<br><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Значками машинок обозначаются нечетные числа, а значками валют – четные.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Любое число в нулевой степени дает единицу.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх4819<br>
+<br><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Значками машинок обозначаются нечетные числа, а значками валют – четные.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Любое число в нулевой степени дает единицу.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх4819<br>
 </div></div><br clear="all"/><strong>Ответ:</strong><br>Для решения требуется логика и знание законов деления в столбик и прочей арифметики. 
  Сразу цепляет возведение в степень - если одно число возвести в степень другого, редко удается получить число менее 10. Вариантов три: 
 2 в кубе = 9 
@@ -472,22 +289,22 @@ http://www.yandex.ru/yandsearch?text=Ford+%F1%E1%E8%EB+%EF%E5%F8%E5%F5%EE%E4%E0
 
  единственный знак, значение которого не выясняется из примеров - &quot;опель&quot;: методом исключения &quot;опель&quot; = 9. 
 
-79*61=4819 <br><br><br><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><b><u>Проснувшись в какой-то абсолютно чужой стране, Ник первым делом пошел в посольство, где очень долго и тщетно пытался убедить посла в том, что у него украли все документы, а золотые папашины часы таки оставили. Бедному Нику ничего не оставалось, как продать эти часы. <a href="https://web.archive.orghttp://cxmoscow.ru/game/87/life_way.jpg"> Там </a> он наконец-то смог привести себя в порядок, встретился с женой, и отыскал дядьку, с которым когда-то заключил контракт. Нашел он его в зоопарке, сел с ним в маленький автомобильчик и поехал. Потом, вовсе не долго думая он вошел в офис, взял в заложницы даму, оказался на крыше… и как-то совершенно случайно убил брата. Осознав все, он встал на крышу и не думая, прыгнул. Вот и весь его жизненный путь.</u> Жаль что он его закончил &quot;под асфальтом&quot; </b><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Кликните на слово &quot;там&quot; в тексте задания. Лебедянский пруд. Коллектор.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Входите в коллектор. идите почти до конца.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбегоммарш</div></div><br clear="all"/><strong>Ответ:</strong><br>Водим. что задание написано жирным и подчеркнуто. Прям как ссылка :-)
+79*61=4819 <br><br><br><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><b><u>Проснувшись в какой-то абсолютно чужой стране, Ник первым делом пошел в посольство, где очень долго и тщетно пытался убедить посла в том, что у него украли все документы, а золотые папашины часы таки оставили. Бедному Нику ничего не оставалось, как продать эти часы. <a href="http://cxmoscow.ru/game/87/life_way.jpg"> Там </a> он наконец-то смог привести себя в порядок, встретился с женой, и отыскал дядьку, с которым когда-то заключил контракт. Нашел он его в зоопарке, сел с ним в маленький автомобильчик и поехал. Потом, вовсе не долго думая он вошел в офис, взял в заложницы даму, оказался на крыше… и как-то совершенно случайно убил брата. Осознав все, он встал на крышу и не думая, прыгнул. Вот и весь его жизненный путь.</u> Жаль что он его закончил &quot;под асфальтом&quot; </b><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Кликните на слово &quot;там&quot; в тексте задания. Лебедянский пруд. Коллектор.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Входите в коллектор. идите почти до конца.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбегоммарш</div></div><br clear="all"/><strong>Ответ:</strong><br>Водим. что задание написано жирным и подчеркнуто. Прям как ссылка :-)
 Находим ссылку, попадаем на карту. На карте видем Лебедянский пруд. Лезем под асфальт - в коллектор. Находим ссылку на адрес фанклуба Алены Апиной - гоп примы, а далее на потолке код.
 
-<img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/9.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Если бы Ник проснулся в этом красивом городе, ему и в голову бы не пришло спросить, где он, это было бы очевидно:<br>
+<img src="www.ljplus.ru/img3/m/a/masha19cm/9.jpg"><br><br><br><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Если бы Ник проснулся в этом красивом городе, ему и в голову бы не пришло спросить, где он, это было бы очевидно:<br>
 <br>
 <br>
 Форма ответа: схгород (на русском)<br>
 <br>
- <img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/12.JPG"><br>
- <img src="https://web.archive.orghttp://www.ljplus.ru/img3/m/a/masha19cm/13.JPG"><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На фото рядом с номерами домов изображены знаки зодиака. Это красивый израильский город.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схяффо<br>
-</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Код с диска<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схтабурет18</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Ник открыл глаза. Вокруг него были люди. Люди были милые и улыбались, милыми улыбками. &quot;Ну привет, гопник&quot; - произнес один из них - и протянул Нику стакан. <br>
+ <img src="www.ljplus.ru/img3/m/a/masha19cm/12.JPG"><br>
+ <img src="www.ljplus.ru/img3/m/a/masha19cm/13.JPG"><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На фото рядом с номерами домов изображены знаки зодиака. Это красивый израильский город.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схяффо<br>
+</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Код с диска<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схтабурет18</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Ник открыл глаза. Вокруг него были люди. Люди были милые и улыбались, милыми улыбками. &quot;Ну привет, гопник&quot; - произнес один из них - и протянул Нику стакан. <br>
 <br>
 Милые гопники ждут вас в милом баре &quot;Бличерс&quot;, на милом Волгоградском проспекте д.1. Подъехав к милому бару, позвоните по милому телефону 8-926-525-4731, 8-901-711-7979. Гоп-гоп-гоп!<br>
 <br>
-схотсыпьеще33<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ну позвоните уже!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Звоните!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схотсыпьеще33</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>схедьнаафтепатии<b>КОПАЙ</b><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схедьнаафтепатии<b>КОПАЙ</b></div></div><br clear="all"/><strong>Ответ:</strong><br>Штабной бонус:
+схотсыпьеще33<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ну позвоните уже!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Звоните!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схотсыпьеще33</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>схедьнаафтепатии<b>КОПАЙ</b><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схедьнаафтепатии<b>КОПАЙ</b></div></div><br clear="all"/><strong>Ответ:</strong><br>Штабной бонус:
 Ник впервые за очень долгое время спустился в метро и остановился перед схемой, чтобы понять, как ему добраться до нужного места...&quot;Так сейчас я нахожусь на станции Люблино...ага...вот она&quot;-подумал Ник, и вдруг цветная схема напомнила ему, как он когда-то катался на трамваях в одном европейском городе..Даже схема метро играла с ним.. 
 
 http://rutube.ru/tracks/28634.html?v=6984e303a64adb718cfb05357355abe9 
@@ -511,5 +328,8 @@ http://rutube.ru/tracks/28634.html?v=6984e303a64adb718cfb05357355abe9
 м люблино-салатовая ветка 5 остановок-м крестьянская застава/м пролетарская-фиолетовая ветка 2 остановки-м китай город/м китай город-рыжая ветка 1 остановка-м тургеневская/м чистые пруды-красная ветка 1 остановка-м лубянка/м кузнецкий мост-фиолетовая ветка 1 остановка-м пушкинская/м тверская-зеленая ветка 2 остановки-м новокузнецкая/м третьяковская-желтая ветка 4 остановки-м шоссе энтузиастов <br><br><br>
 </div>
 <br><br>
+</div>
+<footer>Спасибо за Игру!</footer>
+</div>
 </body>
 </html>

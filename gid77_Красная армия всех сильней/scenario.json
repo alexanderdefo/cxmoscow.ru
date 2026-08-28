@@ -2,8 +2,6 @@
   "game_number": 77,
   "start": "24-02-2007",
   "game_type": "Закрытая",
-  "description": "Игра вне зачета",
-  "supplies": "1. 2 автомобиля",
   "levels": [
     {
       "number": 1,
@@ -127,10 +125,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/77/wh.gif",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/77/wh2-2.jpg"
-      ]
+      "images": []
     },
     {
       "number": 5,
@@ -191,9 +186,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/77/hhddg.JPG"
-      ]
+      "images": []
     },
     {
       "number": 7,
@@ -286,10 +279,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/77/9zzz.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/77/91pjsk2.JPG"
-      ]
+      "images": []
     },
     {
       "number": 10,

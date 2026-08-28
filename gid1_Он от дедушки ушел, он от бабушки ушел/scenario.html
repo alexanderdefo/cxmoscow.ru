@@ -1,68 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
-<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<title>Схватка — Сценарий игры №1</title>
 <link href="../game.css" type="text/css" rel="stylesheet">
-<script src="http://www.cxmoscow.ru/cx.js"></script> 
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
 h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
 .gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
 #hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
 #ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
 strong { color: #FFD700; }
 a { color: #87CEEB; }
 img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
 .stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
 </style>
 </head>
-<body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<body>
+<div class="main-wrap">
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -90,22 +55,22 @@ th { background-color: #3a4585; color: #FFFF00; }
 Нагоняет его старик и молвит: «Сынок, отпущу я тебя, только если ты мне поможешь. А то память моя не та … Я помню, что в этот год покушались на какую-то влиятельную личность, помоги мне вспомнить… В этот год мы еще всем буржуям показали кузькину мать, ой, как они забегали, узнав, что у нас есть бомба...»
 <br>
 <br>
-Ответ: гггг + фамилия (фамилия на русском языке).<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Фамилия человека, на которого покушались такое же, как имя у героя в одной из картин в главной роли с Джимом Керри.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Атомная бомба, но не год создания, а год официального заявления маршалом Ворошиловым.
+Ответ: гггг + фамилия (фамилия на русском языке).<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Фамилия человека, на которого покушались такое же, как имя у героя в одной из картин в главной роли с Джимом Керри.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Атомная бомба, но не год создания, а год официального заявления маршалом Ворошиловым.
 <br>
 В этот же год покушались на президента США.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;1950трумэн
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;1950трумэн
 
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Только Колобок покатился от деда, как бабка тут как тут с метлой аля Третьяк стоит…
 Ты, сынок,не спеши …. Поведай-ка мне имя и фамилию героя одного фильма. Снимали его ещё в моём веке и снят он на  основе этих, как там их, гангстерских комиксов. Мне еще внучек как-то сказал, что имя того удальца сейчас в ихнем  американском сленге такое означает, что я внучонка-то наказала, поскольку  нельзя такие слова знать в его возрасте …
 <br>
 <br>
-Ответ: Имя и фамилия(на английском)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;В фильме снимался Аль Пачино.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Непристойность, о которой говорила бабка, можно извлечь из фразы:
+Ответ: Имя и фамилия(на английском)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;В фильме снимался Аль Пачино.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Непристойность, о которой говорила бабка, можно извлечь из фразы:
 «Suck my ….!!»
 <br>
 В 1990 году получил 3 Оскара.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;dicktracy
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;dicktracy
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Старушка ахнула, а Колобок, миновав метлы, покатился в лес… И вдруг он увидел что-то страшное … Существо было  не большое,  если сравнивать с тем, что он видел ранее, и больше напоминало бабку, по крайней мере, зубами … Но эти две руки на макушке…Колобок подумал: «Были бы такие у бабки, авось, не сплоховала бы с моим правым боком при лепке…»
 <br>
 Правда, Колобок так и не увидел, чтобы существо свои «лапы» как то полезно использовало, но, все же учитывая, что у него самого не было лап и вовсе, такое существо внушало уважение. Заяц (оказалось, что его так зовут) широко улыбался во все свои 2 зуба и на вид был очень  счастливым. Бурча себе что-то под нос, он спросил :«Колобок-колобок, я тебя съем!»*небольшая пауза*
@@ -113,12 +78,12 @@ th { background-color: #3a4585; color: #FFFF00; }
  «Слыс, клуглая голова! Косяк будешь? Нет? Тогда помоги мне лазоблаться с понятиями… Как-то я встлетил мальцов стланных таких, слялись они по лесу… Как то они себя назвали, а я вот и забыл, и лассказать тепель нечего! И фильм так еще насывался, его плавда не успели тогда доснимать…»
 <br>
 <br>
-Ответ: гггг(дата съемок фильма) название фильма(на русском)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;«Весь покрытый зеленью, абсолютно весь Остров невезения в океане есть»
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Последний фильм Миронова.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;1987следопыт
+Ответ: гггг(дата съемок фильма) название фильма(на русском)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;«Весь покрытый зеленью, абсолютно весь Остров невезения в океане есть»
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Последний фильм Миронова.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;1987следопыт
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>1&nbsp;: <br>И покатился Колобок дальше, оставив косого наедине с «трынь-травой». Одно его беспокоило, что-то есть в нем что-то от русской попсы.
 
-Ответ: Имя Фамилия (на русском).<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;От русской звездной попсы.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Я теряю ... и улетаю в небо</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;павелартемьев</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Катится колобок, катится, совершенно не беспокоясь об итогах мировой войны. Вдруг, как будто  из-под земли, появляется серый волк… «Хрррр!!! Агхххрр!!! Ухрррр!!!!».<br>
+Ответ: Имя Фамилия (на русском).<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;От русской звездной попсы.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Я теряю ... и улетаю в небо</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;павелартемьев</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Катится колобок, катится, совершенно не беспокоясь об итогах мировой войны. Вдруг, как будто  из-под земли, появляется серый волк… «Хрррр!!! Агхххрр!!! Ухрррр!!!!».<br>
 - Ты хотел сказать «Колобок-колобок, я тебя съем?»- уточняет круглый. <br>
 -Не понял?!?! <br>
 -Ну, по сценарию…<br>
@@ -127,34 +92,34 @@ th { background-color: #3a4585; color: #FFFF00; }
 -Чую я, ты просто пугаешь меня, ну-ка назови мне этого волка! Есть только один волк, который способен отобрать у меня добычу,несмотря на то, что он негромкий! И зовут этого волка – Лариса. <br>
 <br>
 Ответ: имя фамилия (на русском языке)
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Она снималась в одном из известнейших фильмов вместе с «мушкетерами».
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Все дело в переводе её фамилии. Она снималас в «Мушкетеры, двадцать лет спустя»
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Она снималась в одном из известнейших фильмов вместе с «мушкетерами».
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Все дело в переводе её фамилии. Она снималас в «Мушкетеры, двадцать лет спустя»
 
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;ларисалуппиан
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;ларисалуппиан
 
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>- Ну, ради этой волчицы, я тебя не трону, катись дальше… <br>
 
 В голове Колобка промелькнула мысль:«И в кого я такой умный? Наверное, в того малыша,  имя которого так созвучно с моим «внутренним миром»». 
 Еще недавно наши выпустили картину по мотивам истории про него,  и, ко всему прочему, еще в СССР был такой мультик. <br>
-Ответ: Имя героя, Имя и Фамилия автора произведения. (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Таджикфильм. Мука.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Карлик Нос
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;маленькиймуквильгельмгауф
+Ответ: Имя героя, Имя и Фамилия автора произведения. (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Таджикфильм. Мука.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Карлик Нос
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;маленькиймуквильгельмгауф
 
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>«Красота- то какая» - непроизвольно произнес Колобок,выкатываясь на поляну, покрытую белым ковром одуванчиков, непроизвольно вызывая подъем пуховых семян цветов в воздух...  «Что-то мне это напоминает»-решил Колобок-«Точно, дедушка  рассказывал, что видел это по телевизору…
 <br>
-Ответ: страна, город (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Эта страна пострадала от недавнего крупнейшего бедствия.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В этой городе в прошлом году был побит предыдущий рекорд массового прыжка с парашютами. А страна является неофициальным центром сексуальных развлечений.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;тайландбангкок
+Ответ: страна, город (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Эта страна пострадала от недавнего крупнейшего бедствия.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В этой городе в прошлом году был побит предыдущий рекорд массового прыжка с парашютами. А страна является неофициальным центром сексуальных развлечений.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;тайландбангкок
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Настолько Колобок засмотрелся на эту красоту, что сам не заметил, как врезался в чью то мохнатую,косолапую ногу. 
 «Колобок, колобок, я тебя съем!»- сказал слесарь- Медведь.<br>
 «Странный ход событий, но пароль верен»-мелькнуло в голове у Колобка. 
 <br>
 «Ты, шарообразный, ответь мне, кто мой любимый спортсмен из восточной европы, имя которого похоже на моё?»-озадачил Медведь Колобка.
 <br>
-Ответ: имя фамилия (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Golden Foot
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Спарта, Лацио, Ювентус.
+Ответ: имя фамилия (на русском)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Golden Foot
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Спарта, Лацио, Ювентус.
 «Golden Foot» в 2004. Играл в перечисленных клубах.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;павелнедвед
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;павелнедвед
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Укатился наш главный герой от изрядно подвыпившего Мишки… <br>
 «Что дальше?»-пронеслось в голове у Колобка? <br>
 Он увидел странную картинку … На встречу ему  шла Лиса с зеленоватой черепахой. <br>
@@ -162,14 +127,17 @@ th { background-color: #3a4585; color: #FFFF00; }
 <br>
 
 Ответ: имя фамилия (на русском)
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Если черепаха такого цвета, то лиса …
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Актриса играла роль лисы Алисы в фильме «Приключение Буратино» (Роль черепахи Тортиллы играла Рина Зелёная).
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;еленасанаева
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Если черепаха такого цвета, то лиса …
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Актриса играла роль лисы Алисы в фильме «Приключение Буратино» (Роль черепахи Тортиллы играла Рина Зелёная).
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;еленасанаева
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Катился колобок и вдруг вспомнил, что на сайте Google назначен бой с участием его подружки и … только бой с кем он не мог вспомнить.
 
 Ответ:имяфамилия (на английском)
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;С помощью Google можно устроить бой с кем угодно </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Но подружка может провести только один бой (Googlefight.com)</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;pamelaanderson</div></div><br clear="all"/>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;С помощью Google можно устроить бой с кем угодно </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Но подружка может провести только один бой (Googlefight.com)</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;pamelaanderson</div></div><br clear="all"/>
 </div>
 <br><br>
+</div>
+<footer>Спасибо за Игру!</footer>
+</div>
 </body>
 </html>

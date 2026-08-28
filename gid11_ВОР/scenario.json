@@ -2,8 +2,6 @@
   "game_number": 11,
   "start": "12-11-2005",
   "game_type": "Закрытая",
-  "description": "ВОР",
-  "supplies": "ВОР",
   "levels": [
     {
       "number": 1,
@@ -43,10 +41,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "http://www.cxmoscow.ru/game/10z/10z_1.jpg",
-        "http://www.cxmoscow.ru/game/10z/10z.jpg"
-      ]
+      "images": []
     },
     {
       "number": 3,
@@ -65,8 +60,7 @@
       ],
       "answers": [],
       "images": [
-        "mf_23.png",
-        "http://www.cxmoscow.ru/game/10z/mf_44.jpg"
+        "mf_23.png"
       ]
     },
     {

@@ -2,7 +2,6 @@
   "game_number": 102,
   "start": "25-08-2007",
   "game_type": "Закрытая",
-  "description": "Место преступления",
   "levels": [
     {
       "number": 1,
@@ -49,9 +48,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/h2w.JPG"
-      ]
+      "images": []
     },
     {
       "number": 3,
@@ -141,9 +138,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/4598.jpg"
-      ]
+      "images": []
     },
     {
       "number": 6,
@@ -173,17 +168,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-1-rrr.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-2-dff.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-3-tre.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-4-gnd.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-5-hfds.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-6-dss.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-7-eee.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-8-fxv.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/7-9-hkjl.JPG"
-      ]
+      "images": []
     },
     {
       "number": 7,
@@ -205,10 +190,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/noty.JPG",
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/90876.JPG"
-      ]
+      "images": []
     },
     {
       "number": 8,
@@ -268,9 +250,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://www.cxmoscow.ru/game/102/67733.gif"
-      ]
+      "images": []
     },
     {
       "number": 10,

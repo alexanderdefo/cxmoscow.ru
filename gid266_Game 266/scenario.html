@@ -1,216 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
-<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<title>Схватка — Сценарий игры №266</title>
 <link href="../game.css" type="text/css" rel="stylesheet">
- 
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
 h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
 .gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
 #hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
 #ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
 strong { color: #FFD700; }
 a { color: #87CEEB; }
 img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
 .stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
 </style>
 </head>
-<body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<body>
+<div class="main-wrap">
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -221,7 +38,7 @@ th { background-color: #3a4585; color: #FFFF00; }
 Описание: <br>
 Принадлежности: <br>
 <br><br>
-<table border="1" cellspacing="0" cellpadding="0" align="center" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;">	<tr><th rowspan="2">Место</th><th rowspan="2">Команда</th><th rowspan="2">Уровней пройдено</th><th colspan="3">Время уровней</th><th rowspan="2">Всего</th></tr><tr><th>Активного</th><th>Штрафы</th><th>Бонусы</th></tr><tr align="center"><td>1</td><td>Частитела</td><td>11</td><td>07:16:05</td><td>0</td><td>-20:00</td><td>06:56:05</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>11</td><td>07:18:29</td><td>0</td><td>-20:00</td><td>06:58:29</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>11</td><td>08:17:27</td><td>0</td><td>-20:00</td><td>07:57:27</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>11</td><td>08:54:53</td><td>0</td><td>-20:00</td><td>08:34:53</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>11</td><td>10:56:22</td><td>0</td><td>-10:00</td><td>10:46:22</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>11</td><td>11:03:42</td><td>0</td><td>-10:00</td><td>10:53:42</td></tr><tr align="center"><td>7</td><td>Black_Niggers</td><td>0</td><td>560:06:44</td><td>0</td><td>0</td><td>560:06:44</td></tr><tr align="center"><td>8</td><td>оЧерТание</td><td>0</td><td>560:06:45</td><td>0</td><td>0</td><td>560:06:45</td></tr></table><br><center><img src="http://cxmoscow.ru/games/image.php?game=266&amp;pr=h"></center><a href="showvalues.php?game=266">Посмотреть показатели игры</a>
+<table border="1" cellspacing="0" cellpadding="0" align="center" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;">	<tr><th rowspan="2">Место</th><th rowspan="2">Команда</th><th rowspan="2">Уровней пройдено</th><th colspan="3">Время уровней</th><th rowspan="2">Всего</th></tr><tr><th>Активного</th><th>Штрафы</th><th>Бонусы</th></tr><tr align="center"><td>1</td><td>Частитела</td><td>11</td><td>07:16:05</td><td>0</td><td>-20:00</td><td>06:56:05</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>11</td><td>07:18:29</td><td>0</td><td>-20:00</td><td>06:58:29</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>11</td><td>08:17:27</td><td>0</td><td>-20:00</td><td>07:57:27</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>11</td><td>08:54:53</td><td>0</td><td>-20:00</td><td>08:34:53</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>11</td><td>10:56:22</td><td>0</td><td>-10:00</td><td>10:46:22</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>11</td><td>11:03:42</td><td>0</td><td>-10:00</td><td>10:53:42</td></tr><tr align="center"><td>7</td><td>Black_Niggers</td><td>0</td><td>560:06:44</td><td>0</td><td>0</td><td>560:06:44</td></tr><tr align="center"><td>8</td><td>оЧерТание</td><td>0</td><td>560:06:45</td><td>0</td><td>0</td><td>560:06:45</td></tr></table><br><center><img src="http://cxmoscow.ru/games/image.php?game=266&amp;pr=h"></center>
 <br><br>
 <table align="center" border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><tr align="center"><td>&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>&nbsp;</td></tr><tr align="center"><td>1</td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">19:22:24</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">19:51:29</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">20:57:47</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">21:53:08</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">22:54:12</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">23:01:49</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">23:36:41</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">00:06:07</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">00:37:58</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">01:40:25</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">02:16:05</font></td><td>1</td></tr><tr align="center"><td>2</td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">19:27:13</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">20:13:33</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">21:01:25</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">22:00:17</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">23:01:03</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">23:45:27</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">00:28:32</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">01:28:55</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">01:44:17</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">02:02:14</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">02:18:29</font></td><td>2</td></tr><tr align="center"><td>3</td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">19:35:31</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">20:36:56</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">21:05:54</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">22:09:45</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">23:05:38</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">00:01:52</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">00:35:04</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">01:34:27</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">01:50:57</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">02:16:41</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">03:17:27</font></td><td>3</td></tr><tr align="center"><td>4</td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">19:38:37</font></td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">20:39:23</font></td><td><font size="2">АПОХ</font><br><font color="#ffff00" size="2">21:08:48</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">22:13:33</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">23:16:57</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">00:08:28</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">01:25:50</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">02:04:23</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">02:29:06</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">03:18:58</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">03:54:53</font></td><td>4</td></tr><tr align="center"><td>5</td><td><font size="2">Частитела</font><br><font color="#ffff00" size="2">19:41:32</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">20:46:37</font></td><td><font size="2">Агентство_007</font><br><font color="#ffff00" size="2">21:33:05</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">22:15:54</font></td><td><font size="2">Криминальное Чтиво</font><br><font color="#ffff00" size="2">23:20:05</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">00:28:33</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">01:42:20</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">03:03:58</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">04:20:25</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">04:57:07</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">05:56:22</font></td><td>5</td></tr><tr align="center"><td>6</td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">19:52:02</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">21:00:47</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">22:00:11</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">23:20:55</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">00:25:41</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">01:22:12</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">02:42:29</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">03:37:16</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">04:33:10</font></td><td><font size="2">FocXus</font><br><font color="#ffff00" size="2">05:13:28</font></td><td><font size="2">Z-14</font><br><font color="#ffff00" size="2">06:03:42</font></td><td>6</td></tr><tr align="center"><td>&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>&nbsp;</td></tr></table><br><div class="level_name"><h2> Уровень&nbsp;1.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>19:00:03</td><td>19:22:24</td><td>&nbsp;</td><td>22:21</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Z-14</td><td>19:00:04</td><td>19:27:13</td><td>&nbsp;</td><td>27:09</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Агентство_007</td><td>19:00:02</td><td>19:35:31</td><td>&nbsp;</td><td>35:29</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Криминальное Чтиво</td><td>19:00:04</td><td>19:38:37</td><td>&nbsp;</td><td>38:33</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Частитела</td><td>19:00:03</td><td>19:41:32</td><td>&nbsp;</td><td>41:29</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>FocXus</td><td>19:00:07</td><td>19:52:02</td><td>&nbsp;</td><td>51:55</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Космический пилот 3000.<br>
 <br>
@@ -239,127 +56,130 @@ th { background-color: #3a4585; color: #FFFF00; }
 Формат кода: сх+сумма (цифрами) в целых центах.<br>
 <br>
 Ответ присылать на почту info@cx74.ru и(!) на pavel.tat@mail.ru не более 5 раз до момента окончания игры командой.<br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="https://web.archive.orghttp://www.postcard.ru/pic/iuser/44/2125900444.jpg"><br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="www.postcard.ru/pic/iuser/44/2125900444.jpg"><br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Передвижная лаборатория прикладной криогеники находится на 420 метров юго-западнее дома № 400 по проспекту Победы<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схэкатебязам0р0зил0</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>02:02:14</td><td>02:18:29</td><td>&nbsp;</td><td>16:15</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Агентство_007</td><td>21:33:05</td><td>21:53:08</td><td>&nbsp;</td><td>20:03</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>20:36:56</td><td>21:01:25</td><td>&nbsp;</td><td>24:29</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>00:06:07</td><td>00:37:58</td><td>&nbsp;</td><td>31:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>04:33:10</td><td>05:13:28</td><td>&nbsp;</td><td>40:18</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>23:16:57</td><td>00:28:33</td><td>&nbsp;</td><td>01:11:36</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Профессор Фарнсворт и топливо.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Передвижная лаборатория прикладной криогеники находится на 420 метров юго-западнее дома № 400 по проспекту Победы<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схэкатебязам0р0зил0</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>02:02:14</td><td>02:18:29</td><td>&nbsp;</td><td>16:15</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Агентство_007</td><td>21:33:05</td><td>21:53:08</td><td>&nbsp;</td><td>20:03</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>20:36:56</td><td>21:01:25</td><td>&nbsp;</td><td>24:29</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>00:06:07</td><td>00:37:58</td><td>&nbsp;</td><td>31:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>04:33:10</td><td>05:13:28</td><td>&nbsp;</td><td>40:18</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>23:16:57</td><td>00:28:33</td><td>&nbsp;</td><td>01:11:36</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Профессор Фарнсворт и топливо.<br>
 <br>
 - Good news everyone!!! Я только  что расшифровал формулу чернухи, вот она:  <br>
 [Y,YY-].  <br>
 Но для окончательного теста мне требуется еще один экземпляр. Садитесь в корабль и достаньте мне чернуху.<br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Что стоите, будто вас плитой придавило? Может вам еще и карту дать?<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Какие же вы медлительные. Вандышева на вас не хватает.  Он бы быстро расставил все точки в формуле, да нашел бы мне чернуху весом с бетонную плиту.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схкакашко1</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><th>Прохождение</th><tr align="center"><td>1</td><td>Криминальное Чтиво</td><td>23:20:05</td><td>23:45:27</td><td>&nbsp;</td><td>25:22</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;23:45:14<br>2&nbsp;-&nbsp;23:45:27<br></td></tr><tr align="center"><td>2</td><td>Частитела</td><td>20:39:23</td><td>21:05:54</td><td>&nbsp;</td><td>26:31</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;21:01:36<br>2&nbsp;-&nbsp;21:05:54<br></td></tr><tr align="center"><td>3</td><td>АПОХ</td><td>22:00:17</td><td>23:05:38</td><td>&nbsp;</td><td>01:05:21</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;22:31:12<br>1&nbsp;-&nbsp;23:05:37<br></td></tr><tr align="center"><td>4</td><td>Z-14</td><td>03:03:58</td><td>04:20:25</td><td>&nbsp;</td><td>01:16:27</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;04:09:29<br>1&nbsp;-&nbsp;04:20:25<br></td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>00:08:28</td><td>01:25:50</td><td>&nbsp;</td><td>01:17:22</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:50:43<br>1&nbsp;-&nbsp;01:25:50<br></td></tr><tr align="center"><td>6</td><td>FocXus</td><td>22:00:11</td><td>23:20:55</td><td>&nbsp;</td><td>01:20:44</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;22:22:27<br>1&nbsp;-&nbsp;23:20:55<br></td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Далекие звезды.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Что стоите, будто вас плитой придавило? Может вам еще и карту дать?<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Какие же вы медлительные. Вандышева на вас не хватает.  Он бы быстро расставил все точки в формуле, да нашел бы мне чернуху весом с бетонную плиту.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схкакашко1</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><th>Прохождение</th><tr align="center"><td>1</td><td>Криминальное Чтиво</td><td>23:20:05</td><td>23:45:27</td><td>&nbsp;</td><td>25:22</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;23:45:14<br>2&nbsp;-&nbsp;23:45:27<br></td></tr><tr align="center"><td>2</td><td>Частитела</td><td>20:39:23</td><td>21:05:54</td><td>&nbsp;</td><td>26:31</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;21:01:36<br>2&nbsp;-&nbsp;21:05:54<br></td></tr><tr align="center"><td>3</td><td>АПОХ</td><td>22:00:17</td><td>23:05:38</td><td>&nbsp;</td><td>01:05:21</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;22:31:12<br>1&nbsp;-&nbsp;23:05:37<br></td></tr><tr align="center"><td>4</td><td>Z-14</td><td>03:03:58</td><td>04:20:25</td><td>&nbsp;</td><td>01:16:27</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;04:09:29<br>1&nbsp;-&nbsp;04:20:25<br></td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>00:08:28</td><td>01:25:50</td><td>&nbsp;</td><td>01:17:22</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:50:43<br>1&nbsp;-&nbsp;01:25:50<br></td></tr><tr align="center"><td>6</td><td>FocXus</td><td>22:00:11</td><td>23:20:55</td><td>&nbsp;</td><td>01:20:44</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;22:22:27<br>1&nbsp;-&nbsp;23:20:55<br></td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Далекие звезды.<br>
 <br>
 - Профессор, возвращаясь с прошлой доставки, мы нашли на астероиде разбитый корабль с грузом. Из «черного ящика» удалось слить только это: <br>
-<img src="https://web.archive.orghttp://www.postcard.ru/pic/iuser/18/6223367318.jpg"><br>
+<img src="www.postcard.ru/pic/iuser/18/6223367318.jpg"><br>
 - Так, все ясно. Доставьте груз по назначению. <br>
 <br>
- <br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Ну что смотрите, тут все просто, прямое восхождение и склонение. Я, конечно, мог бы вычислить название звезды, но я уже в пижаме, – сказал профессор и уснул.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Корабль приближался к звезде под странным названием Атик. Да-да именно Атик, а не Омикрон Персей, как многие привыкли её называть. Скоро груз будет доставлен по назначению, и «слива» у вас не будет :)<br>
+ <br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Ну что смотрите, тут все просто, прямое восхождение и склонение. Я, конечно, мог бы вычислить название звезды, но я уже в пижаме, – сказал профессор и уснул.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Корабль приближался к звезде под странным названием Атик. Да-да именно Атик, а не Омикрон Персей, как многие привыкли её называть. Скоро груз будет доставлен по назначению, и «слива» у вас не будет :)<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлур25<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлур25<br>
 </div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><br>
 Пароль к архиву «Земля в опасности!»: схгалаксианрулит<br>
 <br>
 Формат кода: сх+цифры<br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Нет<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Нет<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Не хватает жизней? Попроси помощи у негров: cxbnhelp<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Не хватает жизней? Попроси помощи у негров: cxbnhelp<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх651</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Агентство_007</td><td>02:29:06</td><td>03:18:58</td><td>&nbsp;</td><td>49:52</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>20:13:33</td><td>21:08:48</td><td>&nbsp;</td><td>55:15</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>FocXus</td><td>00:25:41</td><td>01:22:12</td><td>&nbsp;</td><td>56:31</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>19:41:32</td><td>20:39:23</td><td>&nbsp;</td><td>57:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Криминальное Чтиво</td><td>22:13:33</td><td>23:20:05</td><td>&nbsp;</td><td>01:06:32</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>01:42:20</td><td>03:03:58</td><td>&nbsp;</td><td>01:21:38</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Спасти Эми Вонг.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх651</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Агентство_007</td><td>02:29:06</td><td>03:18:58</td><td>&nbsp;</td><td>49:52</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>20:13:33</td><td>21:08:48</td><td>&nbsp;</td><td>55:15</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>FocXus</td><td>00:25:41</td><td>01:22:12</td><td>&nbsp;</td><td>56:31</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>19:41:32</td><td>20:39:23</td><td>&nbsp;</td><td>57:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Криминальное Чтиво</td><td>22:13:33</td><td>23:20:05</td><td>&nbsp;</td><td>01:06:32</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>01:42:20</td><td>03:03:58</td><td>&nbsp;</td><td>01:21:38</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Спасти Эми Вонг.<br>
 <br>
 Пароль к архиву «Марсианские хроники»: схудивительно10всотойстепенипоказываетдажемарс<br>
 <br>
 Внимание: на уровне вести себя тихо!<br>
 <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="https://web.archive.orghttp://www.postcard.ru/pic/iuser/48/8714655448.jpg"><br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="www.postcard.ru/pic/iuser/48/8714655448.jpg"><br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Племя марсианских кузнецов спрятало Эми на сорок третьем тракте в бетонной будке, чтобы ее не могли засечь наши радары.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Племя марсианских кузнецов спрятало Эми на сорок третьем тракте в бетонной будке, чтобы ее не могли засечь наши радары.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схкифгерой988</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Частитела</td><td>22:09:45</td><td>22:54:12</td><td>&nbsp;</td><td>44:27</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>21:08:48</td><td>22:00:17</td><td>&nbsp;</td><td>51:29</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>00:28:32</td><td>01:28:55</td><td>&nbsp;</td><td>01:00:23</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Z-14</td><td>04:57:07</td><td>06:03:42</td><td>&nbsp;</td><td>01:06:35</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>21:53:08</td><td>23:01:03</td><td>&nbsp;</td><td>01:07:55</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>FocXus</td><td>19:52:02</td><td>21:00:47</td><td>&nbsp;</td><td>01:08:45</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Гипножаба.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схкифгерой988</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Частитела</td><td>22:09:45</td><td>22:54:12</td><td>&nbsp;</td><td>44:27</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>21:08:48</td><td>22:00:17</td><td>&nbsp;</td><td>51:29</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>00:28:32</td><td>01:28:55</td><td>&nbsp;</td><td>01:00:23</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Z-14</td><td>04:57:07</td><td>06:03:42</td><td>&nbsp;</td><td>01:06:35</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>21:53:08</td><td>23:01:03</td><td>&nbsp;</td><td>01:07:55</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>FocXus</td><td>19:52:02</td><td>21:00:47</td><td>&nbsp;</td><td>01:08:45</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Гипножаба.<br>
 <br>
 Пароль к архиву «killallhumans»: сх215убейтевсехчеловеков<br>
 <br>
 Внимание! На уровне вести себя тихо, в окна не светить!<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пароль к архиву «killallhumans1»: схнуили43невсех<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Николай Эрнестович был единственным человеком, который не поддавался взгляду гипножабы. Жаль только, что его убило током.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Пароль к архиву «killallhumans1»: схнуили43невсех<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Николай Эрнестович был единственным человеком, который не поддавался взгляду гипножабы. Жаль только, что его убило током.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схгла3кивкучу</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>19:22:24</td><td>20:13:33</td><td>&nbsp;</td><td>51:09</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>FocXus</td><td>21:00:47</td><td>22:00:11</td><td>&nbsp;</td><td>59:24</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Z-14</td><td>22:15:54</td><td>23:16:57</td><td>&nbsp;</td><td>01:01:03</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>21:05:54</td><td>22:09:45</td><td>&nbsp;</td><td>01:03:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>23:01:03</td><td>00:08:28</td><td>&nbsp;</td><td>01:07:25</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Криминальное Чтиво</td><td>21:01:25</td><td>22:13:33</td><td>&nbsp;</td><td>01:12:08</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Межгалактическая бюрократия.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схгла3кивкучу</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>19:22:24</td><td>20:13:33</td><td>&nbsp;</td><td>51:09</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>FocXus</td><td>21:00:47</td><td>22:00:11</td><td>&nbsp;</td><td>59:24</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Z-14</td><td>22:15:54</td><td>23:16:57</td><td>&nbsp;</td><td>01:01:03</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Частитела</td><td>21:05:54</td><td>22:09:45</td><td>&nbsp;</td><td>01:03:51</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>23:01:03</td><td>00:08:28</td><td>&nbsp;</td><td>01:07:25</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Криминальное Чтиво</td><td>21:01:25</td><td>22:13:33</td><td>&nbsp;</td><td>01:12:08</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Межгалактическая бюрократия.<br>
 <br>
 Сегодня вам предстоит доставить груз для Гермеса далеко за пределы Солнечной системы. В трюме находится три упаковки из неизвестного материала, на которых классуется надпись<br>
 EDBGAPDUGRSVAMSS <br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;При прохождении таможни выяснилось, что по местному классификатору материалов на упаковке должно быть трижды написано:<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;При прохождении таможни выяснилось, что по местному классификатору материалов на упаковке должно быть трижды написано:<br>
 ED BG AP DU GR SV AM SS<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Третий раз вам повторяю! Гермес известный Ямалец!<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Третий раз вам повторяю! Гермес известный Ямалец!<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпроверено257насекомыхнет</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>00:01:52</td><td>00:35:04</td><td>&nbsp;</td><td>33:12</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Частитела</td><td>01:40:25</td><td>02:16:05</td><td>&nbsp;</td><td>35:40</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Z-14</td><td>04:20:25</td><td>04:57:07</td><td>&nbsp;</td><td>36:42</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>20:46:37</td><td>21:33:05</td><td>&nbsp;</td><td>46:28</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>03:37:16</td><td>04:33:10</td><td>&nbsp;</td><td>55:54</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Криминальное Чтиво</td><td>19:38:37</td><td>20:36:56</td><td>&nbsp;</td><td>58:19</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вперед в прошлое.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схпроверено257насекомыхнет</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>00:01:52</td><td>00:35:04</td><td>&nbsp;</td><td>33:12</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Частитела</td><td>01:40:25</td><td>02:16:05</td><td>&nbsp;</td><td>35:40</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Z-14</td><td>04:20:25</td><td>04:57:07</td><td>&nbsp;</td><td>36:42</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>20:46:37</td><td>21:33:05</td><td>&nbsp;</td><td>46:28</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>03:37:16</td><td>04:33:10</td><td>&nbsp;</td><td>55:54</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Криминальное Чтиво</td><td>19:38:37</td><td>20:36:56</td><td>&nbsp;</td><td>58:19</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Вперед в прошлое.<br>
 <br>
 - Подожди, мы что, совершили путешествие во времени?<br>
 - Какой-то идиот положил металлическую банку в микроволновку!<br>
 - Точно.<br>
 - Излучение микроволновки наложилось на излучение схуперновы и полученная энергия отбросила нас на 1239 дней назад.<br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- По иронии судьбы мы перенеслись в схубботний вечер, ровно в 21-00 по местному времени. <br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- По иронии судьбы мы перенеслись в схубботний вечер, ровно в 21-00 по местному времени. <br>
 - Профессор, что же нам теперь делать?<br>
 - Начинать, друзья мои, начинать…<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Нажав кнопку включения, команда Planet Express увидела надпись: «Вот уже 40 лет, как под Новый год мы с друзьями ходим в баню».  «Началось – подумал Профессор, а вслух сказал – не стойте столбом, ищите что-нибудь!»<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Нажав кнопку включения, команда Planet Express увидела надпись: «Вот уже 40 лет, как под Новый год мы с друзьями ходим в баню».  «Началось – подумал Профессор, а вслух сказал – не стойте столбом, ищите что-нибудь!»<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схм34ой</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><th>Прохождение</th><tr align="center"><td>1</td><td>Частитела</td><td>23:01:49</td><td>23:36:41</td><td>&nbsp;</td><td>34:52</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;23:27:07<br>1&nbsp;-&nbsp;23:36:41<br></td></tr><tr align="center"><td>2</td><td>Агентство_007</td><td>01:25:50</td><td>02:04:23</td><td>&nbsp;</td><td>38:33</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;02:00:20<br>2&nbsp;-&nbsp;02:04:23<br></td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>23:45:27</td><td>00:28:32</td><td>&nbsp;</td><td>43:05</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:02:10<br>1&nbsp;-&nbsp;00:28:32<br></td></tr><tr align="center"><td>4</td><td>FocXus</td><td>02:42:29</td><td>03:37:16</td><td>&nbsp;</td><td>54:47</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;03:13:59<br>2&nbsp;-&nbsp;03:37:15<br></td></tr><tr align="center"><td>5</td><td>АПОХ</td><td>23:05:38</td><td>00:01:52</td><td>&nbsp;</td><td>56:14</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;23:27:15<br>1&nbsp;-&nbsp;00:01:52<br></td></tr><tr align="center"><td>6</td><td>Z-14</td><td>00:28:33</td><td>01:42:20</td><td>&nbsp;</td><td>01:13:47</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:49:44<br>1&nbsp;-&nbsp;01:42:19<br></td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Потомок метро<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схм34ой</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><th>Прохождение</th><tr align="center"><td>1</td><td>Частитела</td><td>23:01:49</td><td>23:36:41</td><td>&nbsp;</td><td>34:52</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;23:27:07<br>1&nbsp;-&nbsp;23:36:41<br></td></tr><tr align="center"><td>2</td><td>Агентство_007</td><td>01:25:50</td><td>02:04:23</td><td>&nbsp;</td><td>38:33</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;02:00:20<br>2&nbsp;-&nbsp;02:04:23<br></td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>23:45:27</td><td>00:28:32</td><td>&nbsp;</td><td>43:05</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:02:10<br>1&nbsp;-&nbsp;00:28:32<br></td></tr><tr align="center"><td>4</td><td>FocXus</td><td>02:42:29</td><td>03:37:16</td><td>&nbsp;</td><td>54:47</td><td>&nbsp;</td><td>1&nbsp;-&nbsp;03:13:59<br>2&nbsp;-&nbsp;03:37:15<br></td></tr><tr align="center"><td>5</td><td>АПОХ</td><td>23:05:38</td><td>00:01:52</td><td>&nbsp;</td><td>56:14</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;23:27:15<br>1&nbsp;-&nbsp;00:01:52<br></td></tr><tr align="center"><td>6</td><td>Z-14</td><td>00:28:33</td><td>01:42:20</td><td>&nbsp;</td><td>01:13:47</td><td>&nbsp;</td><td>2&nbsp;-&nbsp;00:49:44<br>1&nbsp;-&nbsp;01:42:19<br></td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Потомок метро<br>
 <br>
 - Лила, как мне добраться до ближайшей трубо-транспортной системы? – спросил Фрай.<br>
 - Это просто, - ответила Лила, - от кольца на север чуть больше километра, потом сверни налево, далее пройдешь мимо возрождающегося из пепла, от него еще 700 метров и налево. А там уже и сам увидишь.<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Эта ваша труба хорошая вещь,- восхитился Фрай, -  но в моем веке автодорожное производство было просто необходимо.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;- А что будет в самом конце трубы? Я не ударюсь? – начал беспокоиться Фрай.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Эта ваша труба хорошая вещь,- восхитился Фрай, -  но в моем веке автодорожное производство было просто необходимо.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;- А что будет в самом конце трубы? Я не ударюсь? – начал беспокоиться Фрай.<br>
 - Ну, только если об землю, - съехидничал Бендер.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх2кммимо<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх2кммимо<br>
 </div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Топливо для Бендера должно содержать 40% спирта. Для его приготовления есть две наполненные почти до краев бочки. В одной – сто литров 96% спирта, в другой – сто литров воды. Имея одну литровую кружку, нужно получить в одной из бочек топливо. Начнём с того, что перельём литр спирта в воду. Это первый перелив. Потом кружечку назад. Это второй. После какого по счёту перелива нужно остановиться? <br>
 <br>
 Формат кода: сх+число, написанное текстом в именительном падеже<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Число переливов=0; Концентрация1=0.96; Концентрация2=0;<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Число переливов=0; Концентрация1=0.96; Концентрация2=0;<br>
 Число переливов=1;Концентрация2=(Концентрация1+100*Концентрация2)/101,<br>
 Число переливов=2;Концентрация1=(Концентрация2+99*Концентрация1)/100<br>
 ...<br>
 пока Концентрация2 не станет больше 0.4.<br>
 Смотрим каким стало Число переливов.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;нет</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схстосемьдесятдевять <br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;нет</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схстосемьдесятдевять <br>
 схстосемьдесятвосемь</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>00:35:04</td><td>01:34:27</td><td>&nbsp;</td><td>59:23</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Криминальное Чтиво</td><td>02:16:41</td><td>03:17:27</td><td>&nbsp;</td><td>01:00:46</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Частитела</td><td>00:37:58</td><td>01:40:25</td><td>&nbsp;</td><td>01:02:27</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>FocXus</td><td>23:20:55</td><td>00:25:41</td><td>&nbsp;</td><td>01:04:46</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Z-14</td><td>19:51:29</td><td>20:57:47</td><td>&nbsp;</td><td>01:06:18</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Агентство_007</td><td>19:35:31</td><td>20:46:37</td><td>&nbsp;</td><td>01:11:06</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Устали от грибов – попробуйте слёрм!<br>
 <br>
 Пароль к архиву «Слёрм рулит»: сханамигрибынеплохо32<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Фрай, у тебя в холодильнике хоть шаром покати, сходил бы в ночной ларек, да купил бы чего-нибудь попить, например слёрма. <br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Фрай, у тебя в холодильнике хоть шаром покати, сходил бы в ночной ларек, да купил бы чего-нибудь попить, например слёрма. <br>
 - Да на Пи долларов я смогу купить 62 бутылки!<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Всех, кто хоть раз попробовал слёрм, нужно немедленно отправлять в научно-практический центр радиационной медицины, и подвергнуть излучению огромной тарелки.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Всех, кто хоть раз попробовал слёрм, нужно немедленно отправлять в научно-практический центр радиационной медицины, и подвергнуть излучению огромной тарелки.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх1зиверт</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>01:34:27</td><td>01:50:57</td><td>&nbsp;</td><td>16:30</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Частитела</td><td>23:36:41</td><td>00:06:07</td><td>&nbsp;</td><td>29:26</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>01:44:17</td><td>02:16:41</td><td>&nbsp;</td><td>32:24</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>03:18:58</td><td>03:54:53</td><td>&nbsp;</td><td>35:55</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>05:13:28</td><td>05:56:22</td><td>&nbsp;</td><td>42:54</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>20:57:47</td><td>22:15:54</td><td>&nbsp;</td><td>01:18:07</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Маленький куш Бендера.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх1зиверт</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>АПОХ</td><td>01:34:27</td><td>01:50:57</td><td>&nbsp;</td><td>16:30</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>Частитела</td><td>23:36:41</td><td>00:06:07</td><td>&nbsp;</td><td>29:26</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>01:44:17</td><td>02:16:41</td><td>&nbsp;</td><td>32:24</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Агентство_007</td><td>03:18:58</td><td>03:54:53</td><td>&nbsp;</td><td>35:55</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>FocXus</td><td>05:13:28</td><td>05:56:22</td><td>&nbsp;</td><td>42:54</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>Z-14</td><td>20:57:47</td><td>22:15:54</td><td>&nbsp;</td><td>01:18:07</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Маленький куш Бендера.<br>
 <br>
 - Бендер, мы не знали что ты такой ценитель музыки, эстет и поклонник Бетховена – восхитились члены экипажа Planet Express.<br>
 - Да просто из его волос были выращены несколько алмазов, которые он и стащил! – вмешался в разговор Зепп Бренниган.<br>
 <br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Бендер, не пытайся на меня напасть – угрожающим голосом сказал Зепп, - я целых три дня занимался в СДЮСШОР по боксу,  я смогу за и себя постоять, и алмазы у тебя отбить.<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;- Не все еще пропало, Бедер перепрятал драгоценности, но мы успели снять его действия на видео. Давайте посмотрим видеоархив «Перепрят» с паролем: схперелет321<br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схламаз92</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;11.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Частитела</td><td>22:54:12</td><td>23:01:49</td><td>&nbsp;</td><td>07:37</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>01:50:57</td><td>02:02:14</td><td>&nbsp;</td><td>11:17</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>01:28:55</td><td>01:44:17</td><td>&nbsp;</td><td>15:22</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Z-14</td><td>19:27:13</td><td>19:51:29</td><td>&nbsp;</td><td>24:16</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>02:04:23</td><td>02:29:06</td><td>&nbsp;</td><td>24:43</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>FocXus</td><td>01:22:12</td><td>02:42:29</td><td>&nbsp;</td><td>01:20:17</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Странный корабль.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;- Бендер, не пытайся на меня напасть – угрожающим голосом сказал Зепп, - я целых три дня занимался в СДЮСШОР по боксу,  я смогу за и себя постоять, и алмазы у тебя отбить.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;- Не все еще пропало, Бедер перепрятал драгоценности, но мы успели снять его действия на видео. Давайте посмотрим видеоархив «Перепрят» с паролем: схперелет321<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схламаз92</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;11.</h2></div><br><table border="1" cellspacing="0" cellpadding="0" bordercolor="#333399" style="COLOR: #ffffff; FONT-SIZE: 13pt;"><th align="center">№</th><th align="center">Команда</th><th align="center">Старт</th><th align="center">Завершение</th><th align="center">Штраф</th><th align="center">Продолжительность</th><th>Бонусы</th><tr align="center"><td>1</td><td>Частитела</td><td>22:54:12</td><td>23:01:49</td><td>&nbsp;</td><td>07:37</td><td>&nbsp;</td></tr><tr align="center"><td>2</td><td>АПОХ</td><td>01:50:57</td><td>02:02:14</td><td>&nbsp;</td><td>11:17</td><td>&nbsp;</td></tr><tr align="center"><td>3</td><td>Криминальное Чтиво</td><td>01:28:55</td><td>01:44:17</td><td>&nbsp;</td><td>15:22</td><td>&nbsp;</td></tr><tr align="center"><td>4</td><td>Z-14</td><td>19:27:13</td><td>19:51:29</td><td>&nbsp;</td><td>24:16</td><td>&nbsp;</td></tr><tr align="center"><td>5</td><td>Агентство_007</td><td>02:04:23</td><td>02:29:06</td><td>&nbsp;</td><td>24:43</td><td>&nbsp;</td></tr><tr align="center"><td>6</td><td>FocXus</td><td>01:22:12</td><td>02:42:29</td><td>&nbsp;</td><td>01:20:17</td><td>&nbsp;</td></tr></table><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Странный корабль.<br>
 <br>
 Наши герои столкнулись с неизвестным кораблем-мусоровозом странной конструкции, на борту которого виднелась полустертая надпись «Челябинец». Впоследствии выяснилось, что верфь, с которой был выпущен данный корабль, имела одноименное название с межгалактической магистралью, соединившей 847 планет.<br>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Корабль был совокупностью 847 тел, ограничивающих свободу движения друг друга взаимным сопротивлением. Хотя все это мусор.<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Корабль был совокупностью 847 тел, ограничивающих свободу движения друг друга взаимным сопротивлением. Хотя все это мусор.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Это был единственный космический корабль, который состоял из 847 механических манипуляторов с урнами.<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Это был единственный космический корабль, который состоял из 847 механических манипуляторов с урнами.<br>
 <br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмус49ор<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмус49ор<br>
 </div></div><br clear="all"/>
 </div>
 <br><br>
+</div>
+<footer>Спасибо за Игру!</footer>
+</div>
 </body>
 </html>

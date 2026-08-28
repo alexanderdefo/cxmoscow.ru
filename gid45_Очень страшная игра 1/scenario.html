@@ -1,459 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
-<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<title>Схватка — Сценарий игры №45</title>
 <link href="../game.css" type="text/css" rel="stylesheet">
-<script src="http://www.cxmoscow.ru/cx.js"></script> 
-<style><!-- custom_cxmoscow_style -->
-body {
-    background-color: #4f5ba9 !important;
-    color: #FFFFFF !important;
-}
-.level_name h2, .gnum {
-    color: #FFFF00 !important;
-}
-#hint {
-    background-color: #FFFACD !important;
-    color: #000080 !important;
-    border: 1px solid #DAA520 !important;
-    padding: 4px 8px !important;
-    margin: 4px 0 !important;
-}
-img.image-not-available {
-    border: 2px dashed #DAA520 !important;
-    padding: 5px !important;
-    opacity: 0.8 !important;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
 h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
 .gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
 #hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
 #ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
 strong { color: #FFD700; }
 a { color: #87CEEB; }
 img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
 .stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
 </style>
 </head>
-<body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<body>
+<div class="main-wrap">
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -467,19 +41,19 @@ th { background-color: #3a4585; color: #FFFF00; }
 
 <br><br>
 <div class="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>На небе их много, ну Вам нужна только одна, перейдите дорогу от этого торгового центра, и вы окажетесь на площади, там ищите агента.  <br>
-Вам необходимо поймать ужасного преступника извращенца. Как настоящим схватчикам Вам предстоит ловля на живца. Для того чтобы привлечь внимание маньяка облачитесь в костюм зайца. Текст, которым Вы можете его привлечь звучит так: «ПревеД медвеД, я – зайчеГГГГ! Когда начнется морковный звездопад?» Не забудьте высоко вскидывать руки на словах «ПревеД медвеД» и внимательно следите за происходящем вокруг. Каждая мелочь поможет Вам достигнуть желаемого.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Звездочка – площадь перед метро.<br>
-Внимательно слушайте, что говорит агент!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;2 девушки сидят на скамейке за переходом. Первая – блондинка, вторая с каштановыми кудрявыми волосами</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сходкаболванов</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Кто изображен на фотографии?<br>
+Вам необходимо поймать ужасного преступника извращенца. Как настоящим схватчикам Вам предстоит ловля на живца. Для того чтобы привлечь внимание маньяка облачитесь в костюм зайца. Текст, которым Вы можете его привлечь звучит так: «ПревеД медвеД, я – зайчеГГГГ! Когда начнется морковный звездопад?» Не забудьте высоко вскидывать руки на словах «ПревеД медвеД» и внимательно следите за происходящем вокруг. Каждая мелочь поможет Вам достигнуть желаемого.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Звездочка – площадь перед метро.<br>
+Внимательно слушайте, что говорит агент!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;2 девушки сидят на скамейке за переходом. Первая – блондинка, вторая с каштановыми кудрявыми волосами</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сходкаболванов</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Кто изображен на фотографии?<br>
 Формат ответа: сх+фамилия+имя<br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схтолстойлев</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Этот сказочный персонаж объединяет Домбровского, Врубеля и Ольгу Макееву. Но при этом, ни первый, ни второй, не тем более милая леди нас не интересуют. Персонажей двое. Один главный, второй второстепенный. Статисты нас не интересуют, не так ли? Неподалеку от вышеупомянутого персонажа, в районе, который в свое время прикупил родственник жены царя Михаила Федоровича и чья фамилия застряла навечно в названии оного же района, на &quot;символе&quot; победы жизни над смертью вы сможете найти код.  (Код латинскими буквами)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Родник<br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схlug1</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>1. Синий <br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;схтолстойлев</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Этот сказочный персонаж объединяет Домбровского, Врубеля и Ольгу Макееву. Но при этом, ни первый, ни второй, не тем более милая леди нас не интересуют. Персонажей двое. Один главный, второй второстепенный. Статисты нас не интересуют, не так ли? Неподалеку от вышеупомянутого персонажа, в районе, который в свое время прикупил родственник жены царя Михаила Федоровича и чья фамилия застряла навечно в названии оного же района, на &quot;символе&quot; победы жизни над смертью вы сможете найти код.  (Код латинскими буквами)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Родник<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схlug1</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>1. Синий <br>
 2. Охра красная <br>
 3. Голубой <br>
 4. Аквамарин <br>
 5. Красный <br>
-6. Кобальт<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;порядковый номер – номер буквы</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схлань</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Смешав  часть ул. Летчика Бабушкина, часть Извилистого проезда, Магаданскую улицу, немножко улицы Малыгина,  улицу Напрудная, и захватите 2-ю Напрудную тоже, немножко Норильской улицы, Оборонную улицу, 2 части Осташковской улицы, полный Осташковский проезд и улицу Тайнинскую, вы получите страшный коктейль. Пробовать на вкус не рекомендуем. Но у него есть название. Узнав название, вы легко найдете в том месте код.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;район – Лосиноостровский, почтовое отделение №129345</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;код на телефонной будке</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;СХРЕЙНЕМАКЕРС</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Процесс над Чикатило известен так же тем, что в нем впервые участвовал человек именно этой профессии.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схпсихолог</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>«- Ну и дела, парни! - выдохнул он. - Нет, вы только послушайте... <br>
+6. Кобальт<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;порядковый номер – номер буквы</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схлань</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Смешав  часть ул. Летчика Бабушкина, часть Извилистого проезда, Магаданскую улицу, немножко улицы Малыгина,  улицу Напрудная, и захватите 2-ю Напрудную тоже, немножко Норильской улицы, Оборонную улицу, 2 части Осташковской улицы, полный Осташковский проезд и улицу Тайнинскую, вы получите страшный коктейль. Пробовать на вкус не рекомендуем. Но у него есть название. Узнав название, вы легко найдете в том месте код.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;район – Лосиноостровский, почтовое отделение №129345</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;код на телефонной будке</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;СХРЕЙНЕМАКЕРС</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Процесс над Чикатило известен так же тем, что в нем впервые участвовал человек именно этой профессии.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схпсихолог</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>«- Ну и дела, парни! - выдохнул он. - Нет, вы только послушайте... <br>
 - Да что случилось-то? - проговорил я. <br>
 - Подожди, дай отдышаться. От самого ведь дома бегом бежал... <br>
 - Ты бежал от самого дома? - недоверчиво переспросил Крис. - Вот псих! - До дома Верна, вниз по Главной улице, было никак не меньше пары миль. - Да ведь там, снаружи, градусов девяносто! <br>
@@ -500,15 +74,15 @@ th { background-color: #3a4585; color: #FFFF00; }
 <br>
 ОЧЕНЬ ОПАСНО!!! Будьте внимательны!!! Смотрите под ноги!!!<br>
 <br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
 <br>
 Формат ответа: ключ1+ключ2(сх1г5ы2р)+ключ3+ключ4<br>
 <br>
 <br>
-ключ на уровень: сх446моторсх1г5ы2рсхвз99рывсхалиса128<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-251491 – это номер нужного Вам вагона</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх446мотор+сх1г5ы2р+схвз99рыв+схалиса128</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Необходимо выбрать 4 слова из столбика ниже, чтобы были верны выражения<br>
+ключ на уровень: сх446моторсх1г5ы2рсхвз99рывсхалиса128<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+251491 – это номер нужного Вам вагона</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх446мотор+сх1г5ы2р+схвз99рыв+схалиса128</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Необходимо выбрать 4 слова из столбика ниже, чтобы были верны выражения<br>
 <br>
 A^2=B*D, A*D=B^2*C<br>
 <br>
@@ -529,7 +103,7 @@ A,B,C,D – количество букв в слове<br>
 14 разгильдяйство<br>
 15 безнаказанность<br>
 <br>
-Формат ответа: cxABCD (соответствующие слова, а не числа)<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;C=8, B=3</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;А=6, В=3, С=8, D=12 машинабегскоростьквалификация</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Есть ратные подвиги;<br>
+Формат ответа: cxABCD (соответствующие слова, а не числа)<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;C=8, B=3</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;А=6, В=3, С=8, D=12 машинабегскоростьквалификация</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Есть ратные подвиги;<br>
 Есть схватки великие;<br>
 Найти то, что хочешь,<br>
 Поможет история,<br>
@@ -604,13 +178,13 @@ A,B,C,D – количество букв в слове<br>
 Итак, зачет по прыжкам вы сдали успешно. Но это далеко не все, теперь приступим к бегу, но поскольку вы не закусывали, то советуем закусить, например блинчиками и бежать уже с ними, как это сделал Ян Стикленд 19 февраля 1985 г. в Мельбурне (Австралия), бегал он тогда недолго 59,5с., о причине история умалчивает, а вот вам пробежать нужно в 96 раз меньше и во времени вы не ограничены. Направление вам подскажет секундная стрелка, указывающая время за которое погасла звезда, по материалам одноимённой статьи от 2 мая 2006 года. <br>
 <br>
 7. <br>
-Ну, вот, кажется и финишная прямая, а может и нет. Попробуйте отвернуться от финиша и идти к нему. В качестве примера возьмите Пленни Уинго из Абилены (США), который прошел от Санта-Моники (США) до Стамбула (Турция) в период с 15 апреля 1931 г. по 24 октября 1932 г. Вам необходимо пройти всего в 2575000 раз меньше чем ему и представить как же тяжело было идти Плени с северо-запада на юго-восток.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Совет от НЕЗВЁЗД: положите компас на землю для точности.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;1)двигайтесь на запад на 3 метра<br>
+Ну, вот, кажется и финишная прямая, а может и нет. Попробуйте отвернуться от финиша и идти к нему. В качестве примера возьмите Пленни Уинго из Абилены (США), который прошел от Санта-Моники (США) до Стамбула (Турция) в период с 15 апреля 1931 г. по 24 октября 1932 г. Вам необходимо пройти всего в 2575000 раз меньше чем ему и представить как же тяжело было идти Плени с северо-запада на юго-восток.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Совет от НЕЗВЁЗД: положите компас на землю для точности.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;1)двигайтесь на запад на 3 метра<br>
 2)двигайтесь на север на 8,11 метров<br>
 3)стрелка находится на 5 часах, расстояние – 14,5 метров<br>
 4)стрелка на 9 часах, расстояние – 5,4 метров<br>
 5)вправо относительно севера на 40 градусов, расстояние – 8 метров<br>
 6)стрелка на 10 секундах, расстояние – 4 метра<br>
-7)двигайтесь на юго-восток, расстояние – 5 метров</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схыгфунця</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><i>Задание выходит за радиус игры</i><br>
+7)двигайтесь на юго-восток, расстояние – 5 метров</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схыгфунця</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br><i>Задание выходит за радиус игры</i><br>
 <br>
 СРОЧНО В НОМЕР!<br>
 <b>Бродяги ели друг друга ради любви</b><br>
@@ -623,48 +197,51 @@ A,B,C,D – количество букв в слове<br>
 Московский Комсомолец<br>
 от 06.07.2004<br>
 <br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-Вам необходимо найти код в одной из землянок, находящихся в районе, обозначенном на карте.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Мосфильмовская д.78 стр.1, идите вниз по лестнице к реке Сетунь, далее по дорожке налево, на первой развилке Вам по левой дороге и в первой рощице справа Вы найдете землянки</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схсхчем</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Собеседование при приеме на работу секретаря. Работодатель задаёт вопросы, девушка отвечает.<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+Вам необходимо найти код в одной из землянок, находящихся в районе, обозначенном на карте.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Мосфильмовская д.78 стр.1, идите вниз по лестнице к реке Сетунь, далее по дорожке налево, на первой развилке Вам по левой дороге и в первой рощице справа Вы найдете землянки</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схсхчем</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Собеседование при приеме на работу секретаря. Работодатель задаёт вопросы, девушка отвечает.<br>
 — Сколько знаков в минуту печатаете? <br>
 — Две тысячи. <br>
 — Так много?!<br>
 — Да, но такая херня получается!<br>
 <br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-Формат ключа: сх+кодовая фраза<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-Вы можете съездить в эту страну за клавиатурой.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схпреведзайчеги</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>В начале прошлого века наш город посетили очень нестандартные персонажи. Им так у нас понравилось, что двое из них: Молчаливая галлюцинация и Темно-фиолетовый рыцарь недавно решили остаться у нас навсегда. Рядом с постоянным местом отдыха этой парочки вы найдёте код.<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+Формат ключа: сх+кодовая фраза<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+Вы можете съездить в эту страну за клавиатурой.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схпреведзайчеги</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>В начале прошлого века наш город посетили очень нестандартные персонажи. Им так у нас понравилось, что двое из них: Молчаливая галлюцинация и Темно-фиолетовый рыцарь недавно решили остаться у нас навсегда. Рядом с постоянным местом отдыха этой парочки вы найдёте код.<br>
 <br>
-ПО ГАЗОНАМ НЕ ХОДИТЬ!!!<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;скульптор Любовь Миросенко</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на орудии убийства</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмур25</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>«Он же памятник, кто ж его посадит?!». Ищите код вблизи того, кого не удалось посадить.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Герой его времени был равнодушен ко всему, а за ним спутник дьявола</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Лермонтовская площадь. Код под монументом «Демон летящий».</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схема4</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>KMnO4 + FeSO4 + H2SO4 =&gt; MnSO4 + Fe2(SO4)3 + K2SO4 + H2O<br>
+ПО ГАЗОНАМ НЕ ХОДИТЬ!!!<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;скульптор Любовь Миросенко</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на орудии убийства</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмур25</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>«Он же памятник, кто ж его посадит?!». Ищите код вблизи того, кого не удалось посадить.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Герой его времени был равнодушен ко всему, а за ним спутник дьявола</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Лермонтовская площадь. Код под монументом «Демон летящий».</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схема4</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>KMnO4 + FeSO4 + H2SO4 =&gt; MnSO4 + Fe2(SO4)3 + K2SO4 + H2O<br>
 Проставьте коэффициенты в уравнении реакции.<br>
 Произведение найденных коэффициентов - код.<br>
-Формат кода сх+полученная цифра<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;2; 10; 8 – первые три коэффициента</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;сх12800</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Решение<br>
+Формат кода сх+полученная цифра<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;2; 10; 8 – первые три коэффициента</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;сх12800</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;Решение<br>
 2KMnO4 + 10FeSO4 + 8H2SO4 &#8594; 2MnSO4 + 5Fe2(SO4)3 + K2SO4 + 8H2O<br>
 коэффициенты - 2*10*8*2*5*1*8=12800</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>нсчрзбжфсипфшцфйоёчвпдгшфнечкногдшфтсжкуостуфдсхкцёфшцёйеёсотяклйёукзуй зчшвпжуёшбнёегуроэктнёейёукзуаерфучзщсочюжкспклцчлгеуётзскуйззчккжкцкгро рфджёшфвюсфйёхвторсгшфнцшётрукрцбфуёеезшчрбвхсфъгйрё<br>
 <br>
-Расшифровать это задание Вам поможет граф Гронсфельд и цифры 13666.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Москва долго строилась. Об этом все знают. Особенно много перестраивались ее деревни. Есть одна такая этническая деревня в конце улицы Белозерская.<br>
-Население всей деревни когда-то было детьми, поэтому там прекрасная детская площадка.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Этническая деревня Бибирево. Код на детской площадке, которая находится ближе к ул.Корнейчука, чем к ул.Белозерская<br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдетство8к</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>043.5 086.3 105.2 147.6        085.7 141.2 195.3 153.6       075.8 059.3 052.11 038.5 143.4 015.8 108.7 111.9   ,     128.6 066.3 148.1 121.3 048.5  ,    029.10 134.7 023.2 090.2 155.7                                     165.1 157.1 001.1 095.4 042.2       039.1 136.6 005.9 034.5 139.1 192.3 124.3    ?  <br>
+Расшифровать это задание Вам поможет граф Гронсфельд и цифры 13666.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Москва долго строилась. Об этом все знают. Особенно много перестраивались ее деревни. Есть одна такая этническая деревня в конце улицы Белозерская.<br>
+Население всей деревни когда-то было детьми, поэтому там прекрасная детская площадка.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Этническая деревня Бибирево. Код на детской площадке, которая находится ближе к ул.Корнейчука, чем к ул.Белозерская<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдетство8к</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>043.5 086.3 105.2 147.6        085.7 141.2 195.3 153.6       075.8 059.3 052.11 038.5 143.4 015.8 108.7 111.9   ,     128.6 066.3 148.1 121.3 048.5  ,    029.10 134.7 023.2 090.2 155.7                                     165.1 157.1 001.1 095.4 042.2       039.1 136.6 005.9 034.5 139.1 192.3 124.3    ?  <br>
 <br>
-Сочетание двух чисел – это буква, а максимальное левое число 195.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Вам поможет подземка</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схтрактор</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Есть японское искусство оригами, есть клоунское искусство составление фигурок из воздушных шариков, а есть искусство плетения корзин, по этому принципу некий автор создал в этом парке арку из веток. Ищите её на Алтуфьевском  шоссе. Эта арка Вам покажет дорогу к трубам, в них ищите код.<br>
+Сочетание двух чисел – это буква, а максимальное левое число 195.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Вам поможет подземка</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схтрактор</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Есть японское искусство оригами, есть клоунское искусство составление фигурок из воздушных шариков, а есть искусство плетения корзин, по этому принципу некий автор создал в этом парке арку из веток. Ищите её на Алтуфьевском  шоссе. Эта арка Вам покажет дорогу к трубам, в них ищите код.<br>
 <br>
-Для поиска кода сапоги вам не понадобятся.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Парк «Отрада», речка Лихоборка<br> Труба находится в конце парка<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сххарашо32</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
+Для поиска кода сапоги вам не понадобятся.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Парк «Отрада», речка Лихоборка<br> Труба находится в конце парка<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сххарашо32</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br><img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
 Это хозяин:<br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br>
-Формат кода: сх+улица+номер дома<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;http://nz.xoid.ru/j4ig9km3.mp3</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схновинскийбульвар25<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br>
+Формат кода: сх+улица+номер дома<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;http://nz.xoid.ru/j4ig9km3.mp3</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схновинскийбульвар25<br>
 </div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>Полевое&nbsp;: <br>Есть дома многоэтажные,<br>
 Hа листе - дома бумажные,<br>
 Есть дома, в которых люди<br>
 Проживают много лет.<br>
-<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img"><br> Благодаря этой даме женщины обрели праздник 8 марта.<br>
+<img src="image_not_available.png" class="stub-img" class="stub-img" class="stub-img" class="stub-img" class="stub-img"><br> Благодаря этой даме женщины обрели праздник 8 марта.<br>
 Дом, который вы ищете, когда-то имел отношение к этой песне и к этой даме, а сейчас это просто страшные развалины.<br> <br>
 Код написан на одном из зданий комплекса со стороны набережной.<br>
 <br>
-ЗА ОГРАЖДЕНИЕ ЗАХОДИТЬ НЕ НУЖНО – ОБЪЕКТ ПОД ОХРАНОЙ, ВНУТРИ ЕСТЬ СОБАКИ.<br>ВНИМАНИЕ!!! Afterparty на парковке у ЦДХ!!!<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Шелапутинский переулок, д.3, корп.4.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на стене в районе входа в здание. Смотрите внимательно!!!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбухать05</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Этот итальянский математик, физик, астролог в далёком 16м веке изобрел незаменимую вещь, ставшей непременным атрибутом многих современных автомобилей. Без него мир вряд ли смог полностью наслаждаться мощью породистых авто. А молодой и перспективный француз из маленького городка Бийянкур первым взял на вооружение изобретение итальянца в конце 19 века, тем самым, совершив большой прорыв в автомобилестроении. <br>
+ЗА ОГРАЖДЕНИЕ ЗАХОДИТЬ НЕ НУЖНО – ОБЪЕКТ ПОД ОХРАНОЙ, ВНУТРИ ЕСТЬ СОБАКИ.<br>ВНИМАНИЕ!!! Afterparty на парковке у ЦДХ!!!<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Шелапутинский переулок, д.3, корп.4.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Код на стене в районе входа в здание. Смотрите внимательно!!!</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбухать05</div></div><br clear="all"/><p><strong>Задание&nbsp;</strong>Координаторское&nbsp;: <br>Этот итальянский математик, физик, астролог в далёком 16м веке изобрел незаменимую вещь, ставшей непременным атрибутом многих современных автомобилей. Без него мир вряд ли смог полностью наслаждаться мощью породистых авто. А молодой и перспективный француз из маленького городка Бийянкур первым взял на вооружение изобретение итальянца в конце 19 века, тем самым, совершив большой прорыв в автомобилестроении. <br>
 <br>
-Формат ответа: сх+имя+фамилия<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Луи Рено создал свой первый автомобиль в 21 год</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схджироламокардано</div></div><br clear="all"/>
+Формат ответа: сх+имя+фамилия<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Луи Рено создал свой первый автомобиль в 21 год</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;схджироламокардано</div></div><br clear="all"/>
 </div>
 <br><br>
+</div>
+<footer>Спасибо за Игру!</footer>
+</div>
 </body>
 </html>

@@ -1,459 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Схватка — Сценарий игры №23</title>
+<link href="../game.css" type="text/css" rel="stylesheet">
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
+h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
+.gnum { color: #FFFF00; font-size: 1.2em; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
+#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
+#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
+strong { color: #FFD700; }
+a { color: #87CEEB; }
+img.hint-img { vertical-align: middle; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
+.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+td, th { border: 1px solid #666; padding: 4px 8px; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
+</style>
+</head>
+<body>
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
 <meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
-<link href="../game.css" type="text/css" rel="stylesheet">
-<script src="http://www.cxmoscow.ru/cx.js"></script> 
-<style><!-- custom_cxmoscow_style -->
-body {
-    background-color: #4f5ba9 !important;
-    color: #FFFFFF !important;
-}
-.level_name h2, .gnum {
-    color: #FFFF00 !important;
-}
-#hint {
-    background-color: #FFFACD !important;
-    color: #000080 !important;
-    border: 1px solid #DAA520 !important;
-    padding: 4px 8px !important;
-    margin: 4px 0 !important;
-}
-img.image-not-available {
-    border: 2px dashed #DAA520 !important;
-    padding: 5px !important;
-    opacity: 0.8 !important;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-/* Стилизация схватка.cx */
-body {
-    background-color: #4f5ba9;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    color: #FFFF00;
-    text-align: center;
-    border-bottom: 2px solid #DAA520;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #FFFF00;
-    background-color: #3a4585;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-.gnum {
-    color: #FFFF00;
-    font-size: 1.2em;
-}
-#scen, .scen {
-    background-color: #3a4585;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-#hint, .hint-box {
-    background-color: #FFFACD;
-    color: #000080;
-    border: 1px solid #DAA520;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 80%;
-}
-#ltxt {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-strong {
-    color: #FFD700;
-}
-a {
-    color: #87CEEB;
-}
-img[src="image_not_available.png"] {
-    border: 2px dashed #DAA520;
-    padding: 5px;
-    background-color: #4f5ba9;
-    max-width: 300px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-}
-td, th {
-    border: 1px solid #666;
-    padding: 4px 8px;
-}
-th {
-    background-color: #3a4585;
-    color: #FFFF00;
-}
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
+ 
+
 </head>
 <body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -468,40 +53,43 @@ th { background-color: #3a4585; color: #FFFF00; }
 <br><br>
 <div id="level_name"><h2> Уровень&nbsp;1.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Раньше были вещи для мужчин (брюки, трубка для курения) и женские (косметика, кружевное нижнее белье). Но с начала сексуальной революции все изменилось, или почти все. Вам необходимо уговорить девушку, что бы она вам помогла купить (или выбрать) тампоны. Вы должны придумать причину. Агент согласится не сразу и будет «ломаться».<br>
 Уговаривать будем, в уже полюбившимся нам, Атриуме.<br>
-<b>(Агент отдаст ключ только за реальную причину, по которой она должна помочь вам)</b><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Агент сидит за столиком на 3-ем этаже.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Столики возле касс в кинотеатр.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схги5ги2ена</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Чего хотелось бы пожелать современной женщине (кроме женственности) так это здоровья. А значит физического труда и здорового питания. Вам необходимо разрезать 2 кг. апельсинов на <b>2 части</b> и приехать на чистые пруды, желательно, что бы руки у вас при этом были чистые. На месте звоните агенту 8-903-003-3325. <b>(Апельсины должны быть разрезаны, на месте делать это будет запрещено).</b>
+<b>(Агент отдаст ключ только за реальную причину, по которой она должна помочь вам)</b><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Агент сидит за столиком на 3-ем этаже.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Столики возле касс в кинотеатр.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схги5ги2ена</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Чего хотелось бы пожелать современной женщине (кроме женственности) так это здоровья. А значит физического труда и здорового питания. Вам необходимо разрезать 2 кг. апельсинов на <b>2 части</b> и приехать на чистые пруды, желательно, что бы руки у вас при этом были чистые. На месте звоните агенту 8-903-003-3325. <b>(Апельсины должны быть разрезаны, на месте делать это будет запрещено).</b>
 <br>
-На этом уровне подсказок не будет.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схуд403вдку</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Шутки по поводу умения слабого и прекрасного пола водить машину известны всем. Не будем опровергать устоявшиеся стереотипы. Вам необходимо привезти штраф (квиток) за нарушение правил дорожного движения (любое нарушение). Привезти квиток необходимо в NetLand (отдельный вход в здание Детского Мира с улицы Рождественка). Подняться на лифте и позвонить 8-926-524-5349.<br>
+На этом уровне подсказок не будет.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схуд403вдку</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Шутки по поводу умения слабого и прекрасного пола водить машину известны всем. Не будем опровергать устоявшиеся стереотипы. Вам необходимо привезти штраф (квиток) за нарушение правил дорожного движения (любое нарушение). Привезти квиток необходимо в NetLand (отдельный вход в здание Детского Мира с улицы Рождественка). Подняться на лифте и позвонить 8-926-524-5349.<br>
 На этом уровне подсказок не будет.
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдв2зуп1х</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Многие современные женщины тратят все свое свободное время на Интернет, телесериалы и реалити-шоу.
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схдв2зуп1х</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Многие современные женщины тратят все свое свободное время на Интернет, телесериалы и реалити-шоу.
 На данном этапе ключом будет название одного из нашумевших реалити-шоу + надпись на мусорке у входа в «него» (в это самое «реалити-шоу»). Ищите его по маршруту трамвая №11.
 <br><br>
-Формат ответа : сх + название реалити-шоу + надпись.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Первое настоящее реалити-шоу на Российском ТВ.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;ул. Б. Галушкина. Магазин "За стеклом"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схзастекломбумага</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Для многих современных женщин этот атрибут стал одним из главных определений состоятельности (а порой и привлекательности) мужчины. К сожалению, эти атрибуты могут растаять…
+Формат ответа : сх + название реалити-шоу + надпись.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Первое настоящее реалити-шоу на Российском ТВ.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;ул. Б. Галушкина. Магазин "За стеклом"</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схзастекломбумага</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Для многих современных женщин этот атрибут стал одним из главных определений состоятельности (а порой и привлекательности) мужчины. К сожалению, эти атрибуты могут растаять…
 Переулок вам подскажет отчество одного из героев русских народных сказок.
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Михаил Потапыч. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Потаповский переулок д2,  на дереве за разрушенной "скульптурой".</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх62плк</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>На этих улицах, многие команды наверняка заранее поставили машины(исходя из темы игры). На 1-ой улице вы найдете первый ключ (номер) на «великой русской реке» под снегом. На 4-ой, на заборе между детским садом и вымпелом вы найдете 2-ой ключ.
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Михаил Потапыч. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Потаповский переулок д2,  на дереве за разрушенной "скульптурой".</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх62плк</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>На этих улицах, многие команды наверняка заранее поставили машины(исходя из темы игры). На 1-ой улице вы найдете первый ключ (номер) на «великой русской реке» под снегом. На 4-ой, на заборе между детским садом и вымпелом вы найдете 2-ой ключ.
 <br><br>
-Формат ответа : сх + номер + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;1-ая и 4-ая улицы 8 марта. Волга. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Автомобиль Волга (номер), недалеко от пересечения 1-ой улицы 8 марта и ул. 8 матра.<br> 
+Формат ответа : сх + номер + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;1-ая и 4-ая улицы 8 марта. Волга. </div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Автомобиль Волга (номер), недалеко от пересечения 1-ой улицы 8 марта и ул. 8 матра.<br> 
 Детский садик по адресу 4-ая 8 марта, д 5. на заборе относящемуся к садику, с внешней стороны.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схр319кн50схвол75т6</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>2 ключа находятся возле места, где производят неизменный атрибут праздника «Корнет», на набережной, созвучной с фамилией женщины, Героя Советского Союза.
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схр319кн50схвол75т6</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>2 ключа находятся возле места, где производят неизменный атрибут праздника «Корнет», на набережной, созвучной с фамилией женщины, Героя Советского Союза.
 Первую часть ключа вы найдете на королеве шеста. (королев может быть несколько).
 Вторую часть ключа вы найдете на «общем» между Особенностью национальной охоты и Графом.
 <br><br>
-Формат ответа : 1-ый ключ + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Космодамианская набережная.<br>
+Формат ответа : 1-ый ключ + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Космодамианская набережная.<br>
 Елена Исинбаева.<br>
-Виктор бычков. (Граф Монтенегро)<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Возле дома № 36.<br>
-Возле дома № 4/22.<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлм6кпсх5стк</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Что общего у этого человека с праздником? День смерти. Он родился там, куда его семью депортировали в 1944, он вырос, дослужился до полковника, вернулся на «родину» и даже стал там Президентом…
+Виктор бычков. (Граф Монтенегро)<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Возле дома № 36.<br>
+Возле дома № 4/22.<br></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схлм6кпсх5стк</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Что общего у этого человека с праздником? День смерти. Он родился там, куда его семью депортировали в 1944, он вырос, дослужился до полковника, вернулся на «родину» и даже стал там Президентом…
 По первым 3-ем буквам его фамилии вы найдете 2 улицы.<br>
 На нижней, в одном из дворов, первый ключ на хвосте желтой птицы с красным клювом.<br>
 На верхней, второй ключ – название САО на деревянной избе.
 <br><br>
-Формат ответа : 1-ый ключ + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Верхняя и Нижняя Масловка.<br>
+Формат ответа : 1-ый ключ + 2-ой ключ.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Верхняя и Нижняя Масловка.<br>
 Двор дома № 20<br>
-Кафэ-бар.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Во дворе на детской площадке на сломанной детской качели 2 птицы по бокам, на одной из них ключ.<br>
+Кафэ-бар.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Во дворе на детской площадке на сломанной детской качели 2 птицы по бокам, на одной из них ключ.<br>
 Изба: д.18.
-</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схепрст91схцентрремесел</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Ключ в парке на бульваре. Название бульвара Его вам подскажет другой неизменный атрибут праздника. Ключ находится на столбе, за 3-мя виновницами торжества.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Цветной бульвар.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Напротив дома №7.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схв7юф</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Следующий уровень вы получите в NetLand-е. Телефон тот же, 8-926-524-5349<br>
+</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схепрст91схцентрремесел</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Ключ в парке на бульваре. Название бульвара Его вам подскажет другой неизменный атрибут праздника. Ключ находится на столбе, за 3-мя виновницами торжества.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;ул. Цветной бульвар.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Напротив дома №7.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схв7юф</div></div><br clear="all"/><div id="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Следующий уровень вы получите в NetLand-е. Телефон тот же, 8-926-524-5349<br>
 Хотя бы один координатор должен быть online для ввода ключа.<br><br>
-На этом уровне подсказок не будет.<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схулощ3ж</div></div><br clear="all"/>
+На этом уровне подсказок не будет.<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;На этом уровне подсказок не будет.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схулощ3ж</div></div><br clear="all"/>
 </div>
 <br><br>
-
+<footer>Спасибо за Игру!</footer>
+</div>
+</body>
+</html>

@@ -2,7 +2,6 @@
   "game_number": 239,
   "start": "28-03-2009",
   "game_type": "Закрытая",
-  "description": "28.03 закрытая поискова игра \"Я знаю это место\"",
   "levels": [
     {
       "number": 1,
@@ -55,9 +54,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "rebus.JPG"
-      ]
+      "images": []
     },
     {
       "number": 4,

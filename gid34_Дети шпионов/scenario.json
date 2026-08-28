@@ -2,8 +2,6 @@
   "game_number": 34,
   "start": "03-06-2006",
   "game_type": "Закрытая",
-  "description": "Проводит команда",
-  "supplies": "1. 2 автомобиля.",
   "levels": [
     {
       "number": 1,

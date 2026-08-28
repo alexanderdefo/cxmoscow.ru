@@ -2,8 +2,6 @@
   "game_number": 69,
   "start": "20-01-2007",
   "game_type": "Закрытая",
-  "description": "Грибы да шишки",
-  "supplies": "Грибы да шишки",
   "levels": [
     {
       "number": 1,
@@ -101,9 +99,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/4p8unsf45h.jpg"
-      ]
+      "images": []
     },
     {
       "number": 5,
@@ -201,14 +197,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k1z0ik4h7t.gif",
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k2zkrdhb73jg.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k3zikjdn63h.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k4zmue7h1nfl.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k5zijn4h7e.jpg",
-        "https://web.archive.orghttp://cxmoscow.ru/game/69/6k6zkjhr77hnd.jpg"
-      ]
+      "images": []
     },
     {
       "number": 9,

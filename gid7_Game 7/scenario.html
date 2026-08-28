@@ -1,68 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<title>Игровой портал</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Игра схватка в Москве, экстремальные ночные гонки, погони по Москве Интернет игра">
-<meta name="keywords" content="игра схватка москва гонки в москве экстремальный туризм">
+<title>Схватка — Сценарий игры №7</title>
 <link href="../game.css" type="text/css" rel="stylesheet">
-<script src="http://www.cxmoscow.ru/cx.js"></script> 
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+<style>body { background-color: #3a4585; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 0; padding: 20px 0; }
+.main-wrap { width: 90%; margin: 0 auto; }
 h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
+h2 { color: #FFFF00; background-color: #4f5ba9; padding: 8px 12px; border-radius: 4px; }
 .gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
+#scen, .scen { background-color: #4f5ba9; padding: 15px; border-radius: 8px; margin: 10px auto; width: 90%; }
 #hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
 #ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
 strong { color: #FFD700; }
 a { color: #87CEEB; }
 img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
+img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #3a4585; max-width: 300px; }
 .stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
-</style>
-<style>
-body { background-color: #4f5ba9; color: #FFFFFF; font-family: 'Trebuchet MS', Arial, sans-serif; margin: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-h1 { color: #FFFF00; text-align: center; border-bottom: 2px solid #DAA520; padding-bottom: 10px; }
-h2 { color: #FFFF00; background-color: #3a4585; padding: 8px 12px; border-radius: 4px; }
-.gnum { color: #FFFF00; font-size: 1.2em; }
-#scen, .scen { background-color: #3a4585; padding: 15px; border-radius: 8px; margin: 10px 0; }
-#hint, .hint-box { background-color: #FFFACD; color: #000080; border: 1px solid #DAA520; padding: 6px 10px; margin: 4px 0; border-radius: 4px; display: inline-block; max-width: 80%; }
-#ltxt { display: inline-block; vertical-align: middle; margin-right: 5px; }
-strong { color: #FFD700; }
-a { color: #87CEEB; }
-img.hint-img { vertical-align: middle; }
-img.stub-img { border: 2px dashed #DAA520; padding: 5px; background-color: #4f5ba9; max-width: 300px; }
-.stub-info { display: block; font-size: 0.8em; color: #FFD700; font-style: italic; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-td, th { border: 1px solid #666; padding: 4px 8px; }
-th { background-color: #3a4585; color: #FFFF00; }
+th { background-color: #4f5ba9; color: #FFFF00; }#main { width: 90%; margin: 0 auto; }
+.site-logo-header {text-align:center; margin:0 auto 12px auto;} .site-logo-header img {display:block; max-width:100%; height:auto; margin:0 auto; border-radius:4px; border:none;}
+footer { text-align: center; color: #AAA; font-size: 0.85em; padding: 20px 0 10px 0; border-top: 1px solid #4f5ba9; margin-top: 20px; }
 </style>
 </head>
-<body bgcolor="black">
-<style>.site-logo-header { text-align:center; margin:0 auto 12px auto; } .site-logo-header img { max-width:100%; height:auto; display:inline-block; border-radius:4px; border:none; }</style><div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
+<body>
+<div class="main-wrap">
+<div class="site-logo-header"><a href="../index.html"><img src="../logo.jpg" alt="Схватка — cxmoscow.ru" width="858" height="139"></a></div>
  
 <div id="main"><div id="header" align="center"><span class="gnum">Игровая система</span></div>
 &nbsp;&nbsp;<a href="http://www.cxmoscow.ru/index.php"><font color="#FFFFFF"></font></a>&nbsp;&nbsp;<a href="listgames.php"><font color="#FFFFFF"></font></a>
@@ -80,52 +45,52 @@ th { background-color: #3a4585; color: #FFFF00; }
 Ответ: сх+имя+фамилия (на русском или английском)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Nival Interactive</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Креативный директор</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схалександрмишулин<br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Nival Interactive</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Креативный директор</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схалександрмишулин<br>
 схalexandermishulin</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;2.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Какой третий сайт напрямую связан с love.mail.ru и аналогичным сервисом знакомств рамблера?
 <br><br>
 Ответ: сх+сайт (без http)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Все дело в том, что базы у них (в том числе у ряда других сайтов с подобным сервисом) одинаковые.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Компания Мамба.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схmambaru
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Все дело в том, что базы у них (в том числе у ряда других сайтов с подобным сервисом) одинаковые.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Компания Мамба.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схmambaru
 схwwwmambaru</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;3.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Исли верить источникам в интернете, именно этому актеру принадлежат слова, которые вдохновили разработчиков ID создать легендаргую игру (и назвать её именно так), 3-я часть которой поступила в продажу в прошлом году.<br> А совсем скоро выйдет фильм, снятый по мотивам сюжета этой легендарной игры.
 <br><br>
 Ответ: сх+имя+фамилия (на русском или английском)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Doom</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;фильм: The color of money</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схтомкруз
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Doom</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;фильм: The color of money</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схтомкруз
 схtomcruise</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;4.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Назовите ближайший населенный пункт от поселка Ессей.
 Ответ: сх+название н.п. (на русском)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Эвенкия. Попробуйте воспользоваться электронными картами.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Rambler Map</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схчиринда</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Назовите фамилии 2-ух основателей компании, которая известна предоставлением поисковых сервисов. Название компании произошло от математического термина, единицы с очень большим количеством нулей.
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Эвенкия. Попробуйте воспользоваться электронными картами.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;Rambler Map</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схчиринда</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;5.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Назовите фамилии 2-ух основателей компании, которая известна предоставлением поисковых сервисов. Название компании произошло от математического термина, единицы с очень большим количеством нулей.
 <br>
 <br>
 Ответ: сх+фамилия+фамилия (в алфавитном порядке на русском или английском)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;В прошлом году они оба вошли в 50 богатейших людей америки по данным Forbes.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;googol</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбринпейдж
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;В прошлом году они оба вошли в 50 богатейших людей америки по данным Forbes.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;googol</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схбринпейдж
 схбринпеидж
 схbrinpage</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;6.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Первую букву вы найдете справа от вазы на столе, вторую на её дне, третью ищите на мордочке кота, 4-ую букву вы найдете из надписи (в оригинале) на горшке. Считайте что это буква а не цифра. 5-ая буква на одном из цветков. 6-ую цифру ищите на теле котика. 7-ая внизу на столе, а последняя на стенке за горшком.
 <br>
 Картинка размером более 800к. Загрузка может занять некоторое время.
 <br><br>
-<img border="0" src="http://www.cxmoscow.ru/game/7O/pic4357.jpg" width="800" height="600">
+<img border="0" pic4357.jpg width="800" height="600">
 <br><br>
 Ответ: сх + (найденные буквы, все на русском)
 <br>Подсказок на этом уровне не будет (кроме третей - ответа).
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмалчишка</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>В одном из самых больших on-line магазинов в мире, основанном в сентябре 1995 года вы можете найти предложение купить "тройку" в Уралах. Ключ будет местонахождение. (город из "location") этой "тройки".<br><br>
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схмалчишка</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;7.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>В одном из самых больших on-line магазинов в мире, основанном в сентябре 1995 года вы можете найти предложение купить "тройку" в Уралах. Ключ будет местонахождение. (город из "location") этой "тройки".<br><br>
 
 Овтет: сх+location (язык как в источнике)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ebay.com, речь идет о мотоцикле.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В разделе "Урал", можно найти предложение "тройки".</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схmadison</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Когда и в какой стране состоится событие года в мире компьютерных игр. Открытие финальной части чемпионата мира, а скорее олимпиады в мире кибер спорта...
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Ebay.com, речь идет о мотоцикле.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;В разделе "Урал", можно найти предложение "тройки".</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;схmadison</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;8.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Когда и в какой стране состоится событие года в мире компьютерных игр. Открытие финальной части чемпионата мира, а скорее олимпиады в мире кибер спорта...
 <br> <br>
 Ответ: сх+ДДММ+страна (на русском или английском)
 <br>
 <b>"сх" везде вводите только на русском</b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;WCG2005</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;http://www.worldcybergames.com/</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх1611singapore
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;WCG2005</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;http://www.worldcybergames.com/</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх1611singapore
 сх1611сингапур</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;9.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Вам необходимо посчитать сумму в рублях из формулы. Данные используйте с сайта «РосБизнесКонсалтинг». Для вычислений все переводите в рубли и округляйте до сотых. Использовать курсы на указанные в формуле даты.
 <br><br>
 48 датских крон 18.09.97 - 248 казахских тенге 24.03.03 + 147 финляндских марок(с комиссией 2%) 09.06.01 + 411 японская иена(с комиссией 3%) 17.05.04 + 236 швейцарских франков(с комиссией 2%) 16.09.00 -89 украинских гривен 21.11.98 - 21 сингапурский доллар 05.01.05 + 125 000 белорусских рублей 15.04.01 - 91 португальский эскудо 02.12.00 + 62 турецкие лиры 13.08.02.
@@ -133,15 +98,18 @@ th { background-color: #3a4585; color: #FFFF00; }
 Ответ: сх+цифры (без запятой или точки, т.е "4.08"=408)
 <br>
 <b>"сх" везде вводите только на русском </b>
-<br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Конвертор валют на rbc.ru</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<a href="http://web.archive.orghttp://conv.rbc.ru/">считайте здесь</a></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх739948</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Сколько будет стоить доставка быка весом 400 кг от станции Ерофей Павлович до станции Гагарин скотовозом? Ответ округлить до рублей, и не забудьте НДС!
+<br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;Конвертор валют на rbc.ru</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;<a href="http://web.archive.orghttp://conv.rbc.ru/">считайте здесь</a></div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх739948</div></div><br clear="all"/><div class="level_name"><h2> Уровень&nbsp;10.</h2></div><br><p><strong>Задание&nbsp;</strong>&nbsp;: <br>Сколько будет стоить доставка быка весом 400 кг от станции Ерофей Павлович до станции Гагарин скотовозом? Ответ округлить до рублей, и не забудьте НДС!
 прейскурант 10-01 (1001), Тарифное руководство №4
 <br>
 Посторайтесь внимательно вводить данные на сайте. Первый раз считает быстро, второй уже в несколько раз дольше.
 <br><br>
 Ответ: сх+цифры (без запятой или точки, т.е "4.08"=408) 
 <br><br>
-<b>"сх" везде вводите только на русском</b><br><br><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;введите в яндексе "прейскурант 10-01 (1001), Тарифное руководство №4". Далее ищите.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;www.rtarif.ru</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"  class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх15279552</div></div><br clear="all"/>
+<b>"сх" везде вводите только на русском</b><br><br><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">1.&nbsp;&nbsp;введите в яндексе "прейскурант 10-01 (1001), Тарифное руководство №4". Далее ищите.</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">2.&nbsp;&nbsp;www.rtarif.ru</div></div><br clear="all"/><div><div id="ltxt"><img src="hint.gif"    class="hint-img"></div><div id="hint">3.&nbsp;&nbsp;сх15279552</div></div><br clear="all"/>
 </div>
 <br><br>
+</div>
+<footer>Спасибо за Игру!</footer>
+</div>
 </body>
 </html>

@@ -2,8 +2,6 @@
   "game_number": 10,
   "start": "05-11-2005",
   "game_type": "Открытая",
-  "description": "Ах, какие женщины!",
-  "supplies": "Ах, какие женщины!",
   "levels": [
     {
       "number": 1,
@@ -20,9 +18,7 @@
           "3. схвангелиягущерова\nсхвангелиясурчева\nсхвангелиягуштерова"
         ]
       ],
-      "answers": [
-        "схвангелиягущерова\nсхвангелиясурчева\nсхвангелиягуштерова"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -40,9 +36,7 @@
           "3. схалладемидова"
         ]
       ],
-      "answers": [
-        "схалладемидова"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -60,9 +54,7 @@
           "3. схмарджсимпсон\nсхmargesimpson"
         ]
       ],
-      "answers": [
-        "схмарджсимпсон\nсхmargesimpson"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -80,9 +72,7 @@
           "3. схюба"
         ]
       ],
-      "answers": [
-        "схюба"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -100,9 +90,7 @@
           "3. сх1931голубойсвет\nсх1931голубоисвет\nсх1932голубойсвет\nсх1932голубоисвет"
         ]
       ],
-      "answers": [
-        "сх1931голубойсвет\nсх1931голубоисвет\nсх1932голубойсвет\nсх1932голубоисвет"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -120,9 +108,7 @@
           "3. схnatashamealey"
         ]
       ],
-      "answers": [
-        "схnatashamealey"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -140,9 +126,7 @@
           "3. схronttimiska\nсхmiskarontti"
         ]
       ],
-      "answers": [
-        "схronttimiska\nсхmiskarontti"
-      ],
+      "answers": [],
       "images": []
     },
     {
@@ -178,9 +162,7 @@
           "3. схiwillalwaysloveyou"
         ]
       ],
-      "answers": [
-        "схiwillalwaysloveyou"
-      ],
+      "answers": [],
       "images": []
     },
     {

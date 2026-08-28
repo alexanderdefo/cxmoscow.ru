@@ -181,9 +181,7 @@
         ]
       ],
       "answers": [],
-      "images": [
-        "http://web.archive.orghttp://counter.yadro.ru/hit?t50.6;r'+\nescape(document.referrer)+((typeof(screen)=='undefined')?'':\n';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?\nscreen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+\n';'+Math.random()+\n'"
-      ]
+      "images": []
     }
   ]
 }
